@@ -45,6 +45,11 @@ let state = loadState();
 let currentView = "standard";
 let morphRenderToken = 0;
 
+const AXIE_BY_ID = {};
+AXIE_DATA.forEach((axie) => {
+  AXIE_BY_ID[axie.id] = axie;
+});
+
 const EDIT_PASSWORD_HASH = "2e84c93c35e3200a861e077ad06e0d12a8496fa5dfb55bb745afc52e3dcc2911";
 const EDIT_SESSION_KEY = "aluguelAxieEditUnlocked";
 let editUnlocked = sessionStorage.getItem(EDIT_SESSION_KEY) === "true";
@@ -70,6 +75,7 @@ function updateLockUI() {
   lockBtn.textContent = editUnlocked ? "🔓 Editando" : "🔒 Editar";
   lockBtn.classList.toggle("unlocked", editUnlocked);
   document.body.classList.toggle("edit-locked", !editUnlocked);
+  document.getElementById("exportBtn").style.display = editUnlocked ? "inline-block" : "none";
 }
 
 function openLockModal() {
@@ -101,11 +107,49 @@ async function tryUnlock() {
   }
 }
 
+function buildChangesPayload() {
+  const changes = {};
+  Object.keys(state).forEach((id) => {
+    const axie = AXIE_BY_ID[id];
+    if (!axie) return;
+    const entry = state[id];
+    const publishedRented = axie.rented || false;
+    const publishedTier = axie.rentedTier || 0;
+    if (!!entry.rented !== publishedRented || (entry.rentedTier || 0) !== publishedTier) {
+      changes[id] = { rented: !!entry.rented, rentedTier: entry.rentedTier || 0 };
+    }
+  });
+  return JSON.stringify(changes);
+}
+
+async function openExportModal() {
+  const json = buildChangesPayload();
+  const textarea = document.getElementById("exportTextarea");
+  textarea.value = json;
+  document.getElementById("exportModal").style.display = "flex";
+  textarea.focus();
+  textarea.select();
+  try {
+    await navigator.clipboard.writeText(json);
+    showToast("Copiado! Agora é só colar no chat com o Claude.");
+  } catch (e) {
+    showToast("Não consegui copiar automaticamente — selecione o texto e copie manualmente.");
+  }
+}
+
+function closeExportModal() {
+  document.getElementById("exportModal").style.display = "none";
+}
+
 const TIER_LABELS = ["Rara", "Épica", "Mística", "Final"];
 
 function getEntry(id) {
   if (!state[id]) {
-    state[id] = { rented: false, rentedTier: 0 };
+    const published = AXIE_BY_ID[id] || {};
+    state[id] = {
+      rented: published.rented || false,
+      rentedTier: published.rentedTier || 0,
+    };
   }
   if (state[id].rentedTier === undefined) {
     state[id].rentedTier = 0;
@@ -419,6 +463,12 @@ function init() {
   });
   document.getElementById("lockModal").addEventListener("click", (e) => {
     if (e.target.id === "lockModal") closeLockModal();
+  });
+
+  document.getElementById("exportBtn").addEventListener("click", openExportModal);
+  document.getElementById("exportClose").addEventListener("click", closeExportModal);
+  document.getElementById("exportModal").addEventListener("click", (e) => {
+    if (e.target.id === "exportModal") closeExportModal();
   });
 
   renderGrid();

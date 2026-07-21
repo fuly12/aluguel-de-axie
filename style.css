@@ -102,6 +102,22 @@ body {
   max-width: 90vw;
 }
 
+.modal-box:has(textarea) {
+  width: 420px;
+}
+
+.modal-box textarea {
+  width: 100%;
+  background: #0c1220;
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-family: monospace;
+  resize: vertical;
+}
+
 .modal-box h3 { margin: 0 0 8px; }
 .modal-box p { margin: 0 0 14px; color: var(--muted); font-size: 0.85rem; }
 

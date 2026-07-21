@@ -16,6 +16,7 @@
     <span id="statDisponivel">0</span> disponíveis ·
     <span id="statAlugado">0</span> alugados
   </div>
+  <button id="exportBtn" class="lock-btn" style="display:none" title="Copiar alterações para enviar ao Claude">📋 Copiar alterações</button>
   <button id="lockBtn" class="lock-btn" title="Modo edição">🔒 Editar</button>
 </header>
 
@@ -28,6 +29,17 @@
     <div class="modal-actions">
       <button id="lockCancel" class="modal-btn secondary">Cancelar</button>
       <button id="lockConfirm" class="modal-btn primary">Entrar</button>
+    </div>
+  </div>
+</div>
+
+<div id="exportModal" class="modal-overlay" style="display:none">
+  <div class="modal-box">
+    <h3>📋 Copiar alterações</h3>
+    <p>Cole este texto numa mensagem para o Claude, pedindo para publicar as alterações.</p>
+    <textarea id="exportTextarea" readonly rows="6"></textarea>
+    <div class="modal-actions">
+      <button id="exportClose" class="modal-btn primary">Fechar</button>
     </div>
   </div>
 </div>
@@ -80,7 +92,7 @@
 <main id="grid" class="grid"></main>
 
 <footer class="foot">
-  Os dados de aluguel (status e tier) ficam salvos no navegador (localStorage) — mesmo arquivo, mesmo navegador.
+  O status de aluguel exibido é o que foi publicado por último. Alterações feitas aqui ficam só neste navegador até serem enviadas ao Claude com o botão "📋 Copiar alterações" e publicadas.
 </footer>
 
 <script src="axie-renderer.bundle.js"></script>
