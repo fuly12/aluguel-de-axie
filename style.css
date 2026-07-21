@@ -47,19 +47,79 @@ body {
 }
 
 .lang-btn {
-  background: var(--card);
-  border: 1px solid var(--card-border);
-  border-radius: 8px;
-  font-size: 1.2rem;
-  line-height: 1;
-  padding: 6px 8px;
+  position: relative;
+  width: 42px;
+  height: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  padding: 0;
   cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .lang-btn.active {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 1px var(--accent);
+  box-shadow: 0 0 0 2px var(--accent);
 }
+
+.flag-accent {
+  position: absolute;
+  inset: 0;
+}
+
+.flag-label {
+  position: relative;
+  z-index: 2;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.55);
+}
+
+/* Brasil */
+.flag-pt { background: #009c3b; }
+.flag-pt .flag-accent {
+  background: #ffdf00;
+  clip-path: polygon(50% 8%, 94% 50%, 50% 92%, 6% 50%);
+}
+.flag-pt .flag-label { color: #002776; }
+
+/* Estados Unidos */
+.flag-en {
+  background: repeating-linear-gradient(to bottom, #b22234 0 14.2%, #ffffff 14.2% 28.4%);
+}
+.flag-en .flag-accent {
+  inset: auto auto auto 0;
+  top: 0;
+  left: 0;
+  width: 55%;
+  height: 58%;
+  background: #3c3b6e;
+}
+.flag-en .flag-label { color: #ffffff; }
+
+/* Espanha */
+.flag-es {
+  background: linear-gradient(to bottom, #aa151b 25%, #f1bf00 25% 75%, #aa151b 75%);
+}
+.flag-es .flag-label { color: #aa151b; text-shadow: none; }
+
+/* Filipinas */
+.flag-fil {
+  background: linear-gradient(to bottom right, #0038a8 49%, #ffffff 49% 51%, #ce1126 51%);
+}
+.flag-fil .flag-accent {
+  inset: auto auto auto 0;
+  top: 0;
+  left: 0;
+  width: 42%;
+  height: 100%;
+  background: #ffffff;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+.flag-fil .flag-label { color: #0038a8; }
 
 .discord-contact {
   background: #1a2233;
