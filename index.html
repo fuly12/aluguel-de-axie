@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aluguel de Axies</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <h1>🐾 Aluguel de Axies</h1>
+  <div class="stats">
+    <span id="statTotal">0</span> total ·
+    <span id="statDisponivel">0</span> disponíveis ·
+    <span id="statAlugado">0</span> alugados
+  </div>
+</header>
+
+<div class="view-tabs">
+  <button class="view-tab active" id="tabStandard" data-view="standard">Padrão</button>
+  <button class="view-tab" id="tabMorph" data-view="morph">✨ Morfado</button>
+</div>
+
+<section class="filters">
+  <div class="filter-group">
+    <label>Buscar por ID</label>
+    <input type="text" id="searchId" placeholder="Ex: 1519">
+  </div>
+
+  <div class="filter-group">
+    <label>Classe</label>
+    <select id="filterClass">
+      <option value="">Todas</option>
+    </select>
+  </div>
+
+  <div class="filter-group">
+    <label>Status</label>
+    <select id="filterStatus">
+      <option value="">Todos</option>
+      <option value="disponivel">Disponível</option>
+      <option value="alugado">Alugado</option>
+    </select>
+  </div>
+
+  <div class="filter-group filter-checkbox">
+    <label>
+      <input type="checkbox" id="filterShowAll">
+      Mostrar todos os axies não colecionáveis
+    </label>
+  </div>
+
+</section>
+
+<main id="grid" class="grid"></main>
+
+<footer class="foot">
+  Os dados de aluguel (status e tier) ficam salvos no navegador (localStorage) — mesmo arquivo, mesmo navegador.
+</footer>
+
+<script src="axie-renderer.bundle.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
