@@ -6,7 +6,7 @@ const AXIE_DATA = [
       "eyes": "eyes-zeal-2",
       "ears": "ears-bubblemaker-2",
       "mouth": "mouth-doubletalk-2",
-      "horn": "horn-eggshell",
+      "horn": "horn-eggshell-2",
       "back": "back-tendrils-2",
       "tail": "tail-tiny-dino-2"
     },
@@ -60,7 +60,7 @@ const AXIE_DATA = [
     "id": "1876",
     "class": "Beast",
     "parts": {
-      "eyes": "eyes-little-peas",
+      "eyes": "eyes-little-peas-2",
       "ears": "ears-nyan-2",
       "mouth": "mouth-peace-maker",
       "horn": "horn-babylonia-2",
@@ -202,7 +202,7 @@ const AXIE_DATA = [
     "parts": {
       "eyes": "eyes-nerdy-2",
       "ears": "ears-puppy-2",
-      "mouth": "mouth-little-owl",
+      "mouth": "mouth-little-owl-2",
       "horn": "horn-incisor-2",
       "back": "back-mint",
       "tail": "tail-potato-leaf-2"
@@ -259,7 +259,7 @@ const AXIE_DATA = [
       "eyes": "eyes-nerdy-2",
       "ears": "ears-puppy-2",
       "mouth": "mouth-axie-kiss-2",
-      "horn": "horn-pocky",
+      "horn": "horn-pocky-2",
       "back": "back-mint",
       "tail": "tail-gila-2"
     },
@@ -331,7 +331,7 @@ const AXIE_DATA = [
     "class": "Plant",
     "parts": {
       "eyes": "eyes-clear",
-      "ears": "ears-maiko",
+      "ears": "ears-maiko-2",
       "mouth": "mouth-dango-2",
       "horn": "horn-anemone",
       "back": "back-yakitori-2",
@@ -477,8 +477,8 @@ const AXIE_DATA = [
     },
     "bodyShape": "Normal",
     "specialGenes": [
-      "Nightmare",
-      "Japan"
+      "Japan",
+      "Nightmare"
     ],
     "collectible": true,
     "genesisTitle": null,
@@ -597,7 +597,7 @@ const AXIE_DATA = [
       "back": "back-pumpkin",
       "tail": "tail-carrot"
     },
-    "bodyShape": "BigYak",
+    "bodyShape": "Bigyak",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -643,7 +643,7 @@ const AXIE_DATA = [
       "back": "back-anemone",
       "tail": "tail-carrot"
     },
-    "bodyShape": "WetDog",
+    "bodyShape": "Wetdog",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -685,7 +685,7 @@ const AXIE_DATA = [
       "back": "back-pumpkin",
       "tail": "tail-carrot"
     },
-    "bodyShape": "WetDog",
+    "bodyShape": "Wetdog",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -694,6 +694,31 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": null,
     "level": 9
+  },
+  {
+    "id": "628150",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-papi",
+      "ears": "ears-possessed-lotus-2",
+      "mouth": "mouth-razor-bite",
+      "horn": "horn-shoal-star",
+      "back": "back-red-ear",
+      "tail": "tail-carrot"
+    },
+    "bodyShape": "Wetdog",
+    "specialGenes": [
+      "Nightmare"
+    ],
+    "collectible": true,
+    "genesisTitle": null,
+    "genesisParts": {
+      "Nightmare": 1
+    },
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 45
   },
   {
     "id": "797565",
@@ -738,6 +763,31 @@ const AXIE_DATA = [
     "level": 9
   },
   {
+    "id": "837613",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-papi",
+      "ears": "ears-possessed-lotus-2",
+      "mouth": "mouth-serious",
+      "horn": "horn-cactus",
+      "back": "back-red-ear",
+      "tail": "tail-carrot"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [
+      "Nightmare"
+    ],
+    "collectible": true,
+    "genesisTitle": null,
+    "genesisParts": {
+      "Nightmare": 1
+    },
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 51
+  },
+  {
     "id": "912968",
     "class": "Plant",
     "parts": {
@@ -769,7 +819,7 @@ const AXIE_DATA = [
       "back": "back-pumpkin",
       "tail": "tail-tadpole"
     },
-    "bodyShape": "WetDog",
+    "bodyShape": "Wetdog",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -887,6 +937,31 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": null,
     "level": 41
+  },
+  {
+    "id": "1010078",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-confused",
+      "ears": "ears-possessed-lotus-2",
+      "mouth": "mouth-serious",
+      "horn": "horn-rose-bud",
+      "back": "back-red-ear",
+      "tail": "tail-carrot"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [
+      "Nightmare"
+    ],
+    "collectible": true,
+    "genesisTitle": null,
+    "genesisParts": {
+      "Nightmare": 1
+    },
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 45
   },
   {
     "id": "1022623",
@@ -1470,7 +1545,7 @@ const AXIE_DATA = [
       "back": "back-pumpkin",
       "tail": "tail-carrot"
     },
-    "bodyShape": "BigYak",
+    "bodyShape": "Bigyak",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -1533,7 +1608,7 @@ const AXIE_DATA = [
       "back": "back-pumpkin",
       "tail": "tail-carrot"
     },
-    "bodyShape": "WetDog",
+    "bodyShape": "Wetdog",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -1924,6 +1999,31 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": null,
     "level": 9
+  },
+  {
+    "id": "2632955",
+    "class": "Bird",
+    "parts": {
+      "eyes": "eyes-mavis",
+      "ears": "ears-owl",
+      "mouth": "mouth-little-owl",
+      "horn": "horn-eggshell",
+      "back": "back-pigeon-post",
+      "tail": "tail-evil-eye-2"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [
+      "Nightmare"
+    ],
+    "collectible": true,
+    "genesisTitle": null,
+    "genesisParts": {
+      "Nightmare": 1
+    },
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 45
   },
   {
     "id": "2641068",
@@ -3078,7 +3178,7 @@ const AXIE_DATA = [
       "back": "back-pumpkin",
       "tail": "tail-carrot"
     },
-    "bodyShape": "WetDog",
+    "bodyShape": "Wetdog",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -3439,7 +3539,7 @@ const AXIE_DATA = [
       "back": "back-pumpkin",
       "tail": "tail-carrot"
     },
-    "bodyShape": "WetDog",
+    "bodyShape": "Wetdog",
     "specialGenes": [
       "Nightmare"
     ],
@@ -4119,7 +4219,7 @@ const AXIE_DATA = [
       "back": "back-pumpkin",
       "tail": "tail-carrot"
     },
-    "bodyShape": "BigYak",
+    "bodyShape": "Bigyak",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -4686,7 +4786,7 @@ const AXIE_DATA = [
       "back": "back-ronin",
       "tail": "tail-nimo"
     },
-    "bodyShape": "WetDog",
+    "bodyShape": "Wetdog",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -5303,7 +5403,7 @@ const AXIE_DATA = [
       "back": "back-pumpkin",
       "tail": "tail-carrot"
     },
-    "bodyShape": "BigYak",
+    "bodyShape": "Bigyak",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -5387,7 +5487,7 @@ const AXIE_DATA = [
       "back": "back-pumpkin",
       "tail": "tail-potato-leaf"
     },
-    "bodyShape": "BigYak",
+    "bodyShape": "Bigyak",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -5475,7 +5575,7 @@ const AXIE_DATA = [
       "back": "back-pumpkin",
       "tail": "tail-carrot"
     },
-    "bodyShape": "WetDog",
+    "bodyShape": "Wetdog",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -5819,7 +5919,7 @@ const AXIE_DATA = [
       "back": "back-pumpkin",
       "tail": "tail-carrot"
     },
-    "bodyShape": "BigYak",
+    "bodyShape": "Bigyak",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -6112,6 +6212,27 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": null,
     "level": 9
+  },
+  {
+    "id": "9128191",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-confused",
+      "ears": "ears-clover",
+      "mouth": "mouth-serious",
+      "horn": "horn-leaf-bug",
+      "back": "back-pumpkin",
+      "tail": "tail-pupae"
+    },
+    "bodyShape": "Bigyak",
+    "specialGenes": [],
+    "collectible": false,
+    "genesisTitle": null,
+    "genesisParts": {},
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 38
   },
   {
     "id": "9145416",
@@ -6854,7 +6975,7 @@ const AXIE_DATA = [
       "back": "back-pumpkin",
       "tail": "tail-carrot"
     },
-    "bodyShape": "BigYak",
+    "bodyShape": "Bigyak",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -6863,6 +6984,31 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": null,
     "level": 9
+  },
+  {
+    "id": "9846007",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-papi",
+      "ears": "ears-rosa-2",
+      "mouth": "mouth-dark-kiss-2",
+      "horn": "horn-leaf-bug",
+      "back": "back-turnip-2",
+      "tail": "tail-hot-butt"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [
+      "Nightmare"
+    ],
+    "collectible": true,
+    "genesisTitle": null,
+    "genesisParts": {
+      "Nightmare": 1
+    },
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 50
   },
   {
     "id": "9891030",
@@ -6980,7 +7126,7 @@ const AXIE_DATA = [
       "back": "back-bone-sail",
       "tail": "tail-hot-butt"
     },
-    "bodyShape": "BigYak",
+    "bodyShape": "Bigyak",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -7358,7 +7504,7 @@ const AXIE_DATA = [
       "back": "back-pumpkin",
       "tail": "tail-yam"
     },
-    "bodyShape": "BigYak",
+    "bodyShape": "Bigyak",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -8202,7 +8348,7 @@ const AXIE_DATA = [
       "back": "back-bidens",
       "tail": "tail-hot-butt"
     },
-    "bodyShape": "BigYak",
+    "bodyShape": "Bigyak",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -8253,6 +8399,31 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": null,
     "level": 9
+  },
+  {
+    "id": "11000627",
+    "class": "Bug",
+    "parts": {
+      "eyes": "eyes-cucumber-slice",
+      "ears": "ears-rosa",
+      "mouth": "mouth-poisonous-pincer-2",
+      "horn": "horn-parasite",
+      "back": "back-snail-shell",
+      "tail": "tail-fish-snack"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [
+      "Nightmare"
+    ],
+    "collectible": true,
+    "genesisTitle": null,
+    "genesisParts": {
+      "Nightmare": 1
+    },
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 48
   },
   {
     "id": "11011930",
@@ -8412,7 +8583,7 @@ const AXIE_DATA = [
       "back": "back-blue-moon",
       "tail": "tail-hatsune"
     },
-    "bodyShape": "WetDog",
+    "bodyShape": "Wetdog",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -8463,6 +8634,31 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": null,
     "level": 9
+  },
+  {
+    "id": "11142905",
+    "class": "Bug",
+    "parts": {
+      "eyes": "eyes-topaz",
+      "ears": "ears-small-frill",
+      "mouth": "mouth-poisonous-pincer-2",
+      "horn": "horn-parasite",
+      "back": "back-sandal",
+      "tail": "tail-fish-snack"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [
+      "Nightmare"
+    ],
+    "collectible": true,
+    "genesisTitle": null,
+    "genesisParts": {
+      "Nightmare": 1
+    },
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 48
   },
   {
     "id": "11150182",
@@ -8668,7 +8864,7 @@ const AXIE_DATA = [
       "back": "back-pumpkin",
       "tail": "tail-hot-butt"
     },
-    "bodyShape": "WetDog",
+    "bodyShape": "Wetdog",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -8773,7 +8969,7 @@ const AXIE_DATA = [
       "back": "back-garish-worm",
       "tail": "tail-the-last-one"
     },
-    "bodyShape": "BigYak",
+    "bodyShape": "Bigyak",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -8794,7 +8990,7 @@ const AXIE_DATA = [
       "back": "back-pumpkin",
       "tail": "tail-hatsune"
     },
-    "bodyShape": "BigYak",
+    "bodyShape": "Bigyak",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -9029,7 +9225,7 @@ const AXIE_DATA = [
       "back": "back-mint",
       "tail": "tail-carrot"
     },
-    "bodyShape": "BigYak",
+    "bodyShape": "Bigyak",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -9169,8 +9365,8 @@ const AXIE_DATA = [
     },
     "bodyShape": "Wavy",
     "specialGenes": [
-      "Summer2022",
-      "Nightmare"
+      "Nightmare",
+      "Summer2022"
     ],
     "collectible": true,
     "genesisTitle": null,
@@ -9930,6 +10126,52 @@ const AXIE_DATA = [
     "level": 52
   },
   {
+    "id": "11791536",
+    "class": "Reptile",
+    "parts": {
+      "eyes": "eyes-gecko",
+      "ears": "ears-small-frill",
+      "mouth": "mouth-tiny-turtle",
+      "horn": "horn-dual-blade",
+      "back": "back-nightmare-wings-2",
+      "tail": "tail-cottontail"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [
+      "Nightmare"
+    ],
+    "collectible": true,
+    "genesisTitle": null,
+    "genesisParts": {
+      "Nightmare": 1
+    },
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 48
+  },
+  {
+    "id": "11795915",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-neo",
+      "ears": "ears-rosa-2",
+      "mouth": "mouth-serious",
+      "horn": "horn-cactus",
+      "back": "back-turnip-2",
+      "tail": "tail-hot-butt"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [],
+    "collectible": false,
+    "genesisTitle": null,
+    "genesisParts": {},
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 39
+  },
+  {
     "id": "11814895",
     "class": "Bug",
     "parts": {
@@ -10068,6 +10310,31 @@ const AXIE_DATA = [
     "level": 46
   },
   {
+    "id": "11908892",
+    "class": "Reptile",
+    "parts": {
+      "eyes": "eyes-chubby",
+      "ears": "ears-small-frill",
+      "mouth": "mouth-razor-bite",
+      "horn": "horn-dual-blade",
+      "back": "back-nightmare-wings-2",
+      "tail": "tail-yam"
+    },
+    "bodyShape": "Bigyak",
+    "specialGenes": [
+      "Nightmare"
+    ],
+    "collectible": true,
+    "genesisTitle": null,
+    "genesisParts": {
+      "Nightmare": 1
+    },
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 51
+  },
+  {
     "id": "11909872",
     "class": "Aquatic",
     "parts": {
@@ -10173,6 +10440,27 @@ const AXIE_DATA = [
     "level": 8
   },
   {
+    "id": "11985675",
+    "class": "Aquatic",
+    "parts": {
+      "eyes": "eyes-nerdy",
+      "ears": "ears-larva",
+      "mouth": "mouth-silence-whisper",
+      "horn": "horn-little-branch",
+      "back": "back-mint",
+      "tail": "tail-rice"
+    },
+    "bodyShape": "Bigyak",
+    "specialGenes": [],
+    "collectible": false,
+    "genesisTitle": null,
+    "genesisParts": {},
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 35
+  },
+  {
     "id": "11991092",
     "class": "Beast",
     "parts": {
@@ -10276,6 +10564,31 @@ const AXIE_DATA = [
     "level": 42
   },
   {
+    "id": "12003256",
+    "class": "Reptile",
+    "parts": {
+      "eyes": "eyes-gecko",
+      "ears": "ears-rosa-2",
+      "mouth": "mouth-silence-whisper",
+      "horn": "horn-watermelon",
+      "back": "back-nightmare-wings-2",
+      "tail": "tail-grass-snake-2"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [
+      "Nightmare"
+    ],
+    "collectible": true,
+    "genesisTitle": null,
+    "genesisParts": {
+      "Nightmare": 1
+    },
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 59
+  },
+  {
     "id": "12008114",
     "class": "Bird",
     "parts": {
@@ -10358,6 +10671,31 @@ const AXIE_DATA = [
     "level": 51
   },
   {
+    "id": "12018068",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-robin",
+      "ears": "ears-innocent-lamb",
+      "mouth": "mouth-silence-whisper",
+      "horn": "horn-piranhaplant-2",
+      "back": "back-turnip-2",
+      "tail": "tail-grass-snake"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [
+      "Nightmare"
+    ],
+    "collectible": true,
+    "genesisTitle": null,
+    "genesisParts": {
+      "Nightmare": 1
+    },
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 45
+  },
+  {
     "id": "12019341",
     "class": "Bird",
     "parts": {
@@ -10390,12 +10728,58 @@ const AXIE_DATA = [
     "level": 52
   },
   {
+    "id": "12020806",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-cucumber-slice",
+      "ears": "ears-innocent-lamb",
+      "mouth": "mouth-silence-whisper",
+      "horn": "horn-rose-bud-2",
+      "back": "back-bidens",
+      "tail": "tail-grass-snake"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [],
+    "collectible": false,
+    "genesisTitle": null,
+    "genesisParts": {},
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 33
+  },
+  {
+    "id": "12020807",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-cucumber-slice",
+      "ears": "ears-innocent-lamb",
+      "mouth": "mouth-silence-whisper",
+      "horn": "horn-piranhaplant-2",
+      "back": "back-bidens",
+      "tail": "tail-grass-snake"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [
+      "Nightmare"
+    ],
+    "collectible": true,
+    "genesisTitle": null,
+    "genesisParts": {
+      "Nightmare": 1
+    },
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 44
+  },
+  {
     "id": "12021026",
     "class": "Reptile",
     "parts": {
       "eyes": "eyes-gecko-2",
       "ears": "ears-dragon-ears-2",
-      "mouth": "mouth-silence-whisper",
+      "mouth": "mouth-silence-whisper-2",
       "horn": "horn-strawberry-shortcake-2",
       "back": "back-green-thorns-2",
       "tail": "tail-cottontail-2"
@@ -10420,6 +10804,70 @@ const AXIE_DATA = [
     },
     "morphGenesHex": "0x28000000000001000100a080c00000000003001408a043080003000c2861430a0002061430a085040003000c106105080003001410a0c1080003000008004504",
     "level": 60
+  },
+  {
+    "id": "12029593",
+    "class": "Dusk",
+    "parts": {
+      "eyes": "eyes-nerdy",
+      "ears": "ears-rosa-2",
+      "mouth": "mouth-silence-whisper",
+      "horn": "horn-piranhaplant-2",
+      "back": "back-turnip-2",
+      "tail": "tail-snake-jar-2"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [
+      "Nightmare"
+    ],
+    "collectible": true,
+    "genesisTitle": null,
+    "genesisParts": {
+      "Nightmare": 1
+    },
+    "isMorphed": true,
+    "morphParts": {
+      "eyes": "Nerdy",
+      "ears": "Sakura",
+      "mouth": "Silence Whisper",
+      "horn": "Dual Blade",
+      "back": "Turnip",
+      "tail": "Snake Jar"
+    },
+    "morphGenesHex": "0x900000000000010001408000830c000000010004208085040001000c286103040003000c2000c402000206002860c1020003000c0860400c0003001420814404",
+    "level": 51
+  },
+  {
+    "id": "12031778",
+    "class": "Dawn",
+    "parts": {
+      "eyes": "eyes-nerdy",
+      "ears": "ears-innocent-lamb-2",
+      "mouth": "mouth-silence-whisper",
+      "horn": "horn-strawberry-shortcake",
+      "back": "back-turnip-2",
+      "tail": "tail-earwig-2"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [
+      "Nightmare"
+    ],
+    "collectible": true,
+    "genesisTitle": null,
+    "genesisParts": {
+      "Nightmare": 1
+    },
+    "isMorphed": true,
+    "morphParts": {
+      "eyes": "Nerdy",
+      "ears": "Innocent Lamb",
+      "mouth": "Silence Whisper",
+      "horn": "Strawberry Shortcake",
+      "back": "Turnip",
+      "tail": "Snake Jar"
+    },
+    "morphGenesHex": "0x8800000000000100010100208210000000010004202083080001000c2861440a00030000182045060001000c206101020003000c08204304000206142080c508",
+    "level": 49
   },
   {
     "id": "12032746",
@@ -10466,6 +10914,27 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": null,
     "level": 50
+  },
+  {
+    "id": "12033443",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-cucumber-slice",
+      "ears": "ears-rosa",
+      "mouth": "mouth-silence-whisper",
+      "horn": "horn-strawberry-shortcake",
+      "back": "back-turnip-2",
+      "tail": "tail-snake-jar-2"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [],
+    "collectible": false,
+    "genesisTitle": null,
+    "genesisParts": {},
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 39
   },
   {
     "id": "12036240",
@@ -10688,7 +11157,7 @@ const AXIE_DATA = [
       "back": "back-spiky-wing",
       "tail": "tail-angry-grain-2"
     },
-    "bodyShape": "BigYak",
+    "bodyShape": "Bigyak",
     "specialGenes": [
       "Nightmare"
     ],
@@ -10701,6 +11170,70 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": null,
     "level": 47
+  },
+  {
+    "id": "12047986",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-gecko",
+      "ears": "ears-dragon-ears-2",
+      "mouth": "mouth-silence-whisper",
+      "horn": "horn-strawberry-shortcake-2",
+      "back": "back-green-thorns-2",
+      "tail": "tail-cottontail"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [
+      "Nightmare"
+    ],
+    "collectible": true,
+    "genesisTitle": null,
+    "genesisParts": {
+      "Nightmare": 1
+    },
+    "isMorphed": true,
+    "morphParts": {
+      "eyes": "Gecko",
+      "ears": "Pink Cheek",
+      "mouth": "Toothless Bite",
+      "horn": "Strawberry Shortcake",
+      "back": "Sandal",
+      "tail": "Cottontail"
+    },
+    "morphGenesHex": "0x180000000000010002016050000000000001001408208404000100140861430a00020608084145040003000c206102040003000420a0c5060001000008004208",
+    "level": 56
+  },
+  {
+    "id": "12050497",
+    "class": "Dusk",
+    "parts": {
+      "eyes": "eyes-gecko",
+      "ears": "ears-rosa-2",
+      "mouth": "mouth-silence-whisper",
+      "horn": "horn-watermelon",
+      "back": "back-nightmare-wings-2",
+      "tail": "tail-gila"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [
+      "Nightmare"
+    ],
+    "collectible": true,
+    "genesisTitle": null,
+    "genesisParts": {
+      "Nightmare": 1
+    },
+    "isMorphed": true,
+    "morphParts": {
+      "eyes": "Gecko",
+      "ears": "Rosa",
+      "mouth": "Silence Whisper",
+      "horn": "Strawberry Shortcake",
+      "back": "Nightmare Wings",
+      "tail": "Grass Snake"
+    },
+    "morphGenesHex": "0x9000000000000100020100b0000000000001001408a045020001000c2861430a0003000c1860c3060001000c2061830c0002061418a0c5060001001430a1850c",
+    "level": 55
   },
   {
     "id": "12060244",
@@ -10791,7 +11324,7 @@ const AXIE_DATA = [
     "id": "12097034",
     "class": "Plant",
     "parts": {
-      "eyes": "eyes-nerdy",
+      "eyes": "eyes-nerdy-2",
       "ears": "ears-earwing-2",
       "mouth": "mouth-piranha",
       "horn": "horn-feather-spear-2",
@@ -11517,7 +12050,7 @@ const AXIE_DATA = [
       "back": "back-furball",
       "tail": "tail-gravel-ant"
     },
-    "bodyShape": "BigYak",
+    "bodyShape": "Bigyak",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
