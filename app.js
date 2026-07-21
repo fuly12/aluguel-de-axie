@@ -1,6 +1,6 @@
 const STORAGE_KEY = "aluguelAxieState_v1";
 
-const ALL_CLASSES = ["Aquatic", "Beast", "Bird", "Bug", "Dawn", "Dusk", "Mech", "Plant", "Reptile", "Nightmare"];
+const ALL_CLASSES = ["Aquatic", "Beast", "Bird", "Bug", "Dawn", "Dusk", "Mech", "Plant", "Reptile"];
 
 const CLASS_CLASS_MAP = {
   Aquatic: "c-aquatic",
@@ -12,7 +12,21 @@ const CLASS_CLASS_MAP = {
   Mech: "c-mech",
   Plant: "c-plant",
   Reptile: "c-reptile",
-  Nightmare: "c-nightmare",
+};
+
+const TAG_LABELS = {
+  Nightmare: "Nightmare",
+  NightmareShiny: "Nightmare Shiny",
+  Japan: "Japonês",
+  Xmas2018: "Natalino (Xmas)",
+  Xmas2019: "Natalino (Xmas)",
+  Summer2022: "Verão",
+  SummerShiny2022: "Verão Shiny",
+  Mystic: "Místico",
+  Bionic: "Agamogenesis",
+  ORIGIN: "Origin Gen 0",
+  MEO: "MEO",
+  "MEO II": "MEO II",
 };
 
 function loadState() {
@@ -87,12 +101,6 @@ async function tryUnlock() {
   }
 }
 
-const GENESIS_TITLE_LABELS = {
-  "ORIGIN": "Origin Gen 0",
-  "MEO": "MEO",
-  "MEO II": "MEO II",
-};
-
 const TIER_LABELS = ["Rara", "Épica", "Mística", "Final"];
 
 function getEntry(id) {
@@ -138,6 +146,7 @@ function renderGrid() {
   const searchId = document.getElementById("searchId").value.trim();
   const filterClass = document.getElementById("filterClass").value;
   const filterStatus = document.getElementById("filterStatus").value;
+  const filterCollectibleTag = document.getElementById("filterCollectibleTag").value;
   const showAll = document.getElementById("filterShowAll").checked;
 
   let items = AXIE_DATA.filter((axie) => {
@@ -147,6 +156,7 @@ function renderGrid() {
     if (filterClass && axie.class !== filterClass) return false;
     if (filterStatus === "disponivel" && entry.rented) return false;
     if (filterStatus === "alugado" && !entry.rented) return false;
+    if (filterCollectibleTag && !axieHasCollectibleTag(axie, filterCollectibleTag)) return false;
     return true;
   });
 
@@ -225,12 +235,36 @@ function renderMorphImage(axie, imgEl, statusEl) {
 
 function collectibleTagsHtml(axie) {
   const tags = [];
-  (axie.specialGenes || []).forEach((t) => tags.push(t));
-  if (axie.genesisTitle && GENESIS_TITLE_LABELS[axie.genesisTitle]) {
-    tags.push(GENESIS_TITLE_LABELS[axie.genesisTitle]);
+  (axie.specialGenes || []).forEach((t) => tags.push(TAG_LABELS[t] || t));
+  if (axie.genesisTitle) {
+    tags.push(TAG_LABELS[axie.genesisTitle] || axie.genesisTitle);
   }
   if (tags.length === 0) return "";
   return `<div class="collectible-tags">${tags.map((t) => `<span class="tag-badge">${t}</span>`).join("")}</div>`;
+}
+
+function axieHasCollectibleTag(axie, value) {
+  if (!value) return true;
+  if ((axie.specialGenes || []).includes(value)) return true;
+  if (axie.genesisTitle === value) return true;
+  return false;
+}
+
+function populateCollectibleFilter() {
+  const select = document.getElementById("filterCollectibleTag");
+  const values = new Set();
+  AXIE_DATA.forEach((axie) => {
+    (axie.specialGenes || []).forEach((t) => values.add(t));
+    if (axie.genesisTitle) values.add(axie.genesisTitle);
+  });
+  Array.from(values)
+    .sort((a, b) => (TAG_LABELS[a] || a).localeCompare(TAG_LABELS[b] || b))
+    .forEach((value) => {
+      const opt = document.createElement("option");
+      opt.value = value;
+      opt.textContent = TAG_LABELS[value] || value;
+      select.appendChild(opt);
+    });
 }
 
 function tierRowHtml(entry) {
@@ -350,7 +384,8 @@ function updateStats() {
 
 function init() {
   populateClassFilter();
-  ["searchId", "filterClass", "filterStatus", "filterShowAll"].forEach((id) => {
+  populateCollectibleFilter();
+  ["searchId", "filterClass", "filterStatus", "filterCollectibleTag", "filterShowAll"].forEach((id) => {
     document.getElementById(id).addEventListener("input", renderGrid);
     document.getElementById(id).addEventListener("change", renderGrid);
   });
