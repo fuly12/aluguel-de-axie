@@ -14,20 +14,252 @@ const CLASS_CLASS_MAP = {
   Reptile: "c-reptile",
 };
 
-const TAG_LABELS = {
-  Nightmare: "Nightmare",
-  NightmareShiny: "Nightmare Shiny",
-  Japan: "Japonês",
-  Xmas2018: "Natalino (Xmas)",
-  Xmas2019: "Natalino (Xmas)",
-  Summer2022: "Verão",
-  SummerShiny2022: "Verão Shiny",
-  Mystic: "Místico",
-  Bionic: "Agamogenesis",
-  ORIGIN: "Origin Gen 0",
-  MEO: "MEO",
-  "MEO II": "MEO II",
+const TAG_LABELS_BY_LANG = {
+  pt: {
+    Nightmare: "Nightmare", NightmareShiny: "Nightmare Shiny", Japan: "Japonês",
+    Xmas2018: "Natalino (Xmas)", Xmas2019: "Natalino (Xmas)", Summer2022: "Verão",
+    SummerShiny2022: "Verão Shiny", Mystic: "Místico", Bionic: "Agamogenesis",
+    ORIGIN: "Origin Gen 0", MEO: "MEO", "MEO II": "MEO II",
+  },
+  en: {
+    Nightmare: "Nightmare", NightmareShiny: "Nightmare Shiny", Japan: "Japanese",
+    Xmas2018: "Christmas (Xmas)", Xmas2019: "Christmas (Xmas)", Summer2022: "Summer",
+    SummerShiny2022: "Summer Shiny", Mystic: "Mystic", Bionic: "Agamogenesis",
+    ORIGIN: "Origin Gen 0", MEO: "MEO", "MEO II": "MEO II",
+  },
+  es: {
+    Nightmare: "Nightmare", NightmareShiny: "Nightmare Shiny", Japan: "Japonés",
+    Xmas2018: "Navideño (Xmas)", Xmas2019: "Navideño (Xmas)", Summer2022: "Verano",
+    SummerShiny2022: "Verano Shiny", Mystic: "Místico", Bionic: "Agamogenesis",
+    ORIGIN: "Origin Gen 0", MEO: "MEO", "MEO II": "MEO II",
+  },
+  fil: {
+    Nightmare: "Nightmare", NightmareShiny: "Nightmare Shiny", Japan: "Hapon",
+    Xmas2018: "Pasko (Xmas)", Xmas2019: "Pasko (Xmas)", Summer2022: "Tag-init",
+    SummerShiny2022: "Tag-init Shiny", Mystic: "Mistiko", Bionic: "Agamogenesis",
+    ORIGIN: "Origin Gen 0", MEO: "MEO", "MEO II": "MEO II",
+  },
 };
+
+const I18N = {
+  pt: {
+    title: "🐾 Aluguel de Axies",
+    discordContact: "Discord para contato:",
+    statTotalLabel: "total",
+    statAvailableLabel: "disponíveis",
+    statRentedLabel: "alugados",
+    lockBtnLocked: "🔒 Editar",
+    lockBtnUnlocked: "🔓 Editando",
+    exportBtnLabel: "📋 Copiar alterações",
+    lockModalTitle: "🔒 Modo edição",
+    lockModalDesc: "Digite a senha para poder alterar o status de aluguel.",
+    lockPasswordPlaceholder: "Senha",
+    lockErrorText: "Senha incorreta.",
+    cancelBtn: "Cancelar",
+    enterBtn: "Entrar",
+    exportModalTitle: "📋 Copiar alterações",
+    exportModalDesc: "Cole este texto numa mensagem para o Claude, pedindo para publicar as alterações.",
+    closeBtn: "Fechar",
+    tabStandard: "Padrão",
+    tabMorph: "✨ Morfado",
+    searchLabel: "Buscar por ID",
+    searchPlaceholder: "Ex: 1519",
+    classLabel: "Classe",
+    statusLabel: "Status",
+    optAll: "Todos",
+    optAvailable: "Disponível",
+    optRented: "Alugado",
+    collectibleLabel: "Colecionável",
+    showAllLabel: "Mostrar todos os axies não colecionáveis",
+    emptyMsg: "Nenhum axie encontrado com esses filtros.",
+    footerText: 'O status de aluguel exibido é o que foi publicado por último. Alterações feitas aqui ficam só neste navegador até serem enviadas ao Claude com o botão "📋 Copiar alterações" e publicadas.',
+    toastLockedClick: "Somente o administrador pode alterar isso. Clique em 🔒 Editar.",
+    toastEditOn: "Modo edição ativado.",
+    toastEditOff: "Modo edição desativado.",
+    toastCopied: "Copiado! Agora é só colar no chat com o Claude.",
+    toastCopyFail: "Não consegui copiar automaticamente — selecione o texto e copie manualmente.",
+    rentedUntilLabel: "Alugado até",
+    tierRare: "Rara",
+    tierEpic: "Épica",
+    tierMystic: "Mística",
+    tierFinal: "Final",
+    morphPartsTitle: "✨ Partes após o morph",
+    partEyes: "Olhos", partEars: "Orelhas", partMouth: "Boca", partHorn: "Chifre", partBack: "Costas", partTail: "Cauda",
+    morphGenerating: "Gerando imagem morfada...",
+    morphFailed: "Não foi possível gerar a imagem morfada.",
+  },
+  en: {
+    title: "🐾 Axie Rentals",
+    discordContact: "Discord contact:",
+    statTotalLabel: "total",
+    statAvailableLabel: "available",
+    statRentedLabel: "rented",
+    lockBtnLocked: "🔒 Edit",
+    lockBtnUnlocked: "🔓 Editing",
+    exportBtnLabel: "📋 Copy changes",
+    lockModalTitle: "🔒 Edit mode",
+    lockModalDesc: "Enter the password to change the rental status.",
+    lockPasswordPlaceholder: "Password",
+    lockErrorText: "Incorrect password.",
+    cancelBtn: "Cancel",
+    enterBtn: "Enter",
+    exportModalTitle: "📋 Copy changes",
+    exportModalDesc: "Paste this text in a message to Claude, asking to publish the changes.",
+    closeBtn: "Close",
+    tabStandard: "Standard",
+    tabMorph: "✨ Morphed",
+    searchLabel: "Search by ID",
+    searchPlaceholder: "E.g.: 1519",
+    classLabel: "Class",
+    statusLabel: "Status",
+    optAll: "All",
+    optAvailable: "Available",
+    optRented: "Rented",
+    collectibleLabel: "Collectible",
+    showAllLabel: "Show all non-collectible axies",
+    emptyMsg: "No axie found with these filters.",
+    footerText: 'The rental status shown is the last one published. Changes made here stay only in this browser until sent to Claude with the "📋 Copy changes" button and published.',
+    toastLockedClick: "Only the admin can change this. Click 🔒 Edit.",
+    toastEditOn: "Edit mode enabled.",
+    toastEditOff: "Edit mode disabled.",
+    toastCopied: "Copied! Now just paste it in the chat with Claude.",
+    toastCopyFail: "Couldn't copy automatically — select the text and copy it manually.",
+    rentedUntilLabel: "Rented until",
+    tierRare: "Rare",
+    tierEpic: "Epic",
+    tierMystic: "Mystic",
+    tierFinal: "Final",
+    morphPartsTitle: "✨ Parts after the morph",
+    partEyes: "Eyes", partEars: "Ears", partMouth: "Mouth", partHorn: "Horn", partBack: "Back", partTail: "Tail",
+    morphGenerating: "Generating morphed image...",
+    morphFailed: "Couldn't generate the morphed image.",
+  },
+  es: {
+    title: "🐾 Alquiler de Axies",
+    discordContact: "Contacto de Discord:",
+    statTotalLabel: "total",
+    statAvailableLabel: "disponibles",
+    statRentedLabel: "alquilados",
+    lockBtnLocked: "🔒 Editar",
+    lockBtnUnlocked: "🔓 Editando",
+    exportBtnLabel: "📋 Copiar cambios",
+    lockModalTitle: "🔒 Modo edición",
+    lockModalDesc: "Ingresa la contraseña para poder cambiar el estado del alquiler.",
+    lockPasswordPlaceholder: "Contraseña",
+    lockErrorText: "Contraseña incorrecta.",
+    cancelBtn: "Cancelar",
+    enterBtn: "Entrar",
+    exportModalTitle: "📋 Copiar cambios",
+    exportModalDesc: "Pega este texto en un mensaje para Claude, pidiendo que publique los cambios.",
+    closeBtn: "Cerrar",
+    tabStandard: "Estándar",
+    tabMorph: "✨ Transformado",
+    searchLabel: "Buscar por ID",
+    searchPlaceholder: "Ej: 1519",
+    classLabel: "Clase",
+    statusLabel: "Estado",
+    optAll: "Todos",
+    optAvailable: "Disponible",
+    optRented: "Alquilado",
+    collectibleLabel: "Coleccionable",
+    showAllLabel: "Mostrar todos los axies no coleccionables",
+    emptyMsg: "No se encontró ningún axie con estos filtros.",
+    footerText: 'El estado de alquiler mostrado es el último publicado. Los cambios hechos aquí quedan solo en este navegador hasta que se envíen a Claude con el botón "📋 Copiar cambios" y se publiquen.',
+    toastLockedClick: "Solo el administrador puede cambiar esto. Haz clic en 🔒 Editar.",
+    toastEditOn: "Modo edición activado.",
+    toastEditOff: "Modo edición desactivado.",
+    toastCopied: "¡Copiado! Ahora solo pégalo en el chat con Claude.",
+    toastCopyFail: "No pude copiar automáticamente — selecciona el texto y cópialo manualmente.",
+    rentedUntilLabel: "Alquilado hasta",
+    tierRare: "Rara",
+    tierEpic: "Épica",
+    tierMystic: "Mística",
+    tierFinal: "Final",
+    morphPartsTitle: "✨ Partes después del morph",
+    partEyes: "Ojos", partEars: "Orejas", partMouth: "Boca", partHorn: "Cuerno", partBack: "Espalda", partTail: "Cola",
+    morphGenerating: "Generando imagen transformada...",
+    morphFailed: "No se pudo generar la imagen transformada.",
+  },
+  fil: {
+    title: "🐾 Pag-arkila ng Axies",
+    discordContact: "Discord para sa kontak:",
+    statTotalLabel: "kabuuan",
+    statAvailableLabel: "magagamit",
+    statRentedLabel: "inuupahan",
+    lockBtnLocked: "🔒 I-edit",
+    lockBtnUnlocked: "🔓 Ineedit",
+    exportBtnLabel: "📋 Kopyahin ang mga pagbabago",
+    lockModalTitle: "🔒 Mode ng pag-edit",
+    lockModalDesc: "Ilagay ang password para mabago ang status ng pag-arkila.",
+    lockPasswordPlaceholder: "Password",
+    lockErrorText: "Maling password.",
+    cancelBtn: "Kanselahin",
+    enterBtn: "Pasukin",
+    exportModalTitle: "📋 Kopyahin ang mga pagbabago",
+    exportModalDesc: "I-paste ang tekstong ito sa isang mensahe kay Claude, hinihiling na i-publish ang mga pagbabago.",
+    closeBtn: "Isara",
+    tabStandard: "Standard",
+    tabMorph: "✨ Na-morph",
+    searchLabel: "Maghanap gamit ang ID",
+    searchPlaceholder: "Hal: 1519",
+    classLabel: "Klase",
+    statusLabel: "Status",
+    optAll: "Lahat",
+    optAvailable: "Magagamit",
+    optRented: "Inuupahan",
+    collectibleLabel: "Makokolekta",
+    showAllLabel: "Ipakita lahat ng axies na hindi makokolekta",
+    emptyMsg: "Walang nahanap na axie sa mga filter na ito.",
+    footerText: 'Ang status ng pag-arkila na ipinapakita ay ang huling na-publish. Ang mga pagbabagong ginawa dito ay nasa browser na ito lang hanggang ipadala kay Claude gamit ang button na "📋 Kopyahin ang mga pagbabago" at ma-publish.',
+    toastLockedClick: "Tanging ang admin lang ang makakapagbago nito. I-click ang 🔒 I-edit.",
+    toastEditOn: "Naka-on ang edit mode.",
+    toastEditOff: "Naka-off ang edit mode.",
+    toastCopied: "Nakopya! Ngayon i-paste na lang sa chat kay Claude.",
+    toastCopyFail: "Hindi awtomatikong nakopya — piliin ang teksto at kopyahin nang manu-mano.",
+    rentedUntilLabel: "Inuupahan hanggang",
+    tierRare: "Bihira",
+    tierEpic: "Epiko",
+    tierMystic: "Mistiko",
+    tierFinal: "Final",
+    morphPartsTitle: "✨ Mga parte pagkatapos ng morph",
+    partEyes: "Mata", partEars: "Tainga", partMouth: "Bibig", partHorn: "Sungay", partBack: "Likod", partTail: "Buntot",
+    morphGenerating: "Gumagawa ng na-morph na larawan...",
+    morphFailed: "Hindi magawa ang na-morph na larawan.",
+  },
+};
+
+const LANG_KEY = "aluguelAxieLang";
+let currentLang = localStorage.getItem(LANG_KEY) || "pt";
+
+function t(key) {
+  return (I18N[currentLang] && I18N[currentLang][key]) || I18N.pt[key] || key;
+}
+
+function tagLabel(value) {
+  const langMap = TAG_LABELS_BY_LANG[currentLang] || TAG_LABELS_BY_LANG.pt;
+  return langMap[value] || value;
+}
+
+function translateStaticUI() {
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    el.textContent = t(el.dataset.i18n);
+  });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+    el.placeholder = t(el.dataset.i18nPlaceholder);
+  });
+  document.querySelectorAll(".lang-btn").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.lang === currentLang);
+  });
+}
+
+function setLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem(LANG_KEY, lang);
+  translateStaticUI();
+  updateLockUI();
+  populateCollectibleFilter();
+  renderGrid();
+}
 
 function loadState() {
   try {
@@ -72,10 +304,11 @@ function showToast(msg) {
 
 function updateLockUI() {
   const lockBtn = document.getElementById("lockBtn");
-  lockBtn.textContent = editUnlocked ? "🔓 Editando" : "🔒 Editar";
+  lockBtn.textContent = editUnlocked ? t("lockBtnUnlocked") : t("lockBtnLocked");
   lockBtn.classList.toggle("unlocked", editUnlocked);
   document.body.classList.toggle("edit-locked", !editUnlocked);
   document.getElementById("exportBtn").style.display = editUnlocked ? "inline-block" : "none";
+  document.getElementById("exportBtn").textContent = t("exportBtnLabel");
 }
 
 function openLockModal() {
@@ -101,7 +334,7 @@ async function tryUnlock() {
     sessionStorage.setItem(EDIT_SESSION_KEY, "true");
     updateLockUI();
     closeLockModal();
-    showToast("Modo edição ativado.");
+    showToast(t("toastEditOn"));
   } else {
     error.style.display = "block";
   }
@@ -131,9 +364,9 @@ async function openExportModal() {
   textarea.select();
   try {
     await navigator.clipboard.writeText(json);
-    showToast("Copiado! Agora é só colar no chat com o Claude.");
+    showToast(t("toastCopied"));
   } catch (e) {
-    showToast("Não consegui copiar automaticamente — selecione o texto e copie manualmente.");
+    showToast(t("toastCopyFail"));
   }
 }
 
@@ -141,7 +374,9 @@ function closeExportModal() {
   document.getElementById("exportModal").style.display = "none";
 }
 
-const TIER_LABELS = ["Rara", "Épica", "Mística", "Final"];
+function tierLabels() {
+  return [t("tierRare"), t("tierEpic"), t("tierMystic"), t("tierFinal")];
+}
 
 function getEntry(id) {
   if (!state[id]) {
@@ -205,7 +440,7 @@ function renderGrid() {
   });
 
   if (items.length === 0) {
-    grid.innerHTML = '<div class="empty">Nenhum axie encontrado com esses filtros.</div>';
+    grid.innerHTML = `<div class="empty">${t("emptyMsg")}</div>`;
   }
 
   items.forEach((axie) => {
@@ -254,7 +489,7 @@ function renderMorphImage(axie, imgEl, statusEl) {
 
     (async () => {
       try {
-        if (statusEl) statusEl.textContent = "Gerando imagem morfada...";
+        if (statusEl) statusEl.textContent = t("morphGenerating");
         const renderer = new window.AxieRenderer(tempId);
         await renderer.render(axie.morphGenesHex, 0.3, 95);
         await new Promise((r) => setTimeout(r, 150));
@@ -265,11 +500,11 @@ function renderMorphImage(axie, imgEl, statusEl) {
           imgEl.style.visibility = "visible";
           if (statusEl) statusEl.textContent = "";
         } else if (statusEl) {
-          statusEl.textContent = "Não foi possível gerar a imagem morfada.";
+          statusEl.textContent = t("morphFailed");
         }
       } catch (err) {
         console.error("Erro ao renderizar morph do axie", axie.id, err);
-        if (statusEl) statusEl.textContent = "Erro ao gerar imagem morfada.";
+        if (statusEl) statusEl.textContent = t("morphFailed");
       } finally {
         cleanup();
       }
@@ -279,12 +514,12 @@ function renderMorphImage(axie, imgEl, statusEl) {
 
 function collectibleTagsHtml(axie) {
   const tags = [];
-  (axie.specialGenes || []).forEach((t) => tags.push(TAG_LABELS[t] || t));
+  (axie.specialGenes || []).forEach((tag) => tags.push(tagLabel(tag)));
   if (axie.genesisTitle) {
-    tags.push(TAG_LABELS[axie.genesisTitle] || axie.genesisTitle);
+    tags.push(tagLabel(axie.genesisTitle));
   }
   if (tags.length === 0) return "";
-  return `<div class="collectible-tags">${tags.map((t) => `<span class="tag-badge">${t}</span>`).join("")}</div>`;
+  return `<div class="collectible-tags">${tags.map((tag) => `<span class="tag-badge">${tag}</span>`).join("")}</div>`;
 }
 
 function axieHasCollectibleTag(axie, value) {
@@ -296,23 +531,24 @@ function axieHasCollectibleTag(axie, value) {
 
 function populateCollectibleFilter() {
   const select = document.getElementById("filterCollectibleTag");
+  while (select.options.length > 1) select.remove(1);
   const values = new Set();
   AXIE_DATA.forEach((axie) => {
-    (axie.specialGenes || []).forEach((t) => values.add(t));
+    (axie.specialGenes || []).forEach((tag) => values.add(tag));
     if (axie.genesisTitle) values.add(axie.genesisTitle);
   });
   Array.from(values)
-    .sort((a, b) => (TAG_LABELS[a] || a).localeCompare(TAG_LABELS[b] || b))
+    .sort((a, b) => tagLabel(a).localeCompare(tagLabel(b)))
     .forEach((value) => {
       const opt = document.createElement("option");
       opt.value = value;
-      opt.textContent = TAG_LABELS[value] || value;
+      opt.textContent = tagLabel(value);
       select.appendChild(opt);
     });
 }
 
 function tierRowHtml(entry) {
-  const items = TIER_LABELS.map((label, i) => {
+  const items = tierLabels().map((label, i) => {
     const tier = i + 1;
     const filled = entry.rentedTier >= tier;
     return `<div class="tier-item ${filled ? "filled" : ""}" data-tier="${tier}" title="${label}">
@@ -322,7 +558,7 @@ function tierRowHtml(entry) {
   }).join("");
   return `
     <div class="card-row tier-row-label">
-      <label>Alugado até</label>
+      <label>${t("rentedUntilLabel")}</label>
     </div>
     <div class="tier-row">${items}</div>
   `;
@@ -330,11 +566,14 @@ function tierRowHtml(entry) {
 
 function morphPartsHtml(axie) {
   if (!axie.isMorphed || !axie.morphParts) return "";
-  const labels = { eyes: "Olhos", ears: "Orelhas", mouth: "Boca", horn: "Chifre", back: "Costas", tail: "Cauda" };
+  const labels = {
+    eyes: t("partEyes"), ears: t("partEars"), mouth: t("partMouth"),
+    horn: t("partHorn"), back: t("partBack"), tail: t("partTail"),
+  };
   const rows = Object.keys(labels)
     .map((k) => `<div class="morph-part-row"><span>${labels[k]}</span><strong>${axie.morphParts[k] || "-"}</strong></div>`)
     .join("");
-  return `<div class="morph-parts-box"><div class="morph-parts-title">✨ Partes após o morph</div>${rows}</div>`;
+  return `<div class="morph-parts-box"><div class="morph-parts-title">${t("morphPartsTitle")}</div>${rows}</div>`;
 }
 
 function buildCard(axie) {
@@ -351,7 +590,7 @@ function buildCard(axie) {
     <div class="card-photo">
       <img id="axie-img-${axie.id}" src="${imageUrl(axie.id)}" alt="Axie ${axie.id}" ${isMorphView ? "" : 'loading="lazy"'} title="${partsSummary(axie.parts)}"
            onerror="this.style.visibility='hidden'">
-      ${isMorphView ? '<span class="morph-ribbon">✨ Morfado</span>' : ""}
+      ${isMorphView ? `<span class="morph-ribbon">${t("tabMorph")}</span>` : ""}
       ${axie.level != null ? `<span class="level-badge">Lv. ${axie.level}</span>` : ""}
     </div>
     ${isMorphView ? `<div class="morph-status" id="morph-status-${axie.id}"></div>` : ""}
@@ -364,7 +603,7 @@ function buildCard(axie) {
 
     <div class="status-toggle ${entry.rented ? "alugado" : "disponivel"}">
       <span class="dot"></span>
-      <span class="status-label">${entry.rented ? "Alugado" : "Disponível"}</span>
+      <span class="status-label">${entry.rented ? t("optRented") : t("optAvailable")}</span>
     </div>
 
     ${tierRowHtml(entry)}
@@ -375,7 +614,7 @@ function buildCard(axie) {
     card.className = "card " + (e.rented ? "alugado" : "disponivel");
     const toggleEl = card.querySelector(".status-toggle");
     toggleEl.className = "status-toggle " + (e.rented ? "alugado" : "disponivel");
-    toggleEl.querySelector(".status-label").textContent = e.rented ? "Alugado" : "Disponível";
+    toggleEl.querySelector(".status-label").textContent = e.rented ? t("optRented") : t("optAvailable");
     card.querySelectorAll(".tier-item").forEach((item) => {
       const tier = Number(item.dataset.tier);
       item.classList.toggle("filled", e.rentedTier >= tier);
@@ -386,7 +625,7 @@ function buildCard(axie) {
   const toggle = card.querySelector(".status-toggle");
   toggle.addEventListener("click", () => {
     if (!editUnlocked) {
-      showToast("Somente o administrador pode alterar isso. Clique em 🔒 Editar.");
+      showToast(t("toastLockedClick"));
       return;
     }
     const e = getEntry(axie.id);
@@ -401,7 +640,7 @@ function buildCard(axie) {
   card.querySelectorAll(".tier-item").forEach((item) => {
     item.addEventListener("click", () => {
       if (!editUnlocked) {
-        showToast("Somente o administrador pode alterar isso. Clique em 🔒 Editar.");
+        showToast(t("toastLockedClick"));
         return;
       }
       const tier = Number(item.dataset.tier);
@@ -427,8 +666,14 @@ function updateStats() {
 }
 
 function init() {
+  translateStaticUI();
   populateClassFilter();
   populateCollectibleFilter();
+
+  document.querySelectorAll(".lang-btn").forEach((btn) => {
+    btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
+  });
+
   ["searchId", "filterClass", "filterStatus", "filterCollectibleTag", "filterShowAll"].forEach((id) => {
     document.getElementById(id).addEventListener("input", renderGrid);
     document.getElementById(id).addEventListener("change", renderGrid);
@@ -450,7 +695,7 @@ function init() {
       editUnlocked = false;
       sessionStorage.removeItem(EDIT_SESSION_KEY);
       updateLockUI();
-      showToast("Modo edição desativado.");
+      showToast(t("toastEditOff"));
     } else {
       openLockModal();
     }

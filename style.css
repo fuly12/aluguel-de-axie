@@ -41,6 +41,26 @@ body {
 
 .topbar h1 { margin: 0; font-size: 1.4rem; }
 
+.lang-switcher {
+  display: flex;
+  gap: 4px;
+}
+
+.lang-btn {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+
+.lang-btn.active {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
 .discord-contact {
   background: #1a2233;
   border: 1px solid var(--card-border);
