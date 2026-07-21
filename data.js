@@ -22,7 +22,9 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 60
+    "level": 60,
+    "rented": true,
+    "rentedTier": 2
   },
   {
     "id": "1789",
@@ -54,7 +56,9 @@ const AXIE_DATA = [
       "tail": "Nimo"
     },
     "morphGenesHex": "0x1800000000000300000180410308000000030010108045020003000820404002000206080860c106000206143020c4060002060c1800c1020003001010604302",
-    "level": 60
+    "level": 60,
+    "rented": true,
+    "rentedTier": 2
   },
   {
     "id": "1876",
@@ -82,7 +86,9 @@ const AXIE_DATA = [
       "tail": "Tiny Dino"
     },
     "morphGenesHex": "0x30001004021040c000000030000206044040001000c288040020003000c180084020003000c2040840600030014186085020003001418a04506",
-    "level": 52
+    "level": 52,
+    "rented": true,
+    "rentedTier": 2
   },
   {
     "id": "2635",
@@ -9541,7 +9547,9 @@ const AXIE_DATA = [
       "tail": "Cottontail"
     },
     "morphGenesHex": "0x28000000000000018140a050c41000000003001408a102040001000c28a1450400030014304083040002060c18a105080002069410a0c5060003000008a0400c",
-    "level": 60
+    "level": 60,
+    "rented": true,
+    "rentedTier": 2
   },
   {
     "id": "11536214",
@@ -10803,7 +10811,9 @@ const AXIE_DATA = [
       "tail": "Cottontail"
     },
     "morphGenesHex": "0x28000000000001000100a080c00000000003001408a043080003000c2861430a0002061430a085040003000c106105080003001410a0c1080003000008004504",
-    "level": 60
+    "level": 60,
+    "rented": true,
+    "rentedTier": 2
   },
   {
     "id": "12029593",
@@ -11119,7 +11129,9 @@ const AXIE_DATA = [
       "tail": "Snake Jar"
     },
     "morphGenesHex": "0x90000000000001000381c0208204000000020610106043080001000c2861430a0003000018a1440a0003001010a1410c0003000c288042020003001420214008",
-    "level": 56
+    "level": 56,
+    "rented": true,
+    "rentedTier": 2
   },
   {
     "id": "12045111",
