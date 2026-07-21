@@ -40,6 +40,20 @@ body {
 }
 
 .topbar h1 { margin: 0; font-size: 1.4rem; }
+
+.discord-contact {
+  background: #1a2233;
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.discord-contact strong {
+  color: #c084fc;
+}
+
 .stats { color: var(--muted); font-size: 0.95rem; }
 .stats #statDisponivel { color: var(--green); font-weight: 600; }
 .stats #statAlugado { color: var(--red); font-weight: 600; }
