@@ -31,6 +31,62 @@ let state = loadState();
 let currentView = "standard";
 let morphRenderToken = 0;
 
+const EDIT_PASSWORD_HASH = "2e84c93c35e3200a861e077ad06e0d12a8496fa5dfb55bb745afc52e3dcc2911";
+const EDIT_SESSION_KEY = "aluguelAxieEditUnlocked";
+let editUnlocked = sessionStorage.getItem(EDIT_SESSION_KEY) === "true";
+
+async function sha256Hex(str) {
+  const enc = new TextEncoder().encode(str);
+  const buf = await crypto.subtle.digest("SHA-256", enc);
+  return Array.from(new Uint8Array(buf)).map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+function showToast(msg) {
+  const toast = document.getElementById("toast");
+  toast.textContent = msg;
+  toast.style.display = "block";
+  clearTimeout(showToast._t);
+  showToast._t = setTimeout(() => {
+    toast.style.display = "none";
+  }, 2500);
+}
+
+function updateLockUI() {
+  const lockBtn = document.getElementById("lockBtn");
+  lockBtn.textContent = editUnlocked ? "🔓 Editando" : "🔒 Editar";
+  lockBtn.classList.toggle("unlocked", editUnlocked);
+  document.body.classList.toggle("edit-locked", !editUnlocked);
+}
+
+function openLockModal() {
+  const modal = document.getElementById("lockModal");
+  const input = document.getElementById("lockPasswordInput");
+  const error = document.getElementById("lockError");
+  error.style.display = "none";
+  input.value = "";
+  modal.style.display = "flex";
+  input.focus();
+}
+
+function closeLockModal() {
+  document.getElementById("lockModal").style.display = "none";
+}
+
+async function tryUnlock() {
+  const input = document.getElementById("lockPasswordInput");
+  const error = document.getElementById("lockError");
+  const hash = await sha256Hex(input.value);
+  if (hash === EDIT_PASSWORD_HASH) {
+    editUnlocked = true;
+    sessionStorage.setItem(EDIT_SESSION_KEY, "true");
+    updateLockUI();
+    closeLockModal();
+    showToast("Modo edição ativado.");
+  } else {
+    error.style.display = "block";
+  }
+}
+
 const GENESIS_TITLE_LABELS = {
   "ORIGIN": "Origin Gen 0",
   "MEO": "MEO",
@@ -251,6 +307,10 @@ function buildCard(axie) {
 
   const toggle = card.querySelector(".status-toggle");
   toggle.addEventListener("click", () => {
+    if (!editUnlocked) {
+      showToast("Somente o administrador pode alterar isso. Clique em 🔒 Editar.");
+      return;
+    }
     const e = getEntry(axie.id);
     if (e.rented) {
       updateEntry(axie.id, { rented: false, rentedTier: 0 });
@@ -262,6 +322,10 @@ function buildCard(axie) {
 
   card.querySelectorAll(".tier-item").forEach((item) => {
     item.addEventListener("click", () => {
+      if (!editUnlocked) {
+        showToast("Somente o administrador pode alterar isso. Clique em 🔒 Editar.");
+        return;
+      }
       const tier = Number(item.dataset.tier);
       updateEntry(axie.id, { rented: true, rentedTier: tier });
       refreshCardVisual();
@@ -298,6 +362,28 @@ function init() {
       btn.classList.add("active");
       renderGrid();
     });
+  });
+
+  updateLockUI();
+
+  document.getElementById("lockBtn").addEventListener("click", () => {
+    if (editUnlocked) {
+      editUnlocked = false;
+      sessionStorage.removeItem(EDIT_SESSION_KEY);
+      updateLockUI();
+      showToast("Modo edição desativado.");
+    } else {
+      openLockModal();
+    }
+  });
+
+  document.getElementById("lockCancel").addEventListener("click", closeLockModal);
+  document.getElementById("lockConfirm").addEventListener("click", tryUnlock);
+  document.getElementById("lockPasswordInput").addEventListener("keydown", (e) => {
+    if (e.key === "Enter") tryUnlock();
+  });
+  document.getElementById("lockModal").addEventListener("click", (e) => {
+    if (e.target.id === "lockModal") closeLockModal();
   });
 
   renderGrid();

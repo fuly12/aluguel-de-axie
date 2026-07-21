@@ -44,6 +44,111 @@ body {
 .stats #statDisponivel { color: var(--green); font-weight: 600; }
 .stats #statAlugado { color: var(--red); font-weight: 600; }
 
+.lock-btn {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  color: var(--muted);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lock-btn.unlocked {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+.edit-locked .status-toggle,
+.edit-locked .tier-item {
+  cursor: default;
+}
+
+.edit-locked .tier-item:hover {
+  background: #0c1220;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal-box {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 24px;
+  width: 300px;
+  max-width: 90vw;
+}
+
+.modal-box h3 { margin: 0 0 8px; }
+.modal-box p { margin: 0 0 14px; color: var(--muted); font-size: 0.85rem; }
+
+.modal-box input {
+  width: 100%;
+  background: #0c1220;
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.modal-error {
+  color: var(--red);
+  font-size: 0.8rem;
+  margin-top: 6px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.modal-btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--card-border);
+}
+
+.modal-btn.primary {
+  background: var(--accent);
+  color: #0b0f18;
+  border-color: var(--accent);
+}
+
+.modal-btn.secondary {
+  background: transparent;
+  color: var(--muted);
+}
+
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a2233;
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+  z-index: 200;
+}
+
 .view-tabs {
   display: flex;
   gap: 8px;

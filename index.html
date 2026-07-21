@@ -15,7 +15,23 @@
     <span id="statDisponivel">0</span> disponíveis ·
     <span id="statAlugado">0</span> alugados
   </div>
+  <button id="lockBtn" class="lock-btn" title="Modo edição">🔒 Editar</button>
 </header>
+
+<div id="lockModal" class="modal-overlay" style="display:none">
+  <div class="modal-box">
+    <h3>🔒 Modo edição</h3>
+    <p>Digite a senha para poder alterar o status de aluguel.</p>
+    <input type="password" id="lockPasswordInput" placeholder="Senha">
+    <div class="modal-error" id="lockError" style="display:none">Senha incorreta.</div>
+    <div class="modal-actions">
+      <button id="lockCancel" class="modal-btn secondary">Cancelar</button>
+      <button id="lockConfirm" class="modal-btn primary">Entrar</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast" class="toast" style="display:none"></div>
 
 <div class="view-tabs">
   <button class="view-tab active" id="tabStandard" data-view="standard">Padrão</button>
