@@ -10290,7 +10290,9 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 51
+    "level": 51,
+    "rented": true,
+    "rentedTier": 2
   },
   {
     "id": "11873847",
@@ -10498,7 +10500,9 @@ const AXIE_DATA = [
       "tail": "Ranchu"
     },
     "morphGenesHex": "0x1000281209102100000000300002840400a00020610108084040003000c0821810a0003000030214406000300081020c506000300102080c00c",
-    "level": 60
+    "level": 60,
+    "rented": true,
+    "rentedTier": 2
   },
   {
     "id": "11992788",
@@ -11608,7 +11612,9 @@ const AXIE_DATA = [
       "tail": "Snake Jar"
     },
     "morphGenesHex": "0x2800000000000100020160b0020000000003001408a045020001000c2861440200030014104085040003000c206182020002061410a0c5060003001420004002",
-    "level": 54
+    "level": 54,
+    "rented": true,
+    "rentedTier": 2
   },
   {
     "id": "12148734",
