@@ -282,7 +282,7 @@ AXIE_DATA.forEach((axie) => {
   AXIE_BY_ID[axie.id] = axie;
 });
 
-const EDIT_PASSWORD_HASH = "2e84c93c35e3200a861e077ad06e0d12a8496fa5dfb55bb745afc52e3dcc2911";
+const EDIT_PASSWORD_HASH = "de3d43caad2bd3c4f0622fc60deecd06b34a0f25a80e30b81fe051a3c54799bb";
 const EDIT_SESSION_KEY = "aluguelAxieEditUnlocked";
 let editUnlocked = sessionStorage.getItem(EDIT_SESSION_KEY) === "true";
 
