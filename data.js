@@ -10295,8 +10295,8 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": null,
     "level": 51,
-    "rented": true,
-    "rentedTier": 2
+    "rented": false,
+    "rentedTier": 0
   },
   {
     "id": "11873847",
