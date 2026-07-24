@@ -10108,7 +10108,9 @@ const AXIE_DATA = [
       "tail": "Nimo"
     },
     "morphGenesHex": "0x80000000000001000080c040c30800000003001428a1450a00030008202142080001000018808006000206100821410800030004200105040003001010808404",
-    "level": 52
+    "level": 52,
+    "rented": true,
+    "rentedTier": 2
   },
   {
     "id": "11789052",
@@ -10975,7 +10977,9 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 54
+    "level": 54,
+    "rented": true,
+    "rentedTier": 2
   },
   {
     "id": "12036812",
@@ -11304,7 +11308,9 @@ const AXIE_DATA = [
       "tail": "Iguana"
     },
     "morphGenesHex": "0x8000000000001000380e09082080000000300142861050a0003000c28214408000100001800c0060003000c208044020003000c086044080002061410a10404",
-    "level": 54
+    "level": 54,
+    "rented": true,
+    "rentedTier": 2
   },
   {
     "id": "12064406",
@@ -11364,7 +11370,9 @@ const AXIE_DATA = [
       "tail": "Snake Jar"
     },
     "morphGenesHex": "0x180000000000070001c10040840c000000030004200100080001000810a1020a000300001801820c000300143041410a0003000c28a1400a0003001420a10408",
-    "level": 52
+    "level": 52,
+    "rented": true,
+    "rentedTier": 2
   },
   {
     "id": "12102183",
