@@ -55,6 +55,7 @@
 <div class="view-tabs">
   <button class="view-tab active" id="tabStandard" data-view="standard" data-i18n="tabStandard"></button>
   <button class="view-tab" id="tabMorph" data-view="morph" data-i18n="tabMorph"></button>
+  <button class="view-tab" id="tabTop100" data-view="top100">🏆 Top 100</button>
 </div>
 
 <section class="filters">
@@ -97,10 +98,19 @@
 
 <main id="grid" class="grid"></main>
 
+<section id="top100" class="top100-section" style="display:none">
+  <div class="top100-header">
+    <h2 id="top100Title"></h2>
+    <div id="top100Updated" class="top100-updated"></div>
+  </div>
+  <div id="top100List" class="top100-list"></div>
+</section>
+
 <footer class="foot" data-i18n="footerText"></footer>
 
 <script src="axie-renderer.bundle.js"></script>
 <script src="data.js"></script>
+<script src="top100.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

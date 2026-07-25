@@ -588,3 +588,99 @@ body {
   font-size: 0.8rem;
   padding: 20px;
 }
+
+.top100-section {
+  padding: 24px;
+}
+
+.top100-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.top100-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.top100-updated {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.top100-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.top100-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 10px 16px;
+  flex-wrap: wrap;
+}
+
+.top100-rank {
+  font-weight: 800;
+  font-size: 1.05rem;
+  width: 42px;
+  text-align: center;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+.top100-row:nth-child(1) .top100-rank { color: #ffd166; }
+.top100-row:nth-child(2) .top100-rank { color: #c7ccd6; }
+.top100-row:nth-child(3) .top100-rank { color: #d98c3a; }
+
+.top100-name {
+  flex: 1;
+  min-width: 120px;
+  font-weight: 600;
+}
+
+.top100-stars {
+  color: #ffd166;
+  font-weight: 700;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.top100-team {
+  display: flex;
+  gap: 6px;
+}
+
+.top100-axie {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: #0c1220;
+  overflow: hidden;
+  display: block;
+}
+
+.top100-axie img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.top100-axie .rune-badge {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}

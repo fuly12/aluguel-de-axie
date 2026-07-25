@@ -87,6 +87,8 @@ const I18N = {
     partEyes: "Olhos", partEars: "Orelhas", partMouth: "Boca", partHorn: "Chifre", partBack: "Costas", partTail: "Cauda",
     morphGenerating: "Gerando imagem morfada...",
     morphFailed: "Não foi possível gerar a imagem morfada.",
+    seasonLabel: "Temporada",
+    updatedAtLabel: "Atualizado em",
   },
   en: {
     title: "🐾 Axie Rentals",
@@ -133,6 +135,8 @@ const I18N = {
     partEyes: "Eyes", partEars: "Ears", partMouth: "Mouth", partHorn: "Horn", partBack: "Back", partTail: "Tail",
     morphGenerating: "Generating morphed image...",
     morphFailed: "Couldn't generate the morphed image.",
+    seasonLabel: "Season",
+    updatedAtLabel: "Updated on",
   },
   es: {
     title: "🐾 Alquiler de Axies",
@@ -179,6 +183,8 @@ const I18N = {
     partEyes: "Ojos", partEars: "Orejas", partMouth: "Boca", partHorn: "Cuerno", partBack: "Espalda", partTail: "Cola",
     morphGenerating: "Generando imagen transformada...",
     morphFailed: "No se pudo generar la imagen transformada.",
+    seasonLabel: "Temporada",
+    updatedAtLabel: "Actualizado el",
   },
   fil: {
     title: "🐾 Pag-arkila ng Axies",
@@ -225,6 +231,8 @@ const I18N = {
     partEyes: "Mata", partEars: "Tainga", partMouth: "Bibig", partHorn: "Sungay", partBack: "Likod", partTail: "Buntot",
     morphGenerating: "Gumagawa ng na-morph na larawan...",
     morphFailed: "Hindi magawa ang na-morph na larawan.",
+    seasonLabel: "Season",
+    updatedAtLabel: "Na-update noong",
   },
 };
 
@@ -258,7 +266,81 @@ function setLanguage(lang) {
   translateStaticUI();
   updateLockUI();
   populateCollectibleFilter();
-  renderGrid();
+  switchView();
+}
+
+function switchView() {
+  const filtersEl = document.querySelector(".filters");
+  const gridEl = document.getElementById("grid");
+  const top100El = document.getElementById("top100");
+  if (currentView === "top100") {
+    filtersEl.style.display = "none";
+    gridEl.style.display = "none";
+    top100El.style.display = "block";
+    renderTop100();
+  } else {
+    filtersEl.style.display = "flex";
+    gridEl.style.display = "grid";
+    top100El.style.display = "none";
+    renderGrid();
+  }
+}
+
+function escapeHtml(str) {
+  return String(str || "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+}
+
+function parseSeasonEra(name) {
+  const match = /Season\s+(\d+)\s+(.+)/i.exec(name || "");
+  if (!match) return { season: null, eraKey: null };
+  const season = match[1];
+  const eraRaw = match[2].trim().toLowerCase();
+  let eraKey = null;
+  if (eraRaw.startsWith("rar")) eraKey = "tierRare";
+  else if (eraRaw.startsWith("ep") || eraRaw.startsWith("ép")) eraKey = "tierEpic";
+  else if (eraRaw.startsWith("mist") || eraRaw.startsWith("míst")) eraKey = "tierMystic";
+  else if (eraRaw.startsWith("final")) eraKey = "tierFinal";
+  return { season, eraKey };
+}
+
+function renderTop100() {
+  const titleEl = document.getElementById("top100Title");
+  const updatedEl = document.getElementById("top100Updated");
+  const listEl = document.getElementById("top100List");
+
+  if (typeof TOP100_DATA === "undefined") {
+    titleEl.textContent = "🏆 Top 100";
+    updatedEl.textContent = "";
+    listEl.innerHTML = "";
+    return;
+  }
+
+  const { season, eraKey } = parseSeasonEra(TOP100_DATA.name);
+  const eraLabel = eraKey ? t(eraKey) : TOP100_DATA.name || "";
+  titleEl.textContent = season ? `🏆 ${t("seasonLabel")} ${season} — ${eraLabel}` : `🏆 ${TOP100_DATA.name || "Top 100"}`;
+  updatedEl.textContent = TOP100_DATA.saved_at ? `${t("updatedAtLabel")} ${TOP100_DATA.saved_at}` : "";
+
+  listEl.innerHTML = (TOP100_DATA.players || [])
+    .map(
+      (p) => `
+    <div class="top100-row">
+      <div class="top100-rank">#${p.rank}</div>
+      <div class="top100-name">${escapeHtml(p.name)}</div>
+      <div class="top100-stars">⭐ ${p.stars}</div>
+      <div class="top100-team">
+        ${(p.team || [])
+          .map(
+            (axie) => `
+          <a class="top100-axie" href="${axie.link}" target="_blank" rel="noopener" title="Axie ${axie.id}">
+            <img src="${axie.static_img}" alt="Axie ${axie.id}" loading="lazy">
+            ${axie.rune_img ? `<img class="rune-badge" src="${axie.rune_img}" alt="rune" loading="lazy">` : ""}
+          </a>`
+          )
+          .join("")}
+      </div>
+    </div>`
+    )
+    .join("");
 }
 
 function loadState() {
@@ -684,7 +766,7 @@ function init() {
       currentView = btn.dataset.view;
       document.querySelectorAll(".view-tab").forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
-      renderGrid();
+      switchView();
     });
   });
 
@@ -716,7 +798,7 @@ function init() {
     if (e.target.id === "exportModal") closeExportModal();
   });
 
-  renderGrid();
+  switchView();
 }
 
 document.addEventListener("DOMContentLoaded", init);
