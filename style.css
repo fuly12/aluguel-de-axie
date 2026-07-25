@@ -612,28 +612,56 @@ body {
   font-size: 0.8rem;
 }
 
+.top100-selector-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.top100-selector-row label {
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.top100-selector-row select {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
 .top100-list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .top100-row {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 18px;
   background: var(--card);
   border: 1px solid var(--card-border);
-  border-radius: 10px;
-  padding: 10px 16px;
+  border-radius: 12px;
+  padding: 12px 16px;
   flex-wrap: wrap;
+}
+
+.top100-info {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  min-width: 140px;
 }
 
 .top100-rank {
   font-weight: 800;
   font-size: 1.05rem;
-  width: 42px;
-  text-align: center;
   color: var(--muted);
   flex-shrink: 0;
 }
@@ -643,31 +671,36 @@ body {
 .top100-row:nth-child(3) .top100-rank { color: #d98c3a; }
 
 .top100-name {
-  flex: 1;
-  min-width: 120px;
   font-weight: 600;
+  font-size: 0.85rem;
 }
 
 .top100-stars {
   color: #ffd166;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   white-space: nowrap;
 }
 
 .top100-team {
   display: flex;
-  gap: 6px;
+  gap: 10px;
 }
 
 .top100-axie {
   position: relative;
-  width: 48px;
-  height: 48px;
-  border-radius: 8px;
+  width: 110px;
+  height: 110px;
+  border-radius: 10px;
   background: #0c1220;
   overflow: hidden;
   display: block;
+  flex-shrink: 0;
+  transition: transform 0.15s;
+}
+
+.top100-axie:hover {
+  transform: scale(1.05);
 }
 
 .top100-axie img {
@@ -678,9 +711,9 @@ body {
 
 .top100-axie .rune-badge {
   position: absolute;
-  bottom: -2px;
-  right: -2px;
-  width: 18px;
-  height: 18px;
+  bottom: -3px;
+  right: -3px;
+  width: 34px;
+  height: 34px;
   object-fit: contain;
 }

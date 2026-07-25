@@ -89,6 +89,7 @@ const I18N = {
     morphFailed: "Não foi possível gerar a imagem morfada.",
     seasonLabel: "Temporada",
     updatedAtLabel: "Atualizado em",
+    top100SeasonSelectLabel: "Ver temporada/era",
   },
   en: {
     title: "🐾 Axie Rentals",
@@ -137,6 +138,7 @@ const I18N = {
     morphFailed: "Couldn't generate the morphed image.",
     seasonLabel: "Season",
     updatedAtLabel: "Updated on",
+    top100SeasonSelectLabel: "View season/era",
   },
   es: {
     title: "🐾 Alquiler de Axies",
@@ -185,6 +187,7 @@ const I18N = {
     morphFailed: "No se pudo generar la imagen transformada.",
     seasonLabel: "Temporada",
     updatedAtLabel: "Actualizado el",
+    top100SeasonSelectLabel: "Ver temporada/era",
   },
   fil: {
     title: "🐾 Pag-arkila ng Axies",
@@ -233,6 +236,7 @@ const I18N = {
     morphFailed: "Hindi magawa ang na-morph na larawan.",
     seasonLabel: "Season",
     updatedAtLabel: "Na-update noong",
+    top100SeasonSelectLabel: "Tingnan ang season/era",
   },
 };
 
@@ -303,30 +307,52 @@ function parseSeasonEra(name) {
   return { season, eraKey };
 }
 
+let currentTop100Key = null;
+
+function top100Label(dataset) {
+  const { season, eraKey } = parseSeasonEra(dataset.name);
+  const eraLabel = eraKey ? t(eraKey) : dataset.name || "";
+  return season ? `${t("seasonLabel")} ${season} — ${eraLabel}` : dataset.name || "?";
+}
+
+function populateTop100Selector() {
+  const select = document.getElementById("top100SeasonSelect");
+  if (typeof TOP100_DATASETS === "undefined") return;
+  select.innerHTML = "";
+  TOP100_DATASETS.forEach((dataset) => {
+    const opt = document.createElement("option");
+    opt.value = dataset.key;
+    opt.textContent = top100Label(dataset);
+    select.appendChild(opt);
+  });
+  if (!currentTop100Key && TOP100_DATASETS.length > 0) {
+    currentTop100Key = TOP100_DATASETS[0].key;
+  }
+  select.value = currentTop100Key;
+}
+
 function renderTop100() {
   const titleEl = document.getElementById("top100Title");
   const updatedEl = document.getElementById("top100Updated");
   const listEl = document.getElementById("top100List");
 
-  if (typeof TOP100_DATA === "undefined") {
+  if (typeof TOP100_DATASETS === "undefined" || TOP100_DATASETS.length === 0) {
     titleEl.textContent = "🏆 Top 100";
     updatedEl.textContent = "";
     listEl.innerHTML = "";
     return;
   }
 
-  const { season, eraKey } = parseSeasonEra(TOP100_DATA.name);
-  const eraLabel = eraKey ? t(eraKey) : TOP100_DATA.name || "";
-  titleEl.textContent = season ? `🏆 ${t("seasonLabel")} ${season} — ${eraLabel}` : `🏆 ${TOP100_DATA.name || "Top 100"}`;
-  updatedEl.textContent = TOP100_DATA.saved_at ? `${t("updatedAtLabel")} ${TOP100_DATA.saved_at}` : "";
+  populateTop100Selector();
+  const dataset = TOP100_DATASETS.find((d) => d.key === currentTop100Key) || TOP100_DATASETS[0];
 
-  listEl.innerHTML = (TOP100_DATA.players || [])
+  titleEl.textContent = `🏆 ${top100Label(dataset)}`;
+  updatedEl.textContent = dataset.saved_at ? `${t("updatedAtLabel")} ${dataset.saved_at}` : "";
+
+  listEl.innerHTML = (dataset.players || [])
     .map(
       (p) => `
     <div class="top100-row">
-      <div class="top100-rank">#${p.rank}</div>
-      <div class="top100-name">${escapeHtml(p.name)}</div>
-      <div class="top100-stars">⭐ ${p.stars}</div>
       <div class="top100-team">
         ${(p.team || [])
           .map(
@@ -337,6 +363,11 @@ function renderTop100() {
           </a>`
           )
           .join("")}
+      </div>
+      <div class="top100-info">
+        <div class="top100-rank">#${p.rank}</div>
+        <div class="top100-name">${escapeHtml(p.name)}</div>
+        <div class="top100-stars">⭐ ${p.stars}</div>
       </div>
     </div>`
     )
@@ -759,6 +790,11 @@ function init() {
   ["searchId", "filterClass", "filterStatus", "filterCollectibleTag", "filterShowAll"].forEach((id) => {
     document.getElementById(id).addEventListener("input", renderGrid);
     document.getElementById(id).addEventListener("change", renderGrid);
+  });
+
+  document.getElementById("top100SeasonSelect").addEventListener("change", (e) => {
+    currentTop100Key = e.target.value;
+    renderTop100();
   });
 
   document.querySelectorAll(".view-tab").forEach((btn) => {
