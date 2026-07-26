@@ -357,7 +357,7 @@ function renderTop100() {
         ${(p.team || [])
           .map(
             (axie) => `
-          <a class="top100-axie" href="${axie.link}" target="_blank" rel="noopener" title="Axie ${axie.id}">
+          <a class="top100-axie" href="https://app.axieinfinity.com/marketplace/axies/${axie.id}/" target="_blank" rel="noopener" title="Axie ${axie.id}">
             <img src="${axie.static_img}" alt="Axie ${axie.id}" loading="lazy">
             ${axie.rune_img ? `<img class="rune-badge" src="${axie.rune_img}" alt="rune" loading="lazy">` : ""}
           </a>`
