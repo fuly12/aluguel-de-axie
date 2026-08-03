@@ -99,6 +99,7 @@ const I18N = {
     perEraLabel: "por era",
     slipsLabel: "Fortune Slips à venda:",
     slipsFor: "por",
+    renterNamePlaceholder: "Nome do locatário",
   },
   en: {
     title: "🐾 Axie Rentals",
@@ -157,6 +158,7 @@ const I18N = {
     perEraLabel: "per era",
     slipsLabel: "Fortune Slips for sale:",
     slipsFor: "for",
+    renterNamePlaceholder: "Renter name",
   },
   es: {
     title: "🐾 Alquiler de Axies",
@@ -215,6 +217,7 @@ const I18N = {
     perEraLabel: "por era",
     slipsLabel: "Fortune Slips a la venta:",
     slipsFor: "por",
+    renterNamePlaceholder: "Nombre del inquilino",
   },
   fil: {
     title: "🐾 Pag-arkila ng Axies",
@@ -273,6 +276,7 @@ const I18N = {
     perEraLabel: "bawat era",
     slipsLabel: "Fortune Slips na ibinebenta:",
     slipsFor: "para sa",
+    renterNamePlaceholder: "Pangalan ng umuupa",
   },
 };
 
@@ -511,6 +515,7 @@ async function tryUnlock() {
     updateLockUI();
     closeLockModal();
     showToast(t("toastEditOn"));
+    switchView();
   } else {
     error.style.display = "block";
   }
@@ -560,10 +565,14 @@ function getEntry(id) {
     state[id] = {
       rented: published.rented || false,
       rentedTier: published.rentedTier || 0,
+      renterName: "",
     };
   }
   if (state[id].rentedTier === undefined) {
     state[id].rentedTier = 0;
+  }
+  if (state[id].renterName === undefined) {
+    state[id].renterName = "";
   }
   return state[id];
 }
@@ -723,7 +732,7 @@ function populateCollectibleFilter() {
     });
 }
 
-function tierRowHtml(entry) {
+function tierRowHtml(entry, axieId) {
   const items = tierLabels().map((label, i) => {
     const tier = i + 1;
     const filled = entry.rentedTier >= tier;
@@ -732,9 +741,13 @@ function tierRowHtml(entry) {
       <span class="tier-label">${label}</span>
     </div>`;
   }).join("");
+  const renterField = editUnlocked
+    ? `<input type="text" class="renter-input" data-axie-id="${axieId}" placeholder="${t("renterNamePlaceholder")}" value="${escapeHtml(entry.renterName)}">`
+    : "";
   return `
     <div class="card-row tier-row-label">
       <label>${t("rentedUntilLabel")}</label>
+      ${renterField}
     </div>
     <div class="tier-row">${items}</div>
   `;
@@ -782,8 +795,15 @@ function buildCard(axie) {
       <span class="status-label">${entry.rented ? t("optRented") : t("optAvailable")}</span>
     </div>
 
-    ${tierRowHtml(entry)}
+    ${tierRowHtml(entry, axie.id)}
   `;
+
+  const renterInput = card.querySelector(".renter-input");
+  if (renterInput) {
+    renterInput.addEventListener("input", (e) => {
+      updateEntry(axie.id, { renterName: e.target.value });
+    });
+  }
 
   function refreshCardVisual() {
     const e = getEntry(axie.id);
@@ -878,6 +898,7 @@ function init() {
       sessionStorage.removeItem(EDIT_SESSION_KEY);
       updateLockUI();
       showToast(t("toastEditOff"));
+      switchView();
     } else {
       openLockModal();
     }

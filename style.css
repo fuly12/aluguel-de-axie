@@ -622,6 +622,21 @@ body {
   font-size: 0.75rem;
 }
 
+.renter-input {
+  flex: 1;
+  min-width: 0;
+  background: #0c1220;
+  border: 1px solid #c084fc;
+  color: var(--text);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+.renter-input::placeholder {
+  color: var(--muted);
+}
+
 .tier-row {
   display: flex;
   gap: 6px;
