@@ -97,6 +97,8 @@ const I18N = {
     commonLabel: "Axie Comum",
     shinyLabel: "Shiny",
     perEraLabel: "por era",
+    slipsLabel: "Fortune Slips à venda:",
+    slipsFor: "por",
   },
   en: {
     title: "🐾 Axie Rentals",
@@ -153,6 +155,8 @@ const I18N = {
     commonLabel: "Common Axie",
     shinyLabel: "Shiny",
     perEraLabel: "per era",
+    slipsLabel: "Fortune Slips for sale:",
+    slipsFor: "for",
   },
   es: {
     title: "🐾 Alquiler de Axies",
@@ -209,6 +213,8 @@ const I18N = {
     commonLabel: "Axie Común",
     shinyLabel: "Shiny",
     perEraLabel: "por era",
+    slipsLabel: "Fortune Slips a la venta:",
+    slipsFor: "por",
   },
   fil: {
     title: "🐾 Pag-arkila ng Axies",
@@ -265,6 +271,8 @@ const I18N = {
     commonLabel: "Karaniwang Axie",
     shinyLabel: "Shiny",
     perEraLabel: "bawat era",
+    slipsLabel: "Fortune Slips na ibinebenta:",
+    slipsFor: "para sa",
   },
 };
 
