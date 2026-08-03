@@ -23,8 +23,8 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": null,
     "level": 60,
-    "rented": false,
-    "rentedTier": 0
+    "rented": true,
+    "rentedTier": 4
   },
   {
     "id": "1789",
