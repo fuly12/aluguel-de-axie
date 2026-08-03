@@ -90,7 +90,7 @@ const I18N = {
     seasonLabel: "Temporada",
     updatedAtLabel: "Atualizado em",
     top100SeasonSelectLabel: "Ver temporada/era",
-    promoTicketTitle: "🎫 Ticket Especial",
+    promoTicketTitle: "🎫 Tiquete de Morph",
     promoTicketSubtitle: "Garanta o seu por apenas US$ 1 — fale com fuly_12 no Discord",
   },
   en: {
@@ -141,7 +141,7 @@ const I18N = {
     seasonLabel: "Season",
     updatedAtLabel: "Updated on",
     top100SeasonSelectLabel: "View season/era",
-    promoTicketTitle: "🎫 Special Ticket",
+    promoTicketTitle: "🎫 Morph Ticket",
     promoTicketSubtitle: "Get yours for just US$ 1 — message fuly_12 on Discord",
   },
   es: {
@@ -192,7 +192,7 @@ const I18N = {
     seasonLabel: "Temporada",
     updatedAtLabel: "Actualizado el",
     top100SeasonSelectLabel: "Ver temporada/era",
-    promoTicketTitle: "🎫 Ticket Especial",
+    promoTicketTitle: "🎫 Ticket de Morph",
     promoTicketSubtitle: "Consigue el tuyo por solo US$ 1 — escribe a fuly_12 en Discord",
   },
   fil: {
@@ -243,7 +243,7 @@ const I18N = {
     seasonLabel: "Season",
     updatedAtLabel: "Na-update noong",
     top100SeasonSelectLabel: "Tingnan ang season/era",
-    promoTicketTitle: "🎫 Espesyal na Ticket",
+    promoTicketTitle: "🎫 Morph Ticket",
     promoTicketSubtitle: "Kunin ang sa'yo sa US$ 1 lang — mag-message kay fuly_12 sa Discord",
   },
 };
