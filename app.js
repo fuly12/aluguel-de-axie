@@ -345,7 +345,7 @@ function parseSeasonEra(name) {
 }
 
 const PRICE_TABLE = [
-  { labelKey: "ORIGIN", price: 5 },
+  { labelKey: "ORIGIN", price: 6 },
   { labelKey: "shinyLabel", price: 4 },
   { labelKey: "Xmas2019", price: 4 },
   { labelKey: "Japan", price: 4 },
