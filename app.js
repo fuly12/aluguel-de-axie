@@ -90,6 +90,8 @@ const I18N = {
     seasonLabel: "Temporada",
     updatedAtLabel: "Atualizado em",
     top100SeasonSelectLabel: "Ver temporada/era",
+    promoTicketTitle: "🎫 Ticket Especial",
+    promoTicketSubtitle: "Garanta o seu por apenas US$ 1 — fale com fuly_12 no Discord",
   },
   en: {
     title: "🐾 Axie Rentals",
@@ -139,6 +141,8 @@ const I18N = {
     seasonLabel: "Season",
     updatedAtLabel: "Updated on",
     top100SeasonSelectLabel: "View season/era",
+    promoTicketTitle: "🎫 Special Ticket",
+    promoTicketSubtitle: "Get yours for just US$ 1 — message fuly_12 on Discord",
   },
   es: {
     title: "🐾 Alquiler de Axies",
@@ -188,6 +192,8 @@ const I18N = {
     seasonLabel: "Temporada",
     updatedAtLabel: "Actualizado el",
     top100SeasonSelectLabel: "Ver temporada/era",
+    promoTicketTitle: "🎫 Ticket Especial",
+    promoTicketSubtitle: "Consigue el tuyo por solo US$ 1 — escribe a fuly_12 en Discord",
   },
   fil: {
     title: "🐾 Pag-arkila ng Axies",
@@ -237,6 +243,8 @@ const I18N = {
     seasonLabel: "Season",
     updatedAtLabel: "Na-update noong",
     top100SeasonSelectLabel: "Tingnan ang season/era",
+    promoTicketTitle: "🎫 Espesyal na Ticket",
+    promoTicketSubtitle: "Kunin ang sa'yo sa US$ 1 lang — mag-message kay fuly_12 sa Discord",
   },
 };
 
