@@ -24,7 +24,7 @@ const AXIE_DATA = [
     "morphGenesHex": null,
     "level": 60,
     "rented": true,
-    "rentedTier": 2
+    "rentedTier": 4
   },
   {
     "id": "1789",
