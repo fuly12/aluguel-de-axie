@@ -92,6 +92,11 @@ const I18N = {
     top100SeasonSelectLabel: "Ver temporada/era",
     promoTicketTitle: "🎫 Tiquete de Morph",
     promoTicketSubtitle: "Garanta o seu por apenas US$ 1 — fale com fuly_12 no Discord",
+    priceTableTitle: "💰 Preços por Era",
+    priceTableNote: "Valores em AXS, cobrados por cada era de aluguel.",
+    commonLabel: "Axie Comum",
+    shinyLabel: "Shiny",
+    perEraLabel: "por era",
   },
   en: {
     title: "🐾 Axie Rentals",
@@ -143,6 +148,11 @@ const I18N = {
     top100SeasonSelectLabel: "View season/era",
     promoTicketTitle: "🎫 Morph Ticket",
     promoTicketSubtitle: "Get yours for just US$ 1 — message fuly_12 on Discord",
+    priceTableTitle: "💰 Prices per Era",
+    priceTableNote: "Values in AXS, charged per rental era.",
+    commonLabel: "Common Axie",
+    shinyLabel: "Shiny",
+    perEraLabel: "per era",
   },
   es: {
     title: "🐾 Alquiler de Axies",
@@ -194,6 +204,11 @@ const I18N = {
     top100SeasonSelectLabel: "Ver temporada/era",
     promoTicketTitle: "🎫 Ticket de Morph",
     promoTicketSubtitle: "Consigue el tuyo por solo US$ 1 — escribe a fuly_12 en Discord",
+    priceTableTitle: "💰 Precios por Era",
+    priceTableNote: "Valores en AXS, cobrados por cada era de alquiler.",
+    commonLabel: "Axie Común",
+    shinyLabel: "Shiny",
+    perEraLabel: "por era",
   },
   fil: {
     title: "🐾 Pag-arkila ng Axies",
@@ -245,6 +260,11 @@ const I18N = {
     top100SeasonSelectLabel: "Tingnan ang season/era",
     promoTicketTitle: "🎫 Morph Ticket",
     promoTicketSubtitle: "Kunin ang sa'yo sa US$ 1 lang — mag-message kay fuly_12 sa Discord",
+    priceTableTitle: "💰 Presyo bawat Era",
+    priceTableNote: "Halaga sa AXS, sisingilin bawat era ng pag-arkila.",
+    commonLabel: "Karaniwang Axie",
+    shinyLabel: "Shiny",
+    perEraLabel: "bawat era",
   },
 };
 
@@ -278,6 +298,7 @@ function setLanguage(lang) {
   translateStaticUI();
   updateLockUI();
   populateCollectibleFilter();
+  renderPriceTable();
   switchView();
 }
 
@@ -313,6 +334,32 @@ function parseSeasonEra(name) {
   else if (eraRaw.startsWith("mist") || eraRaw.startsWith("míst")) eraKey = "tierMystic";
   else if (eraRaw.startsWith("final")) eraKey = "tierFinal";
   return { season, eraKey };
+}
+
+const PRICE_TABLE = [
+  { labelKey: "ORIGIN", price: 5 },
+  { labelKey: "shinyLabel", price: 4 },
+  { labelKey: "Xmas2019", price: 4 },
+  { labelKey: "Japan", price: 4 },
+  { labelKey: "MEO", price: 4 },
+  { labelKey: "Nightmare", price: 3 },
+  { labelKey: "commonLabel", price: 1 },
+];
+
+function priceRowLabel(labelKey) {
+  if (labelKey === "commonLabel" || labelKey === "shinyLabel") return t(labelKey);
+  return tagLabel(labelKey);
+}
+
+function renderPriceTable() {
+  const el = document.getElementById("priceTable");
+  el.innerHTML = PRICE_TABLE.map(
+    (row) => `
+    <div class="price-row">
+      <span class="price-row-label">${priceRowLabel(row.labelKey)}</span>
+      <span class="price-row-value">${row.price} AXS <small>/ ${t("perEraLabel")}</small></span>
+    </div>`
+  ).join("");
 }
 
 let currentTop100Key = null;
@@ -790,6 +837,7 @@ function init() {
   translateStaticUI();
   populateClassFilter();
   populateCollectibleFilter();
+  renderPriceTable();
 
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.addEventListener("click", () => setLanguage(btn.dataset.lang));

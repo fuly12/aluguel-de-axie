@@ -162,6 +162,58 @@ body {
   color: #d7d9ff;
 }
 
+.price-section {
+  padding: 20px 24px;
+  background: #131b2b;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.price-title {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+}
+
+.price-note {
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin-bottom: 14px;
+}
+
+.price-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
+.price-row-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.price-row-value {
+  font-weight: 800;
+  color: #ffd166;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.price-row-value small {
+  font-weight: 500;
+  color: var(--muted);
+  font-size: 0.7rem;
+}
+
 .stats { color: var(--muted); font-size: 0.95rem; }
 .stats #statDisponivel { color: var(--green); font-weight: 600; }
 .stats #statAlugado { color: var(--red); font-weight: 600; }
