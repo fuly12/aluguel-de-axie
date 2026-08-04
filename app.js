@@ -423,9 +423,9 @@ function renderTop100() {
       <div class="top100-team">
         ${(p.team || [])
           .map(
-            (axie) => `
+            (axie, idx) => `
           <a class="top100-axie" href="https://app.axieinfinity.com/marketplace/axies/${axie.id}/" target="_blank" rel="noopener" title="Axie ${axie.id}">
-            <img src="${axie.static_img}" alt="Axie ${axie.id}" loading="lazy">
+            <img id="top100-img-${dataset.key}-${p.rank}-${idx}" src="${axie.static_img}" alt="Axie ${axie.id}">
             ${axie.rune_img ? `<img class="rune-badge" src="${axie.rune_img}" alt="rune" loading="lazy">` : ""}
           </a>`
           )
@@ -439,6 +439,64 @@ function renderTop100() {
     </div>`
     )
     .join("");
+
+  queueTop100Renders(dataset);
+}
+
+let top100RenderToken = 0;
+
+async function queueTop100Renders(dataset) {
+  const myToken = ++top100RenderToken;
+  if (!window.AxieRenderer) {
+    console.warn("AxieRenderer não carregado — mostrando fotos atuais dos axies.");
+    return;
+  }
+  for (const p of dataset.players || []) {
+    for (let idx = 0; idx < (p.team || []).length; idx++) {
+      if (myToken !== top100RenderToken) return;
+      const axie = p.team[idx];
+      if (!axie.genes) continue;
+      const imgEl = document.getElementById(`top100-img-${dataset.key}-${p.rank}-${idx}`);
+      if (!imgEl) continue;
+      await renderTop100AxieImage(axie.genes, imgEl, myToken);
+    }
+  }
+}
+
+function renderTop100AxieImage(genesHex, imgEl, myToken) {
+  return new Promise((resolve) => {
+    const tempId = `top100-temp-${Math.random().toString(36).slice(2)}`;
+    const tempContainer = document.createElement("div");
+    tempContainer.id = tempId;
+    tempContainer.style.position = "fixed";
+    tempContainer.style.top = "-9999px";
+    tempContainer.style.left = "-9999px";
+    tempContainer.style.width = "300px";
+    tempContainer.style.height = "300px";
+    document.body.appendChild(tempContainer);
+
+    const cleanup = () => {
+      if (document.body.contains(tempContainer)) document.body.removeChild(tempContainer);
+      resolve();
+    };
+
+    (async () => {
+      try {
+        const renderer = new window.AxieRenderer(tempId);
+        await renderer.render(genesHex, 0.3, 95);
+        await new Promise((r) => setTimeout(r, 150));
+        const dataUrl = renderer.extractImage();
+        renderer.destroy();
+        if (myToken === top100RenderToken && dataUrl && dataUrl.length > 100) {
+          imgEl.src = dataUrl;
+        }
+      } catch (err) {
+        console.error("Erro ao renderizar axie do Top 100", err);
+      } finally {
+        cleanup();
+      }
+    })();
+  });
 }
 
 function loadState() {
