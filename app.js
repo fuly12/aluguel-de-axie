@@ -336,7 +336,7 @@ function escapeHtml(str) {
 }
 
 function parseSeasonEra(name) {
-  const match = /Season\s+(\d+)\s+(.+)/i.exec(name || "");
+  const match = /(?:Season|Temporada)\s+(\d+)\s+(.+)/i.exec(name || "");
   if (!match) return { season: null, eraKey: null };
   const season = match[1];
   const eraRaw = match[2].trim().toLowerCase();
