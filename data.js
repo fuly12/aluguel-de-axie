@@ -57,8 +57,8 @@ const AXIE_DATA = [
     },
     "morphGenesHex": "0x1800000000000300000180410308000000030010108045020003000820404002000206080860c106000206143020c4060002060c1800c1020003001010604302",
     "level": 60,
-    "rented": true,
-    "rentedTier": 2
+    "rented": false,
+    "rentedTier": 0
   },
   {
     "id": "1876",
@@ -87,8 +87,8 @@ const AXIE_DATA = [
     },
     "morphGenesHex": "0x30001004021040c000000030000206044040001000c288040020003000c180084020003000c2040840600030014186085020003001418a04506",
     "level": 52,
-    "rented": true,
-    "rentedTier": 2
+    "rented": false,
+    "rentedTier": 0
   },
   {
     "id": "2635",
@@ -231,8 +231,8 @@ const AXIE_DATA = [
     },
     "morphGenesHex": "0x1800000000000700010040b0c110000000030004200142080003000810014508000300001841820a000300143081440a0001000c2801430a0003001420814408",
     "level": 51,
-    "rented": true,
-    "rentedTier": 2
+    "rented": false,
+    "rentedTier": 0
   },
   {
     "id": "46497",
@@ -261,8 +261,8 @@ const AXIE_DATA = [
     },
     "morphGenesHex": "0x70002404060c20c00000001001020a1400a000100002801030a000300102021440c000300102081840a0003001028214408000300101061400a",
     "level": 51,
-    "rented": true,
-    "rentedTier": 2
+    "rented": false,
+    "rentedTier": 0
   },
   {
     "id": "46502",
@@ -291,8 +291,8 @@ const AXIE_DATA = [
     },
     "morphGenesHex": "0x800000000000700018120d0800c0000000300042081000a00030010104104080003001028a14008000300102861810a0001001028610508000300101081040a",
     "level": 50,
-    "rented": true,
-    "rentedTier": 2
+    "rented": false,
+    "rentedTier": 0
   },
   {
     "id": "48742",
@@ -9556,8 +9556,8 @@ const AXIE_DATA = [
     },
     "morphGenesHex": "0x28000000000000018140a050c41000000003001408a102040001000c28a1450400030014304083040002060c18a105080002069410a0c5060003000008a0400c",
     "level": 60,
-    "rented": true,
-    "rentedTier": 2
+    "rented": false,
+    "rentedTier": 0
   },
   {
     "id": "11536214",
@@ -10115,8 +10115,8 @@ const AXIE_DATA = [
     },
     "morphGenesHex": "0x80000000000001000080c040c30800000003001428a1450a00030008202142080001000018808006000206100821410800030004200105040003001010808404",
     "level": 52,
-    "rented": true,
-    "rentedTier": 2
+    "rented": false,
+    "rentedTier": 0
   },
   {
     "id": "11789052",
@@ -10511,8 +10511,8 @@ const AXIE_DATA = [
     },
     "morphGenesHex": "0x1000281209102100000000300002840400a00020610108084040003000c0821810a0003000030214406000300081020c506000300102080c00c",
     "level": 60,
-    "rented": true,
-    "rentedTier": 2
+    "rented": false,
+    "rentedTier": 0
   },
   {
     "id": "11992788",
@@ -10826,8 +10826,8 @@ const AXIE_DATA = [
     },
     "morphGenesHex": "0x28000000000001000100a080c00000000003001408a043080003000c2861430a0002061430a085040003000c106105080003001410a0c1080003000008004504",
     "level": 60,
-    "rented": true,
-    "rentedTier": 2
+    "rented": false,
+    "rentedTier": 0
   },
   {
     "id": "12029593",
@@ -10984,8 +10984,8 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": null,
     "level": 54,
-    "rented": true,
-    "rentedTier": 2
+    "rented": false,
+    "rentedTier": 0
   },
   {
     "id": "12036812",
@@ -11146,8 +11146,8 @@ const AXIE_DATA = [
     },
     "morphGenesHex": "0x90000000000001000381c0208204000000020610106043080001000c2861430a0003000018a1440a0003001010a1410c0003000c288042020003001420214008",
     "level": 56,
-    "rented": true,
-    "rentedTier": 2
+    "rented": false,
+    "rentedTier": 0
   },
   {
     "id": "12045111",
@@ -11315,8 +11315,8 @@ const AXIE_DATA = [
     },
     "morphGenesHex": "0x8000000000001000380e09082080000000300142861050a0003000c28214408000100001800c0060003000c208044020003000c086044080002061410a10404",
     "level": 54,
-    "rented": true,
-    "rentedTier": 2
+    "rented": false,
+    "rentedTier": 0
   },
   {
     "id": "12064406",
@@ -11377,8 +11377,8 @@ const AXIE_DATA = [
     },
     "morphGenesHex": "0x180000000000070001c10040840c000000030004200100080001000810a1020a000300001801820c000300143041410a0003000c28a1400a0003001420a10408",
     "level": 52,
-    "rented": true,
-    "rentedTier": 2
+    "rented": false,
+    "rentedTier": 0
   },
   {
     "id": "12102183",
@@ -11629,8 +11629,8 @@ const AXIE_DATA = [
     },
     "morphGenesHex": "0x2800000000000100020160b0020000000003001408a045020001000c2861440200030014104085040003000c206182020002061410a0c5060003001420004002",
     "level": 54,
-    "rented": true,
-    "rentedTier": 2
+    "rented": false,
+    "rentedTier": 0
   },
   {
     "id": "12148734",
