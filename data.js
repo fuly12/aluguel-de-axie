@@ -87,8 +87,8 @@ const AXIE_DATA = [
     },
     "morphGenesHex": "0x30001004021040c000000030000206044040001000c288040020003000c180084020003000c2040840600030014186085020003001418a04506",
     "level": 52,
-    "rented": false,
-    "rentedTier": 0
+    "rented": true,
+    "rentedTier": 4
   },
   {
     "id": "2635",
@@ -147,8 +147,8 @@ const AXIE_DATA = [
     },
     "morphGenesHex": "0x1000000000000500034100c084080000000300000841050a000300002881000a0003000018a1020c000300103041840c0003000c2801800c0003000c1081800a",
     "level": 60,
-    "rented": false,
-    "rentedTier": 0
+    "rented": true,
+    "rentedTier": 4
   },
   {
     "id": "4619",
@@ -11068,8 +11068,8 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": null,
     "level": 50,
-    "rented": false,
-    "rentedTier": 0
+    "rented": true,
+    "rentedTier": 4
   },
   {
     "id": "12039103",
