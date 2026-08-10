@@ -6,7 +6,6 @@
     "update-morph-data": "node scripts/update-morph-data.mjs"
   },
   "dependencies": {
-    "playwright-core": "^1.62.1",
     "undici": "^8.10.0"
   }
 }
