@@ -126,6 +126,7 @@ const I18N = {
     perEraLabel: "por era",
     slipsLabel: "Fortune Slips à venda:",
     slipsFor: "por",
+    slipsContactSuffix: "fale com fuly_12 no Discord",
     renterNamePlaceholder: "Nome do locatário",
   },
   en: {
@@ -187,6 +188,7 @@ const I18N = {
     perEraLabel: "per era",
     slipsLabel: "Fortune Slips for sale:",
     slipsFor: "for",
+    slipsContactSuffix: "message fuly_12 on Discord",
     renterNamePlaceholder: "Renter name",
   },
   es: {
@@ -248,6 +250,7 @@ const I18N = {
     perEraLabel: "por era",
     slipsLabel: "Fortune Slips a la venta:",
     slipsFor: "por",
+    slipsContactSuffix: "escribe a fuly_12 en Discord",
     renterNamePlaceholder: "Nombre del inquilino",
   },
   fil: {
@@ -309,6 +312,7 @@ const I18N = {
     perEraLabel: "bawat era",
     slipsLabel: "Fortune Slips na ibinebenta:",
     slipsFor: "para sa",
+    slipsContactSuffix: "mag-message kay fuly_12 sa Discord",
     renterNamePlaceholder: "Pangalan ng umuupa",
   },
 };
