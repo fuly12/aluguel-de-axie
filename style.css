@@ -134,6 +134,28 @@ body {
   color: #c084fc;
 }
 
+.associates-banner {
+  background: #1a2233;
+  border-bottom: 1px solid var(--card-border);
+  padding: 10px 24px;
+  text-align: center;
+}
+
+.associates-names {
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.associates-names strong {
+  color: #c084fc;
+}
+
+.associates-instructions {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
 .promo-banner {
   display: flex;
   align-items: stretch;

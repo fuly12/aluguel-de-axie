@@ -70,6 +70,8 @@ const I18N = {
   pt: {
     title: "🐾 Aluguel de Axies",
     discordContact: "Discord para contato:",
+    associatesLabel: "🤝 Associados",
+    associatesInstructions: "Interessados em alugar? Procure o dono do Axie — o Discord dele aparece logo abaixo da imagem de cada um.",
     statTotalLabel: "total",
     statAvailableLabel: "disponíveis",
     statRentedLabel: "alugados",
@@ -129,6 +131,8 @@ const I18N = {
   en: {
     title: "🐾 Axie Rentals",
     discordContact: "Discord contact:",
+    associatesLabel: "🤝 Associates",
+    associatesInstructions: "Interested in renting? Look for the Axie's owner — their Discord shows up right below each Axie's image.",
     statTotalLabel: "total",
     statAvailableLabel: "available",
     statRentedLabel: "rented",
@@ -188,6 +192,8 @@ const I18N = {
   es: {
     title: "🐾 Alquiler de Axies",
     discordContact: "Contacto de Discord:",
+    associatesLabel: "🤝 Asociados",
+    associatesInstructions: "¿Interesado en alquilar? Busca al dueño del Axie — su Discord aparece justo debajo de la imagen de cada uno.",
     statTotalLabel: "total",
     statAvailableLabel: "disponibles",
     statRentedLabel: "alquilados",
@@ -247,6 +253,8 @@ const I18N = {
   fil: {
     title: "🐾 Pag-arkila ng Axies",
     discordContact: "Discord para sa kontak:",
+    associatesLabel: "🤝 Mga Kasosyo",
+    associatesInstructions: "Interesado mag-arkila? Hanapin ang may-ari ng Axie — makikita ang Discord niya sa ibaba mismo ng larawan ng bawat Axie.",
     statTotalLabel: "kabuuan",
     statAvailableLabel: "magagamit",
     statRentedLabel: "inuupahan",
@@ -329,6 +337,16 @@ function translateStaticUI() {
   });
 }
 
+function renderAssociatesBanner() {
+  const el = document.getElementById("associatesBanner");
+  if (!el || typeof PARTNER_NAMES === "undefined") return;
+  const names = Object.values(PARTNER_NAMES).join(", ");
+  el.innerHTML = `
+    <div class="associates-names">${t("associatesLabel")}: <strong>${escapeHtml(names)}</strong></div>
+    <div class="associates-instructions">${t("associatesInstructions")}</div>
+  `;
+}
+
 function setLanguage(lang) {
   currentLang = lang;
   localStorage.setItem(LANG_KEY, lang);
@@ -336,6 +354,7 @@ function setLanguage(lang) {
   updateLockUI();
   populateCollectibleFilter();
   renderPriceTable();
+  renderAssociatesBanner();
   switchView();
 }
 
@@ -985,6 +1004,7 @@ function init() {
   populateClassFilter();
   populateCollectibleFilter();
   renderPriceTable();
+  renderAssociatesBanner();
 
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
