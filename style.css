@@ -264,6 +264,10 @@ body {
   margin: 2px 0;
 }
 
+.owner-discord {
+  margin-left: 10px;
+}
+
 #lockModal input {
   display: block;
   width: 100%;

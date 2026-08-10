@@ -61,6 +61,7 @@ const I18N = {
     commissionLabel: "Comissão",
     adminLabel: "Admin",
     ownerLabel: "Dono",
+    discordLabel: "Discord",
     tabStandard: "Padrão",
     tabMorph: "✨ Morfado",
     searchLabel: "Buscar por ID",
@@ -119,6 +120,7 @@ const I18N = {
     commissionLabel: "Commission",
     adminLabel: "Admin",
     ownerLabel: "Owner",
+    discordLabel: "Discord",
     tabStandard: "Standard",
     tabMorph: "✨ Morphed",
     searchLabel: "Search by ID",
@@ -177,6 +179,7 @@ const I18N = {
     commissionLabel: "Comisión",
     adminLabel: "Admin",
     ownerLabel: "Dueño",
+    discordLabel: "Discord",
     tabStandard: "Estándar",
     tabMorph: "✨ Transformado",
     searchLabel: "Buscar por ID",
@@ -235,6 +238,7 @@ const I18N = {
     commissionLabel: "Komisyon",
     adminLabel: "Admin",
     ownerLabel: "May-ari",
+    discordLabel: "Discord",
     tabStandard: "Standard",
     tabMorph: "✨ Na-morph",
     searchLabel: "Maghanap gamit ang ID",
@@ -862,6 +866,7 @@ function buildCard(axie) {
 
   const ownerName = typeof PARTNER_NAMES !== "undefined" ? PARTNER_NAMES[normalizeWallet(axie.ownerWallet)] : null;
   const showOwnerBadge = typeof PARTNER_NAMES !== "undefined" && Object.keys(PARTNER_NAMES).length > 1 && ownerName;
+  const discordHandle = typeof PARTNER_DISCORD !== "undefined" ? PARTNER_DISCORD[normalizeWallet(axie.ownerWallet)] : null;
 
   card.innerHTML = `
     <div class="card-photo">
@@ -875,7 +880,7 @@ function buildCard(axie) {
       <div class="card-id">#${axie.id}</div>
       <span class="class-badge" style="background: var(--${badgeClass})">${axie.class || "?"}</span>
     </div>
-    ${showOwnerBadge ? `<div class="owner-badge">${t("ownerLabel")}: ${escapeHtml(ownerName)}</div>` : ""}
+    ${showOwnerBadge ? `<div class="owner-badge">${t("ownerLabel")}: ${escapeHtml(ownerName)}${discordHandle ? `<span class="owner-discord">${t("discordLabel")}: ${escapeHtml(discordHandle)}</span>` : ""}</div>` : ""}
     ${collectibleTagsHtml(axie)}
     ${currentView === "morph" ? morphPartsHtml(axie) : ""}
 
