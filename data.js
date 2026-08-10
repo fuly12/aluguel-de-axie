@@ -13099,7 +13099,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 39
   },
   {
     "id": "104736",
@@ -13127,7 +13127,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "113713",
@@ -13155,7 +13155,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "138308",
@@ -13183,7 +13183,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "138522",
@@ -13211,7 +13211,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 55
   },
   {
     "id": "186758",
@@ -13233,7 +13233,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 20
   },
   {
     "id": "262024",
@@ -13255,7 +13255,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 20
   },
   {
     "id": "698204",
@@ -13277,7 +13277,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "763476",
@@ -13299,7 +13299,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 16
   },
   {
     "id": "931120",
@@ -13321,7 +13321,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "1031009",
@@ -13343,7 +13343,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 20
   },
   {
     "id": "1083689",
@@ -13365,7 +13365,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 18
   },
   {
     "id": "1174077",
@@ -13387,7 +13387,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "1256127",
@@ -13409,7 +13409,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 18
   },
   {
     "id": "1288625",
@@ -13431,7 +13431,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "1289039",
@@ -13453,7 +13453,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "1289039",
@@ -13475,7 +13475,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "1422742",
@@ -13497,7 +13497,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "1483352",
@@ -13519,7 +13519,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 14
   },
   {
     "id": "1492645",
@@ -13541,7 +13541,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "1533905",
@@ -13563,7 +13563,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 17
   },
   {
     "id": "1641622",
@@ -13585,7 +13585,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "1705416",
@@ -13607,7 +13607,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 21
   },
   {
     "id": "1740756",
@@ -13629,7 +13629,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 18
   },
   {
     "id": "1782991",
@@ -13651,7 +13651,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "1888402",
@@ -13673,7 +13673,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 18
   },
   {
     "id": "2052255",
@@ -13695,7 +13695,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "2079236",
@@ -13717,7 +13717,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "2079299",
@@ -13739,7 +13739,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 10
   },
   {
     "id": "2079301",
@@ -13761,7 +13761,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "2081702",
@@ -13783,7 +13783,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "2118258",
@@ -13805,7 +13805,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 18
   },
   {
     "id": "2178268",
@@ -13827,7 +13827,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 4
   },
   {
     "id": "2208634",
@@ -13849,7 +13849,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 14
   },
   {
     "id": "2453216",
@@ -13871,7 +13871,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "2454136",
@@ -13893,7 +13893,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "2510267",
@@ -13915,7 +13915,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 7
   },
   {
     "id": "2512709",
@@ -13937,7 +13937,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 18
   },
   {
     "id": "2513393",
@@ -13959,7 +13959,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 17
   },
   {
     "id": "2513423",
@@ -13981,7 +13981,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 17
   },
   {
     "id": "2514423",
@@ -14003,7 +14003,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "2514622",
@@ -14025,7 +14025,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "2532179",
@@ -14047,7 +14047,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "2532662",
@@ -14069,7 +14069,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "2532828",
@@ -14091,7 +14091,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 18
   },
   {
     "id": "2532830",
@@ -14113,7 +14113,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "2533256",
@@ -14135,7 +14135,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "2533269",
@@ -14157,7 +14157,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "2537774",
@@ -14179,7 +14179,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "2617217",
@@ -14201,7 +14201,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "2634958",
@@ -14223,7 +14223,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 14
   },
   {
     "id": "2793276",
@@ -14245,7 +14245,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 2
   },
   {
     "id": "3144226",
@@ -14267,7 +14267,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "3174705",
@@ -14289,7 +14289,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 14
   },
   {
     "id": "3290652",
@@ -14311,7 +14311,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 22
   },
   {
     "id": "3366267",
@@ -14333,7 +14333,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 14
   },
   {
     "id": "3416387",
@@ -14355,7 +14355,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 5
   },
   {
     "id": "3712096",
@@ -14377,7 +14377,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 20
   },
   {
     "id": "3741046",
@@ -14399,7 +14399,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 17
   },
   {
     "id": "3751073",
@@ -14421,7 +14421,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 5
   },
   {
     "id": "3753142",
@@ -14443,7 +14443,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 11
   },
   {
     "id": "3767045",
@@ -14465,7 +14465,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 21
   },
   {
     "id": "3794934",
@@ -14487,7 +14487,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 15
   },
   {
     "id": "3801545",
@@ -14509,7 +14509,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 14
   },
   {
     "id": "3824293",
@@ -14535,7 +14535,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 48
   },
   {
     "id": "3881345",
@@ -14557,7 +14557,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 15
   },
   {
     "id": "3949404",
@@ -14579,7 +14579,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 20
   },
   {
     "id": "4096831",
@@ -14601,7 +14601,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 17
   },
   {
     "id": "4174582",
@@ -14623,7 +14623,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 16
   },
   {
     "id": "4219893",
@@ -14645,7 +14645,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 18
   },
   {
     "id": "4340915",
@@ -14667,7 +14667,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 10
   },
   {
     "id": "4584003",
@@ -14689,7 +14689,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 30
   },
   {
     "id": "4737033",
@@ -14715,7 +14715,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 33
   },
   {
     "id": "4886728",
@@ -14737,7 +14737,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 20
   },
   {
     "id": "5006463",
@@ -14759,7 +14759,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "5037724",
@@ -14781,7 +14781,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 10
   },
   {
     "id": "5037941",
@@ -14803,7 +14803,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 2
   },
   {
     "id": "5180300",
@@ -14825,7 +14825,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "5215463",
@@ -14847,7 +14847,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "5377554",
@@ -14869,7 +14869,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 16
   },
   {
     "id": "5404575",
@@ -14891,7 +14891,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 3
   },
   {
     "id": "5658265",
@@ -14913,7 +14913,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 22
   },
   {
     "id": "5666762",
@@ -14935,7 +14935,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 18
   },
   {
     "id": "5870574",
@@ -14957,7 +14957,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 12
   },
   {
     "id": "5894240",
@@ -14979,7 +14979,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "5989710",
@@ -15001,7 +15001,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 18
   },
   {
     "id": "6052582",
@@ -15023,7 +15023,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 13
   },
   {
     "id": "6124101",
@@ -15045,7 +15045,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 3
   },
   {
     "id": "6124206",
@@ -15067,7 +15067,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 5
   },
   {
     "id": "6206231",
@@ -15093,7 +15093,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 51
   },
   {
     "id": "6258476",
@@ -15115,7 +15115,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 18
   },
   {
     "id": "6405362",
@@ -15137,7 +15137,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "6426346",
@@ -15159,7 +15159,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 18
   },
   {
     "id": "6737220",
@@ -15181,7 +15181,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "6763630",
@@ -15203,7 +15203,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "6903552",
@@ -15225,7 +15225,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "6941106",
@@ -15247,7 +15247,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 12
   },
   {
     "id": "6952189",
@@ -15269,7 +15269,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "7111197",
@@ -15291,7 +15291,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "7651739",
@@ -15313,7 +15313,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 8
   },
   {
     "id": "7661427",
@@ -15335,7 +15335,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 14
   },
   {
     "id": "7724797",
@@ -15357,7 +15357,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 12
   },
   {
     "id": "7976609",
@@ -15379,7 +15379,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 5
   },
   {
     "id": "7981235",
@@ -15401,7 +15401,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 16
   },
   {
     "id": "7994259",
@@ -15423,7 +15423,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 20
   },
   {
     "id": "8063357",
@@ -15445,7 +15445,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 16
   },
   {
     "id": "8095759",
@@ -15467,7 +15467,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "8133053",
@@ -15489,7 +15489,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "8214059",
@@ -15515,7 +15515,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 53
   },
   {
     "id": "8228143",
@@ -15537,7 +15537,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 10
   },
   {
     "id": "8228936",
@@ -15559,7 +15559,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 16
   },
   {
     "id": "8278489",
@@ -15581,7 +15581,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "8278810",
@@ -15603,7 +15603,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "8449607",
@@ -15625,7 +15625,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "8469770",
@@ -15647,7 +15647,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 16
   },
   {
     "id": "8761898",
@@ -15669,7 +15669,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "8792264",
@@ -15691,7 +15691,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 15
   },
   {
     "id": "8794914",
@@ -15713,7 +15713,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "8896914",
@@ -15735,7 +15735,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "8897291",
@@ -15757,7 +15757,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 16
   },
   {
     "id": "8897491",
@@ -15779,7 +15779,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 10
   },
   {
     "id": "8897549",
@@ -15801,7 +15801,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 16
   },
   {
     "id": "9036304",
@@ -15823,7 +15823,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 16
   },
   {
     "id": "9130483",
@@ -15845,7 +15845,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 17
   },
   {
     "id": "9142916",
@@ -15867,7 +15867,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "9251673",
@@ -15889,7 +15889,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 16
   },
   {
     "id": "9645355",
@@ -15911,7 +15911,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 18
   },
   {
     "id": "9645495",
@@ -15933,7 +15933,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 16
   },
   {
     "id": "9908499",
@@ -15955,7 +15955,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "9908751",
@@ -15977,7 +15977,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "10100397",
@@ -15999,7 +15999,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 16
   },
   {
     "id": "10120741",
@@ -16021,7 +16021,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "10368332",
@@ -16043,7 +16043,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 37
   },
   {
     "id": "11075394",
@@ -16065,7 +16065,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 29
   },
   {
     "id": "11090528",
@@ -16087,7 +16087,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 32
   },
   {
     "id": "11091293",
@@ -16113,7 +16113,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 35
   },
   {
     "id": "11199232",
@@ -16135,7 +16135,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 5
   },
   {
     "id": "11232873",
@@ -16157,7 +16157,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "11247733",
@@ -16179,7 +16179,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 22
   },
   {
     "id": "11297642",
@@ -16201,7 +16201,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "11299708",
@@ -16223,7 +16223,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 29
   },
   {
     "id": "11308194",
@@ -16245,7 +16245,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 29
   },
   {
     "id": "11319589",
@@ -16267,7 +16267,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 23
   },
   {
     "id": "11324379",
@@ -16293,7 +16293,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 41
   },
   {
     "id": "11331063",
@@ -16315,7 +16315,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 18
   },
   {
     "id": "11354807",
@@ -16341,7 +16341,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "11393754",
@@ -16367,7 +16367,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 30
   },
   {
     "id": "11428550",
@@ -16393,7 +16393,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 26
   },
   {
     "id": "11436470",
@@ -16415,7 +16415,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 10
   },
   {
     "id": "11456158",
@@ -16441,7 +16441,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 15
   },
   {
     "id": "11456646",
@@ -16467,7 +16467,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 28
   },
   {
     "id": "11458165",
@@ -16493,7 +16493,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 49
   },
   {
     "id": "11475293",
@@ -16515,7 +16515,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 14
   },
   {
     "id": "11477612",
@@ -16537,7 +16537,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 31
   },
   {
     "id": "11477785",
@@ -16559,7 +16559,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 15
   },
   {
     "id": "11486159",
@@ -16581,7 +16581,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 21
   },
   {
     "id": "11512860",
@@ -16607,7 +16607,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 55
   },
   {
     "id": "11527611",
@@ -16629,7 +16629,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 20
   },
   {
     "id": "11538076",
@@ -16651,7 +16651,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 10
   },
   {
     "id": "11538585",
@@ -16673,7 +16673,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 49
   },
   {
     "id": "11622055",
@@ -16695,7 +16695,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 20
   },
   {
     "id": "11668321",
@@ -16721,7 +16721,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 28
   },
   {
     "id": "11671309",
@@ -16743,7 +16743,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 22
   },
   {
     "id": "11671309",
@@ -16765,7 +16765,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 22
   },
   {
     "id": "11681715",
@@ -16791,7 +16791,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 49
   },
   {
     "id": "11685997",
@@ -16813,7 +16813,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 28
   },
   {
     "id": "11685997",
@@ -16835,7 +16835,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 28
   },
   {
     "id": "11701512",
@@ -16857,7 +16857,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 15
   },
   {
     "id": "11714518",
@@ -16879,7 +16879,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 15
   },
   {
     "id": "11715282",
@@ -16901,7 +16901,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 15
   },
   {
     "id": "11735072",
@@ -16923,7 +16923,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 29
   },
   {
     "id": "11759563",
@@ -16945,7 +16945,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 38
   },
   {
     "id": "11760761",
@@ -16967,7 +16967,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 15
   },
   {
     "id": "11773280",
@@ -16989,7 +16989,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "11783085",
@@ -17011,7 +17011,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 29
   },
   {
     "id": "11794111",
@@ -17033,7 +17033,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 16
   },
   {
     "id": "11794714",
@@ -17055,7 +17055,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 28
   },
   {
     "id": "11798942",
@@ -17077,7 +17077,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "11812742",
@@ -17099,7 +17099,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 28
   },
   {
     "id": "11836119",
@@ -17121,7 +17121,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 32
   },
   {
     "id": "11844660",
@@ -17143,7 +17143,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 29
   },
   {
     "id": "11847846",
@@ -17169,7 +17169,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 58
   },
   {
     "id": "11872560",
@@ -17191,7 +17191,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 22
   },
   {
     "id": "11877094",
@@ -17217,7 +17217,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "11881598",
@@ -17239,7 +17239,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 10
   },
   {
     "id": "11895532",
@@ -17265,7 +17265,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "11897611",
@@ -17291,7 +17291,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "11902837",
@@ -17313,7 +17313,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 18
   },
   {
     "id": "11907194",
@@ -17339,7 +17339,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "11916681",
@@ -17365,7 +17365,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 51
   },
   {
     "id": "11918122",
@@ -17387,7 +17387,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "11918510",
@@ -17413,7 +17413,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 42
   },
   {
     "id": "11932059",
@@ -17439,7 +17439,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "11935729",
@@ -17461,7 +17461,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 30
   },
   {
     "id": "11940850",
@@ -17487,7 +17487,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 56
   },
   {
     "id": "11942142",
@@ -17513,7 +17513,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 40
   },
   {
     "id": "11957597",
@@ -17535,7 +17535,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 20
   },
   {
     "id": "11957791",
@@ -17561,7 +17561,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 57
   },
   {
     "id": "11966965",
@@ -17587,7 +17587,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "11967462",
@@ -17613,7 +17613,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "11970465",
@@ -17639,7 +17639,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 56
   },
   {
     "id": "11971439",
@@ -17665,7 +17665,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 56
   },
   {
     "id": "11972662",
@@ -17691,7 +17691,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 42
   },
   {
     "id": "11990361",
@@ -17717,7 +17717,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "11992800",
@@ -17743,7 +17743,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "11997467",
@@ -17769,7 +17769,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 57
   },
   {
     "id": "12001144",
@@ -17791,7 +17791,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 22
   },
   {
     "id": "12004935",
@@ -17817,7 +17817,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 49
   },
   {
     "id": "12006205",
@@ -17843,7 +17843,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "12019609",
@@ -17865,7 +17865,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 20
   },
   {
     "id": "12022609",
@@ -17887,7 +17887,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 33
   },
   {
     "id": "12028268",
@@ -17913,7 +17913,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 40
   },
   {
     "id": "12029527",
@@ -17935,7 +17935,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 16
   },
   {
     "id": "12029562",
@@ -17961,7 +17961,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 39
   },
   {
     "id": "12030525",
@@ -17987,7 +17987,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 42
   },
   {
     "id": "12030530",
@@ -18013,7 +18013,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 42
   },
   {
     "id": "12033307",
@@ -18039,7 +18039,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 48
   },
   {
     "id": "12045685",
@@ -18061,7 +18061,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 25
   },
   {
     "id": "12046246",
@@ -18083,7 +18083,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 33
   },
   {
     "id": "12058913",
@@ -18105,7 +18105,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 28
   },
   {
     "id": "12068704",
@@ -18127,7 +18127,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 18
   },
   {
     "id": "12075119",
@@ -18149,7 +18149,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "12078259",
@@ -18171,7 +18171,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 24
   },
   {
     "id": "12089271",
@@ -18193,7 +18193,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 34
   },
   {
     "id": "12096354",
@@ -18219,7 +18219,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 56
   },
   {
     "id": "12104648",
@@ -18241,7 +18241,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "12122080",
@@ -18263,7 +18263,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 6
   },
   {
     "id": "12132899",
@@ -18285,7 +18285,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "12133526",
@@ -18311,7 +18311,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 52
   },
   {
     "id": "12135798",
@@ -18333,7 +18333,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 25
   },
   {
     "id": "12135798",
@@ -18355,7 +18355,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 25
   },
   {
     "id": "12187864",
@@ -18377,7 +18377,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "12192599",
@@ -18399,7 +18399,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 12
   },
   {
     "id": "12207604",
@@ -18421,7 +18421,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 11
   },
   {
     "id": "12222103",
@@ -18443,7 +18443,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "12224531",
@@ -18465,7 +18465,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 5
   },
   {
     "id": "12239240",
@@ -18487,7 +18487,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 4
   },
   {
     "id": "12245316",
@@ -18509,7 +18509,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "12248500",
@@ -18531,7 +18531,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "12249191",
@@ -18553,7 +18553,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "1207",
@@ -18581,7 +18581,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "1497",
@@ -18603,7 +18603,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "2065",
@@ -18625,7 +18625,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "2076",
@@ -18651,7 +18651,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "2678",
@@ -18673,7 +18673,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 40
   },
   {
     "id": "4211",
@@ -18695,7 +18695,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 36
   },
   {
     "id": "5223",
@@ -18717,7 +18717,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 38
   },
   {
     "id": "5565",
@@ -18747,7 +18747,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "7060",
@@ -18769,7 +18769,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "7158",
@@ -18791,7 +18791,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 58
   },
   {
     "id": "7863",
@@ -18813,7 +18813,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "96182",
@@ -18841,7 +18841,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "103531",
@@ -18863,7 +18863,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "214001",
@@ -18889,7 +18889,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 32
   },
   {
     "id": "865713",
@@ -18915,7 +18915,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 53
   },
   {
     "id": "931979",
@@ -18937,7 +18937,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "1036331",
@@ -18963,7 +18963,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 57
   },
   {
     "id": "1276895",
@@ -18989,7 +18989,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 52
   },
   {
     "id": "1570458",
@@ -19011,7 +19011,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "1854044",
@@ -19033,7 +19033,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "2460782",
@@ -19055,7 +19055,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 20
   },
   {
     "id": "2532955",
@@ -19077,7 +19077,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 13
   },
   {
     "id": "3085499",
@@ -19099,7 +19099,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "4024054",
@@ -19125,7 +19125,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "4059069",
@@ -19151,7 +19151,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 57
   },
   {
     "id": "4247522",
@@ -19177,7 +19177,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 47
   },
   {
     "id": "4641841",
@@ -19199,7 +19199,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "4782936",
@@ -19221,7 +19221,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 20
   },
   {
     "id": "4817960",
@@ -19243,7 +19243,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "6143049",
@@ -19265,7 +19265,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "6714040",
@@ -19287,7 +19287,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 20
   },
   {
     "id": "7358812",
@@ -19309,7 +19309,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "7397243",
@@ -19335,7 +19335,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 56
   },
   {
     "id": "7467586",
@@ -19357,7 +19357,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 12
   },
   {
     "id": "7516241",
@@ -19379,7 +19379,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 20
   },
   {
     "id": "8281112",
@@ -19401,7 +19401,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "8552220",
@@ -19423,7 +19423,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 56
   },
   {
     "id": "9663954",
@@ -19449,7 +19449,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 54
   },
   {
     "id": "9892613",
@@ -19471,7 +19471,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 19
   },
   {
     "id": "10045639",
@@ -19497,7 +19497,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 58
   },
   {
     "id": "10328655",
@@ -19519,7 +19519,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "10574551",
@@ -19541,7 +19541,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "10605442",
@@ -19563,7 +19563,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 20
   },
   {
     "id": "10942612",
@@ -19585,7 +19585,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 14
   },
   {
     "id": "10979000",
@@ -19611,7 +19611,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 44
   },
   {
     "id": "11008408",
@@ -19633,7 +19633,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 20
   },
   {
     "id": "11022383",
@@ -19655,7 +19655,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "11140697",
@@ -19681,7 +19681,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 58
   },
   {
     "id": "11172041",
@@ -19703,7 +19703,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "11310900",
@@ -19729,7 +19729,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 53
   },
   {
     "id": "11347600",
@@ -19755,7 +19755,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 56
   },
   {
     "id": "11348200",
@@ -19777,7 +19777,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 58
   },
   {
     "id": "11435429",
@@ -19805,7 +19805,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 54
   },
   {
     "id": "11491111",
@@ -19827,7 +19827,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "11641678",
@@ -19853,7 +19853,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 58
   },
   {
     "id": "11653922",
@@ -19875,7 +19875,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 12
   },
   {
     "id": "11683680",
@@ -19897,7 +19897,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "11726255",
@@ -19919,7 +19919,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "11750335",
@@ -19945,7 +19945,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "11790233",
@@ -19971,7 +19971,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "11815508",
@@ -19997,7 +19997,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 43
   },
   {
     "id": "11855604",
@@ -20019,7 +20019,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 20
   },
   {
     "id": "11905895",
@@ -20045,7 +20045,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 50
   },
   {
     "id": "11905923",
@@ -20071,7 +20071,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 53
   },
   {
     "id": "11921556",
@@ -20097,7 +20097,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 51
   },
   {
     "id": "11929398",
@@ -20123,7 +20123,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "11932180",
@@ -20149,7 +20149,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "11933721",
@@ -20175,7 +20175,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 54
   },
   {
     "id": "11956612",
@@ -20201,7 +20201,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "11969528",
@@ -20227,7 +20227,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "11971824",
@@ -20253,7 +20253,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "11981145",
@@ -20279,7 +20279,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "11982291",
@@ -20305,7 +20305,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "11985583",
@@ -20331,7 +20331,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 58
   },
   {
     "id": "11987968",
@@ -20357,7 +20357,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "11991125",
@@ -20383,7 +20383,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 51
   },
   {
     "id": "12000635",
@@ -20409,7 +20409,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 50
   },
   {
     "id": "12016260",
@@ -20435,7 +20435,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 54
   },
   {
     "id": "12019912",
@@ -20461,7 +20461,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "12040647",
@@ -20487,7 +20487,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "12044653",
@@ -20513,7 +20513,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 52
   },
   {
     "id": "12049004",
@@ -20539,7 +20539,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 49
   },
   {
     "id": "12053446",
@@ -20565,7 +20565,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 60
   },
   {
     "id": "12084737",
@@ -20591,7 +20591,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 52
   },
   {
     "id": "12086176",
@@ -20613,7 +20613,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "12096896",
@@ -20635,7 +20635,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "12100031",
@@ -20661,7 +20661,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 33
   },
   {
     "id": "12114010",
@@ -20687,7 +20687,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 55
   },
   {
     "id": "12122500",
@@ -20709,7 +20709,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "12134239",
@@ -20735,7 +20735,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 53
   },
   {
     "id": "12139498",
@@ -20757,7 +20757,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 20
   },
   {
     "id": "12145770",
@@ -20783,7 +20783,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 49
   },
   {
     "id": "12184542",
@@ -20805,7 +20805,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "12184849",
@@ -20827,7 +20827,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "12221564",
@@ -20849,7 +20849,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "12221974",
@@ -20871,7 +20871,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "12222706",
@@ -20893,7 +20893,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 2
   },
   {
     "id": "12223094",
@@ -20915,7 +20915,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 2
   },
   {
     "id": "12223252",
@@ -20937,7 +20937,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "12223612",
@@ -20959,7 +20959,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 2
   },
   {
     "id": "12224823",
@@ -20981,7 +20981,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 2
   },
   {
     "id": "12225107",
@@ -21003,7 +21003,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 2
   },
   {
     "id": "12225358",
@@ -21025,7 +21025,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 2
   },
   {
     "id": "12225696",
@@ -21047,7 +21047,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 9
   },
   {
     "id": "12226268",
@@ -21069,7 +21069,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 2
   },
   {
     "id": "12227215",
@@ -21091,7 +21091,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 2
   },
   {
     "id": "12227923",
@@ -21113,7 +21113,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "12228181",
@@ -21135,7 +21135,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 2
   },
   {
     "id": "12228452",
@@ -21157,7 +21157,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 2
   },
   {
     "id": "12228682",
@@ -21179,7 +21179,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "12229372",
@@ -21201,7 +21201,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 2
   },
   {
     "id": "12229518",
@@ -21223,7 +21223,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "12235811",
@@ -21245,7 +21245,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "12236094",
@@ -21267,7 +21267,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "12243305",
@@ -21289,7 +21289,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "12243470",
@@ -21311,7 +21311,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "12244484",
@@ -21333,7 +21333,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   },
   {
     "id": "12245238",
@@ -21355,6 +21355,6 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": null
+    "level": 1
   }
 ];
