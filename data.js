@@ -21,15 +21,8 @@ const AXIE_DATA = [
       "Nightmare": 1
     },
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Zeal",
-      "ears": "Pink Cheek",
-      "mouth": "Hungry Bird",
-      "horn": "Beech",
-      "back": "Cupid",
-      "tail": "Rice"
-    },
-    "morphGenesHex": "0x20000000000003000180e041040800000003000008208502000300082000400200030008082084060003000c106081040002060810808006000300001080c306",
+    "morphParts": null,
+    "morphGenesHex": "0x20000000000003000180e0410408000000030000082085020003000808004002000300101820840600030008086081040002061018808006000300141880c306",
     "level": 60
   },
   {
@@ -53,16 +46,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 3
     },
-    "isMorphed": true,
-    "morphParts": {
-      "eyes": "Clear",
-      "ears": "Sakura",
-      "mouth": "Silence Whisper",
-      "horn": "Parasite",
-      "back": "Sandal",
-      "tail": "Ant"
-    },
-    "morphGenesHex": "0x1800000000000300000180410308000000030010108045020003000c284040020002060c2060c106000206042820c406000206042000c1020003000408604302",
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
     "level": 60
   },
   {
@@ -83,15 +69,8 @@ const AXIE_DATA = [
     "genesisTitle": "ORIGIN",
     "genesisParts": {},
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Puppy",
-      "ears": "Pink Cheek",
-      "mouth": "Confident",
-      "horn": "Oranda",
-      "back": "Hero",
-      "tail": "Koi"
-    },
-    "morphGenesHex": "0x30001004021040c0000000300002060440400010000288040020003000808008402000300102840840600030000106085020003001008a04506",
+    "morphParts": null,
+    "morphGenesHex": "0x30001004021040c0000000300001060440400010008108040020003000008008402000300100840840600030000106085020003000808a04506",
     "level": 52
   },
   {
@@ -112,15 +91,8 @@ const AXIE_DATA = [
     "genesisTitle": "ORIGIN",
     "genesisParts": {},
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Gero",
-      "ears": "Inkling",
-      "mouth": "Catfish",
-      "horn": "Anemone",
-      "back": "Anemone",
-      "tail": "Nimo"
-    },
-    "morphGenesHex": "0x200000000000030001014070c41000000001001020a0830400010010104044020003001020808506000300102040840600030010288082020003001010a08404",
+    "morphParts": null,
+    "morphGenesHex": "0x200000000000030001014070c41000000001001010a0830400010010104044020003000408808506000300041840840600030010088082020003001018a08404",
     "level": 49
   },
   {
@@ -141,15 +113,8 @@ const AXIE_DATA = [
     "genesisTitle": "MEO",
     "genesisParts": {},
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Clear",
-      "ears": "Innocent Lamb",
-      "mouth": "Confident",
-      "horn": "Cuckoo",
-      "back": "Blue Moon",
-      "tail": "Ranchu"
-    },
-    "morphGenesHex": "0x1000000000000500034100c084080000000300101041050a000300002881000a0003000018a1020c000300081041840c000300101001800c000300102081800a",
+    "morphParts": null,
+    "morphGenesHex": "0x1000000000000500034100c084080000000300042041050a000300002081000a0003000428a1020c000300042841840c0003000c2801800c000300102081800a",
     "level": 60
   },
   {
@@ -170,15 +135,8 @@ const AXIE_DATA = [
     "genesisTitle": "MEO",
     "genesisParts": {},
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Tricky",
-      "ears": "Larva",
-      "mouth": "Kotaro",
-      "horn": "Rose Bud",
-      "back": "Red Ear",
-      "tail": "Navaga"
-    },
-    "morphGenesHex": "0x2800000000000500030040c0c208000000030014104105080003001410810208000300040801040c0003000c18814408000300142861400a0003001028a1820a",
+    "morphParts": null,
+    "morphGenesHex": "0x2800000000000500030040c0c208000000030004204105080003000c20810208000300002801040c0003000828814408000300142861400a0003000020a1820a",
     "level": 60
   },
   {
@@ -198,16 +156,9 @@ const AXIE_DATA = [
     "collectible": true,
     "genesisTitle": "MEO",
     "genesisParts": {},
-    "isMorphed": true,
-    "morphParts": {
-      "eyes": "Gero",
-      "ears": "Inkling",
-      "mouth": "Axie Kiss",
-      "horn": "Anemone",
-      "back": "Anemone",
-      "tail": "Nimo"
-    },
-    "morphGenesHex": "0x1800000000000500020140200308000000030010202140080001000020a104080003001020a1400a000300102061440c0001001028a18008000100101001430a",
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
     "level": 41
   },
   {
@@ -228,15 +179,8 @@ const AXIE_DATA = [
     "genesisTitle": "MEO II",
     "genesisParts": {},
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Nerdy",
-      "ears": "Sakura",
-      "mouth": "Confident",
-      "horn": "Parasite",
-      "back": "Sandal",
-      "tail": "Potato Leaf"
-    },
-    "morphGenesHex": "0x1800000000000700010040b0c1100000000300042001420800030000280145080003000c2041820a000300042881440a000100042001430a0003000c28814408",
+    "morphParts": null,
+    "morphGenesHex": "0x1800000000000700010040b0c110000000030004200142080003000828014508000300002841820a000300142881440a0001000c2801430a0003000c28814408",
     "level": 52
   },
   {
@@ -257,15 +201,8 @@ const AXIE_DATA = [
     "genesisTitle": "MEO II",
     "genesisParts": {},
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Gero",
-      "ears": "Inkling",
-      "mouth": "Confident",
-      "horn": "Anemone",
-      "back": "Anemone",
-      "tail": "Nimo"
-    },
-    "morphGenesHex": "0x70002404060c20c00000003001020a1400a000100002801030a000300102021440c000300102081840a0003001028214408000300101061400a",
+    "morphParts": null,
+    "morphGenesHex": "0x70002404060c20c00000003000c20a1400a000100002801030a000300002821440c000300002081840a0003001020214408000300082061400a",
     "level": 51
   },
   {
@@ -286,15 +223,8 @@ const AXIE_DATA = [
     "genesisTitle": "MEO II",
     "genesisParts": {},
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Gero",
-      "ears": "Inkling",
-      "mouth": "Axie Kiss",
-      "horn": "Anemone",
-      "back": "Anemone",
-      "tail": "Nimo"
-    },
-    "morphGenesHex": "0x800000000000700018120d0800c0000000300102081000a00030000204104080003001020a14008000300102061810a0001001028610508000300101081040a",
+    "morphParts": null,
+    "morphGenesHex": "0x800000000000700018120d0800c0000000300042081000a00030000204104080003000028a14008000300002061810a0001000c28610508000300142881040a",
     "level": 51
   },
   {
@@ -419,15 +349,8 @@ const AXIE_DATA = [
       "Japanese": 1
     },
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Gero",
-      "ears": "Larva",
-      "mouth": "Goda",
-      "horn": "Anemone",
-      "back": "Anemone",
-      "tail": "Nimo"
-    },
-    "morphGenesHex": "0x1000000000000100000120c0820c0000000300102040430a000300001041400a0001000408810006000300102000c2020003019028410506000100101041420a",
+    "morphParts": null,
+    "morphGenesHex": "0x1000000000000100000120c0820c0000000300080840430a000300001041400a0001000408810006000300080800c2020003018810410506000100002841420a",
     "level": 49
   },
   {
@@ -498,15 +421,8 @@ const AXIE_DATA = [
       "Nightmare": 1
     },
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Blossom",
-      "ears": "Possessed Lotus",
-      "mouth": "Dango",
-      "horn": "Eggshell",
-      "back": "Yakitori",
-      "tail": "Cottontail"
-    },
-    "morphGenesHex": "0x180000000000010001419010830c00000003000c2821020400030194286043020002060c1040420a00030008082183040003018c10618102000100000860c306",
+    "morphParts": null,
+    "morphGenesHex": "0x180000000000010001419010830c00000003000c2821020400030194286043020002060c1040420a00030004302183040003018c106181020001000c2860c306",
     "level": 50
   },
   {
@@ -894,9 +810,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x28000000000001000240c0608210000000020610108102040001001008a044020003000c286085060003001418a0c302000300081821820c0003000c08818402",
     "level": 57
   },
   {
@@ -6399,15 +6315,8 @@ const AXIE_DATA = [
       "Nightmare": 1
     },
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Confused",
-      "ears": "Larva",
-      "mouth": "Peace Maker",
-      "horn": "Unko",
-      "back": "Kingfisher",
-      "tail": "Hot Butt"
-    },
-    "morphGenesHex": "0x100000000000010002412090830c00000003000c10404402000300081040820400010004084042060003001408414202000300082840c10a0002060c3040c20c",
+    "morphParts": null,
+    "morphGenesHex": "0x100000000000010002412090830c00000003000808404402000300081040820400010014184042060003001408414202000300082840c10a000206081840c20c",
     "level": 54
   },
   {
@@ -9787,16 +9696,9 @@ const AXIE_DATA = [
       "Shiny": 1,
       "Nightmare": 2
     },
-    "isMorphed": true,
-    "morphParts": {
-      "eyes": "Gecko",
-      "ears": "Sidebarb",
-      "mouth": "Silence Whisper",
-      "horn": "Piranhaplant",
-      "back": "Tri Spikes",
-      "tail": "Cloud"
-    },
-    "morphGenesHex": "0x28000000000000018140a050c41000000003001408a102040001000c28a1450400030014304083040002060c18a105080002069410a0c5060003000820a0400c",
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
     "level": 60
   },
   {
@@ -10026,16 +9928,9 @@ const AXIE_DATA = [
     "collectible": true,
     "genesisTitle": "MEO II",
     "genesisParts": {},
-    "isMorphed": true,
-    "morphParts": {
-      "eyes": "Gero",
-      "ears": "Inkling",
-      "mouth": "Confident",
-      "horn": "Anemone",
-      "back": "Anemone",
-      "tail": "Nimo"
-    },
-    "morphGenesHex": "0x18000000000007000240a050840c0000000100102001020a0001000028814008000100102001050c0001001020014208000300102881450a0003001010010508",
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
     "level": 35
   },
   {
@@ -10390,15 +10285,8 @@ const AXIE_DATA = [
       "Nightmare": 1
     },
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Topaz",
-      "ears": "Innocent Lamb",
-      "mouth": "Hungry Bird",
-      "horn": "Babylonia",
-      "back": "Sandal",
-      "tail": "Nimo"
-    },
-    "morphGenesHex": "0x80000000000001000080c040c30800000003001428a1450a00030008202142080001000018808006000206100821410800030004200105040003001010808404",
+    "morphParts": null,
+    "morphGenesHex": "0x80000000000001000080c040c30800000003001428a1450a00030000202142080001000018808006000206041021410800030010180105040003001010808404",
     "level": 52
   },
   {
@@ -10747,15 +10635,8 @@ const AXIE_DATA = [
       "Nightmare": 1
     },
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Nerdy",
-      "ears": "Earwing",
-      "mouth": "Bottom Dweller",
-      "horn": "Wing Horn",
-      "back": "Cupid",
-      "tail": "Ranchu"
-    },
-    "morphGenesHex": "0x1000281209102100000000300042040400a0002061010808404000300043021810a0003000828214406000300081020c506000300102080c00c",
+    "morphParts": null,
+    "morphGenesHex": "0x1000281209102100000000300002840400a0002061010808404000300043021810a0003000030214406000300081020c506000300102080c00c",
     "level": 60
   },
   {
@@ -10779,9 +10660,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x18000000000001000140a050440800000003000c206103080003000c2861450a0003000018a180060002060c186102020003000c1860c108000100000860c30c",
     "level": 53
   },
   {
@@ -10854,15 +10735,8 @@ const AXIE_DATA = [
       "Nightmare": 1
     },
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Lucas",
-      "ears": "Pink Cheek",
-      "mouth": "Confident",
-      "horn": "Wing Horn",
-      "back": "Cupid",
-      "tail": "Cloud"
-    },
-    "morphGenesHex": "0x10000000000001000100a09044080000000300081040850200020600284080080001000808804402000300082841420600030008106081080003000820410208",
+    "morphParts": null,
+    "morphGenesHex": "0x10000000000001000100a09044080000000300081040850200020604104080080001000808804402000300082841420600030008306081080003000820410208",
     "level": 54
   },
   {
@@ -10913,15 +10787,8 @@ const AXIE_DATA = [
       "Nightmare": 1
     },
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Nerdy",
-      "ears": "Sakura",
-      "mouth": "Silence Whisper",
-      "horn": "Wing Horn",
-      "back": "Cupid",
-      "tail": "Cloud"
-    },
-    "morphGenesHex": "0x100000000000010002602091020c000000030004204082020002060c28a0800a0001000c20808406000300082880400c000300081020420c000300082021400a",
+    "morphParts": null,
+    "morphGenesHex": "0x100000000000010002602091020c000000030008084082020002060810a0800a0001000808808406000300082880400c000300081020420c000300082021400a",
     "level": 52
   },
   {
@@ -10946,15 +10813,8 @@ const AXIE_DATA = [
       "Nightmare": 1
     },
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Nerdy",
-      "ears": "Sakura",
-      "mouth": "Silence Whisper",
-      "horn": "Wing Horn",
-      "back": "Cupid",
-      "tail": "Cloud"
-    },
-    "morphGenesHex": "0x100000000000010002602091020c000000030004204082020002060c28a0800a0001000c20808406000300082880400c000300081020420c000300082021400a",
+    "morphParts": null,
+    "morphGenesHex": "0x100000000000010002602091020c000000030008084082020002060810a0800a0001000808808406000300082880400c000300081020420c000300082021400a",
     "level": 52
   },
   {
@@ -10979,15 +10839,8 @@ const AXIE_DATA = [
       "Nightmare": 1
     },
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Gecko",
-      "ears": "Sidebarb",
-      "mouth": "Silence Whisper",
-      "horn": "Beech",
-      "back": "Tri Spikes",
-      "tail": "Cottontail"
-    },
-    "morphGenesHex": "0x28000000000001000100a080c00000000003001408a043080003000c2861430a0002061430a085040003000c106105080003001410a0c1080003000008004504",
+    "morphParts": null,
+    "morphGenesHex": "0x28000000000001000100a080c00000000003001408a043080003000c2861430a0002061410a085040003000c206105080003001418a0c1080003000008004504",
     "level": 60
   },
   {
@@ -11085,16 +10938,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": true,
-    "morphParts": {
-      "eyes": "Hazy",
-      "ears": "Innocent Lamb",
-      "mouth": "Peace Maker",
-      "horn": "Bumpy",
-      "back": "Turnip",
-      "tail": "Snake Jar"
-    },
-    "morphGenesHex": "0x180000000000010001c0a070830000000002061010204308000100081060830a000100001800c304000300143021810c0003000c088103040003001420808308",
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
     "level": 54
   },
   {
@@ -11140,16 +10986,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": true,
-    "morphParts": {
-      "eyes": "Clear",
-      "ears": "Gill",
-      "mouth": "Kotaro",
-      "horn": "Wing Horn",
-      "back": "Blue Moon",
-      "tail": "Ranchu"
-    },
-    "morphGenesHex": "0x80000000000001000140402004080000000300101021410a0001001410a08404000206102821810c000300082841420a000100101040c20c0003001020a04002",
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
     "level": 50
   },
   {
@@ -11226,15 +11065,8 @@ const AXIE_DATA = [
       "Nightmare": 1
     },
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Hazy",
-      "ears": "Innocent Lamb",
-      "mouth": "Silence Whisper",
-      "horn": "Bumpy",
-      "back": "Cupid",
-      "tail": "Snake Jar"
-    },
-    "morphGenesHex": "0x90000000000001000381c0208204000000020610106043080001000c2861430a0003000018a1440a0003001430a1410c00030008108042020003001420214008",
+    "morphParts": null,
+    "morphGenesHex": "0x90000000000001000381c0208204000000020614106043080001000c2861430a0003000018a1440a0003000c28a1410c0003000c088042020003001420214008",
     "level": 57
   },
   {
@@ -11333,15 +11165,8 @@ const AXIE_DATA = [
       "Nightmare": 1
     },
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Topaz",
-      "ears": "Innocent Lamb",
-      "mouth": "Square Teeth",
-      "horn": "Beech",
-      "back": "Cupid",
-      "tail": "Bloodfin"
-    },
-    "morphGenesHex": "0x8000000000001000380e09082080000000300142861050a0003000428214408000100001800c0060003000c1080440200030008106044080002061010a10404",
+    "morphParts": null,
+    "morphGenesHex": "0x8000000000001000380e09082080000000300142861050a0003000c28214408000100001800c00600030010088044020003000c086044080002061010a10404",
     "level": 54
   },
   {
@@ -11366,15 +11191,8 @@ const AXIE_DATA = [
       "Nightmare": 1
     },
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Blossom",
-      "ears": "Innocent Lamb",
-      "mouth": "Silence Whisper",
-      "horn": "Leaf Bug",
-      "back": "Kingfisher",
-      "tail": "Cottontail"
-    },
-    "morphGenesHex": "0x8000000000001000080c0d0830800000003000c28a1450a0001000c2881420a000300001800c006000300043021840200030008286044060002060008a10308",
+    "morphParts": null,
+    "morphGenesHex": "0x8000000000001000080c0d0830800000003000c28a1450a0001000c2881420a000300001800c00600030004302184020003000c086044060002061010a10308",
     "level": 57
   },
   {
@@ -11395,15 +11213,8 @@ const AXIE_DATA = [
     "genesisTitle": "MEO II",
     "genesisParts": {},
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Gero",
-      "ears": "Inkling",
-      "mouth": "Piranha",
-      "horn": "Anemone",
-      "back": "Anemone",
-      "tail": "Nimo"
-    },
-    "morphGenesHex": "0x180000000000070001c10040840c000000030010200100080001001028a1020a000300102001820c000300102041410a0003001028a1400a0003001010a10408",
+    "morphParts": null,
+    "morphGenesHex": "0x180000000000070001c10040840c000000030004200100080001001028a1020a000300043001820c000300083041410a0003000020a1400a0003000c28a10408",
     "level": 53
   },
   {
@@ -11656,15 +11467,8 @@ const AXIE_DATA = [
       "Nightmare": 1
     },
     "isMorphed": true,
-    "morphParts": {
-      "eyes": "Gecko",
-      "ears": "Friezard",
-      "mouth": "Silence Whisper",
-      "horn": "Strawberry Shortcake",
-      "back": "Tri Spikes",
-      "tail": "Snake Jar"
-    },
-    "morphGenesHex": "0x2800000000000100020160b0020000000003001408a045020001000c2861440200030014104085040003000c206182020002061410a0c5060003001420004002",
+    "morphParts": null,
+    "morphGenesHex": "0x2800000000000100020160b0020000000003001008a045020001000c2861440200030014104085040003000c206182020002061418a0c5060003000818004002",
     "level": 54
   },
   {
@@ -13124,9 +12928,9 @@ const AXIE_DATA = [
       "Japanese": 2,
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x180000000000010003816000c30c00000002060c10a0810a0003000c104043020003000408a0c1020003018c106041040003018c10604506000300101860430a",
     "level": 60
   },
   {
@@ -13152,9 +12956,9 @@ const AXIE_DATA = [
       "Japanese": 1,
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x800000000000100020100b0830c00000002060c108042020003000c28604002000300101060c4060003001408a043060003018c100085060003001018404006",
     "level": 60
   },
   {
@@ -13180,9 +12984,9 @@ const AXIE_DATA = [
       "Xmas": 2,
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x800000000000100030000e0440c0000000302881040810800020600106140080003028c2821030a000300142881800800030004284104040003000c3061840c",
     "level": 60
   },
   {
@@ -16338,9 +16142,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Summer": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x10000000000001000341a030c400000000030010100042020003000c2841420a000300040840c4060003001408618406000203003000c10a000300101040c008",
     "level": 60
   },
   {
@@ -16490,9 +16294,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Summer": 2
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x80000000000000101c0e09083080000000003041000850a000300082020840a000300041000440c000203940880c108000003003061850a0003000c30004402",
     "level": 49
   },
   {
@@ -16604,9 +16408,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x18000000000001000380b010820c00000003000c0841030a0001000c286043020003000c304142080002060c184142080003000c2861830c0003001420218404",
     "level": 55
   },
   {
@@ -17214,9 +17018,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Shiny": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x90000000000001000281c020c21000000002068c10a0810800010008086042020003000c1860c306000300043061430a000300041060830a0003000c3021430c",
     "level": 60
   },
   {
@@ -17262,9 +17066,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x800000000000010001c0003082080000000300100880450800030010282103020003001008204202000300100800c402000300042021010c0002061010608404",
     "level": 60
   },
   {
@@ -17288,9 +17092,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x1000000000000100024120c0840800000003000810204408000300082841420a00030008184104040002060818418108000300083041820c0003000810a04402",
     "level": 60
   },
   {
@@ -17336,9 +17140,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x200000000000010000c1402043100000000300142881050a000300042881010a0003000018810008000300100880400800020610180144040003000008804404",
     "level": 60
   },
   {
@@ -17436,9 +17240,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x1800000000000100000080e08204000000030008104045080003000c280085020003000c30a180060002060c186043060003000c1860c40c0003000c10204304",
     "level": 60
   },
   {
@@ -17484,9 +17288,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x88000000000001000140a080c01000000003000c086044020001000c286141080003000018a141080002060c186083060003001420a102080003000c28208504",
     "level": 56
   },
   {
@@ -17584,9 +17388,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x18000000000001000140a0508208000000030008100140040003000028614008000300001800c0060002060c182143060003000c1860c3060003000c10608304",
     "level": 60
   },
   {
@@ -17610,9 +17414,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x90000000000001000381c050c20800000002060c10608304000300042021040a000300142800c304000300103081840c00010004102080060003000008808402",
     "level": 60
   },
   {
@@ -17636,9 +17440,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x8000000000001000141c000410800000002060c1060820a0001000420214202000300142820c50a000300042820850c0003000410208204000300042080c30c",
     "level": 56
   },
   {
@@ -17662,9 +17466,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x1000200e071030c00000003000020804008000100002801450a0003001008010402000300000800400c0003001030a143040002061010618004",
     "level": 56
   },
   {
@@ -17714,9 +17518,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x1800000000000100014160c0010c00000003000808a103020001000c280082040003000c2820c30a0002060c186084080003000c1040830c0003001010214506",
     "level": 60
   },
   {
@@ -17740,9 +17544,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x18000000000001000140a020820800000003000c206102040003000c28604302000300001800c0060003000c2061030a0002060c186103060003000008a04306",
     "level": 60
   },
   {
@@ -17766,9 +17570,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x18000000000001000300a050820800000003000c206100080003000c28614404000300001800c0060003000c206141040002060c1860c3060001000008a0c00a",
     "level": 57
   },
   {
@@ -17840,9 +17644,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x9000000000000100020100b0830400000003001408a045020003000c2861430a000300001860c2020003000c20a0430c00020614180045060003001428a1400c",
     "level": 60
   },
   {
@@ -18216,9 +18020,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x90000000000001000201c050c30c000000030010108081040001000c2861430a000300001800c1080002060c1800c3080003000c086043020003001420a10508",
     "level": 56
   },
   {
@@ -18308,9 +18112,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x180000000000010002412090820800000003000820414208000300082800420a000300102840c206000206041001040a000300083040820c000100081040800a",
     "level": 52
   },
   {
@@ -18578,9 +18382,9 @@ const AXIE_DATA = [
       "Mystic": 1,
       "Nightmare": 2
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x20000000000003000180c09104080000000300041060840200020604106041040002060c10204506000300041800420400030010088044040002009008008106",
     "level": 60
   },
   {
@@ -18600,9 +18404,9 @@ const AXIE_DATA = [
     "collectible": true,
     "genesisTitle": "ORIGIN",
     "genesisParts": {},
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x18000000000003000301a0608308000000030004084083040003000c086045040003001410a084060003000c1040c10600030004082081040003000018808106",
     "level": 60
   },
   {
@@ -18622,9 +18426,9 @@ const AXIE_DATA = [
     "collectible": true,
     "genesisTitle": "ORIGIN",
     "genesisParts": {},
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x2000000000000300000140c0c20c0000000300080860440200030010108081020003001418a043040003000418a0850400030000188044040003001018a0c306",
     "level": 60
   },
   {
@@ -18648,9 +18452,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Mystic": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x1800000000000300030180d1000800000003000c0820850200030008084084040003000c1820c004000200900880c0060003000c084040040003000c0840c106",
     "level": 60
   },
   {
@@ -18766,9 +18570,9 @@ const AXIE_DATA = [
     "collectible": true,
     "genesisTitle": "MEO II",
     "genesisParts": {},
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x1800000000000700030140b0840800000003000c282140080003000828a1000a0003000420a100080001000c28014208000300142041440c0003001020a14108",
     "level": 60
   },
   {
@@ -18788,9 +18592,9 @@ const AXIE_DATA = [
     "collectible": true,
     "genesisTitle": "MEO II",
     "genesisParts": {},
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x28000000000007000281004104080000000300102861010a0001000c28410108000300002821430c0003000c28018308000300002841040a000300002061000c",
     "level": 58
   },
   {
@@ -18810,9 +18614,9 @@ const AXIE_DATA = [
     "collectible": true,
     "genesisTitle": "MEO II",
     "genesisParts": {},
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x1800000000000700024040e0830c0000000300142061400a0003000c2801040a000300142081400a000300142081420c000300002881800c000300102881450c",
     "level": 60
   },
   {
@@ -19420,9 +19224,9 @@ const AXIE_DATA = [
     "collectible": true,
     "genesisTitle": "MEO II",
     "genesisParts": {},
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x200000000000070001012051031000000003000028a1440a0003001028a14008000300102801410a000300102861010a000300042841450a0001000020414108",
     "level": 56
   },
   {
@@ -19774,9 +19578,9 @@ const AXIE_DATA = [
     "collectible": true,
     "genesisTitle": "MEO II",
     "genesisParts": {},
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x100000000000070002810000c310000000030000200102080001000c2041400a000300082041040c0003000c28a10108000300082821000c000300002881840c",
     "level": 58
   },
   {
@@ -19802,9 +19606,9 @@ const AXIE_DATA = [
       "Shiny": 1,
       "Summer": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x20000000000001000240e090820800000002048410408302000203102081040a0001000820a0400c000300103061850a000100042801830c000300100841030c",
     "level": 54
   },
   {
@@ -19942,9 +19746,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x80000000000010002c04050820c00000003001428a1450a0001000428214104000300001800c3020003001028a181040003000c08a042040002061010808404",
     "level": 60
   },
   {
@@ -19968,9 +19772,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x10000000000001000240c0c08408000000030008204101080003000828410108000300081840c204000206081841820c000300083000c2080001000820408504",
     "level": 60
   },
   {
@@ -20068,9 +19872,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x200000000000010001e02000020c0000000206101080820a0003000428214208000300100880450c000300102881010c00030010208104080001001010a18404",
     "level": 53
   },
   {
@@ -20146,9 +19950,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x1800000000000100024000c0c31000000003000810408404000300002881440a00010000186181080002060c18a103040003000c2860c00a0003000408204502",
     "level": 60
   },
   {
@@ -20198,9 +20002,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x28000000000001000140a050830800000003001408a045020003001428a14004000300100880450c0002061418a1430c000300102081000a0001001010808502",
     "level": 60
   },
   {
@@ -20224,9 +20028,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x28000000000001000140a070c30c000000030014086105080003000c2821420a0003000c1860c20a0003000c30a0c5060002061418a0c2020003000c28808306",
     "level": 60
   },
   {
@@ -20250,9 +20054,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x200000000000010002412090840c000000030010088044080003001008a04504000300103081810a0003001020810408000100102860840a0002061010808008",
     "level": 60
   },
   {
@@ -20276,9 +20080,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x800000000000010001c1a0b08208000000020610108084040003001020a103080003001010808106000300103081840c000300103080c4060001001010808304",
     "level": 60
   },
   {
@@ -20354,9 +20158,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x90000000000001000241c0508408000000030004202144040001000c286143080003000018010306000206041020840c00030004106081060003001010008404",
     "level": 60
   },
   {
@@ -20380,9 +20184,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x80000000000001000340e00082080000000300101080810200030010208104080003001010808404000300103081840c000206101880c4060001001010808404",
     "level": 51
   },
   {
@@ -20458,9 +20262,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x280000000000010000800061021000000002061410a083080003000c28804202000300001840c006000300043000c50a0003000c086043040003001420610508",
     "level": 60
   },
   {
@@ -20484,9 +20288,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x1000000000000100014180610208000000030008084042020003000c2880830a000300001840450a0003000808a042020003000c104182080002061010808402",
     "level": 60
   },
   {
