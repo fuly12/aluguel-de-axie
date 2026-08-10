@@ -706,6 +706,8 @@ function renderGrid() {
     return true;
   });
 
+  items.sort((a, b) => (b.level ?? -1) - (a.level ?? -1));
+
   if (items.length === 0) {
     grid.innerHTML = `<div class="empty">${t("emptyMsg")}</div>`;
   }
