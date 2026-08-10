@@ -353,8 +353,8 @@ const PRICE_TABLE = [
   { labelKey: "shinyLabel", price: 4 },
   { labelKey: "Xmas2019", price: 4 },
   { labelKey: "Japan", price: 4 },
-  { labelKey: "MEO", price: 4 },
-  { labelKey: "Nightmare", price: 3 },
+  { labelKey: "MEO", price: 5 },
+  { labelKey: "Nightmare", price: 3.5 },
   { labelKey: "commonLabel", price: 1 },
 ];
 
