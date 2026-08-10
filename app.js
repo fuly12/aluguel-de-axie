@@ -48,18 +48,19 @@ const I18N = {
     statTotalLabel: "total",
     statAvailableLabel: "disponíveis",
     statRentedLabel: "alugados",
-    lockBtnLocked: "🔒 Editar",
-    lockBtnUnlocked: "🔓 Editando",
-    exportBtnLabel: "📋 Copiar alterações",
-    lockModalTitle: "🔒 Modo edição",
-    lockModalDesc: "Digite a senha para poder alterar o status de aluguel.",
+    lockBtnLocked: "🔒 Entrar",
+    lockBtnUnlocked: "🔓 Sair",
+    lockModalTitle: "🔒 Login de parceiro",
+    lockModalDesc: "Entre com seu e-mail e senha pra poder alterar o status de aluguel dos seus axies.",
+    loginEmailPlaceholder: "E-mail",
     lockPasswordPlaceholder: "Senha",
-    lockErrorText: "Senha incorreta.",
+    lockErrorText: "E-mail ou senha incorretos.",
     cancelBtn: "Cancelar",
     enterBtn: "Entrar",
-    exportModalTitle: "📋 Copiar alterações",
-    exportModalDesc: "Cole este texto numa mensagem para o Claude, pedindo para publicar as alterações.",
-    closeBtn: "Fechar",
+    myAccountLabel: "Minha conta",
+    commissionLabel: "Comissão",
+    adminLabel: "Admin",
+    ownerLabel: "Dono",
     tabStandard: "Padrão",
     tabMorph: "✨ Morfado",
     searchLabel: "Buscar por ID",
@@ -72,12 +73,10 @@ const I18N = {
     collectibleLabel: "Colecionável",
     showAllLabel: "Mostrar todos os axies não colecionáveis",
     emptyMsg: "Nenhum axie encontrado com esses filtros.",
-    footerText: 'O status de aluguel exibido é o que foi publicado por último. Alterações feitas aqui ficam só neste navegador até serem enviadas ao Claude com o botão "📋 Copiar alterações" e publicadas.',
-    toastLockedClick: "Somente o administrador pode alterar isso. Clique em 🔒 Editar.",
-    toastEditOn: "Modo edição ativado.",
-    toastEditOff: "Modo edição desativado.",
-    toastCopied: "Copiado! Agora é só colar no chat com o Claude.",
-    toastCopyFail: "Não consegui copiar automaticamente — selecione o texto e copie manualmente.",
+    footerText: "O status de aluguel é atualizado em tempo real. Faça login pra alterar o status dos seus próprios axies.",
+    toastLockedClick: "Você não tem permissão pra alterar esse axie.",
+    toastEditOn: "Login realizado.",
+    toastEditOff: "Sessão encerrada.",
     rentedUntilLabel: "Alugado até",
     tierRare: "Rara",
     tierEpic: "Épica",
@@ -107,18 +106,19 @@ const I18N = {
     statTotalLabel: "total",
     statAvailableLabel: "available",
     statRentedLabel: "rented",
-    lockBtnLocked: "🔒 Edit",
-    lockBtnUnlocked: "🔓 Editing",
-    exportBtnLabel: "📋 Copy changes",
-    lockModalTitle: "🔒 Edit mode",
-    lockModalDesc: "Enter the password to change the rental status.",
+    lockBtnLocked: "🔒 Log in",
+    lockBtnUnlocked: "🔓 Log out",
+    lockModalTitle: "🔒 Partner login",
+    lockModalDesc: "Sign in with your email and password to change the rental status of your axies.",
+    loginEmailPlaceholder: "Email",
     lockPasswordPlaceholder: "Password",
-    lockErrorText: "Incorrect password.",
+    lockErrorText: "Incorrect email or password.",
     cancelBtn: "Cancel",
     enterBtn: "Enter",
-    exportModalTitle: "📋 Copy changes",
-    exportModalDesc: "Paste this text in a message to Claude, asking to publish the changes.",
-    closeBtn: "Close",
+    myAccountLabel: "My account",
+    commissionLabel: "Commission",
+    adminLabel: "Admin",
+    ownerLabel: "Owner",
     tabStandard: "Standard",
     tabMorph: "✨ Morphed",
     searchLabel: "Search by ID",
@@ -131,12 +131,10 @@ const I18N = {
     collectibleLabel: "Collectible",
     showAllLabel: "Show all non-collectible axies",
     emptyMsg: "No axie found with these filters.",
-    footerText: 'The rental status shown is the last one published. Changes made here stay only in this browser until sent to Claude with the "📋 Copy changes" button and published.',
-    toastLockedClick: "Only the admin can change this. Click 🔒 Edit.",
-    toastEditOn: "Edit mode enabled.",
-    toastEditOff: "Edit mode disabled.",
-    toastCopied: "Copied! Now just paste it in the chat with Claude.",
-    toastCopyFail: "Couldn't copy automatically — select the text and copy it manually.",
+    footerText: "The rental status shown updates in real time. Log in to change the status of your own axies.",
+    toastLockedClick: "You don't have permission to change this axie.",
+    toastEditOn: "Logged in.",
+    toastEditOff: "Logged out.",
     rentedUntilLabel: "Rented until",
     tierRare: "Rare",
     tierEpic: "Epic",
@@ -166,18 +164,19 @@ const I18N = {
     statTotalLabel: "total",
     statAvailableLabel: "disponibles",
     statRentedLabel: "alquilados",
-    lockBtnLocked: "🔒 Editar",
-    lockBtnUnlocked: "🔓 Editando",
-    exportBtnLabel: "📋 Copiar cambios",
-    lockModalTitle: "🔒 Modo edición",
-    lockModalDesc: "Ingresa la contraseña para poder cambiar el estado del alquiler.",
+    lockBtnLocked: "🔒 Iniciar sesión",
+    lockBtnUnlocked: "🔓 Cerrar sesión",
+    lockModalTitle: "🔒 Acceso de socio",
+    lockModalDesc: "Ingresa tu correo y contraseña para poder cambiar el estado de alquiler de tus axies.",
+    loginEmailPlaceholder: "Correo electrónico",
     lockPasswordPlaceholder: "Contraseña",
-    lockErrorText: "Contraseña incorrecta.",
+    lockErrorText: "Correo o contraseña incorrectos.",
     cancelBtn: "Cancelar",
     enterBtn: "Entrar",
-    exportModalTitle: "📋 Copiar cambios",
-    exportModalDesc: "Pega este texto en un mensaje para Claude, pidiendo que publique los cambios.",
-    closeBtn: "Cerrar",
+    myAccountLabel: "Mi cuenta",
+    commissionLabel: "Comisión",
+    adminLabel: "Admin",
+    ownerLabel: "Dueño",
     tabStandard: "Estándar",
     tabMorph: "✨ Transformado",
     searchLabel: "Buscar por ID",
@@ -190,12 +189,10 @@ const I18N = {
     collectibleLabel: "Coleccionable",
     showAllLabel: "Mostrar todos los axies no coleccionables",
     emptyMsg: "No se encontró ningún axie con estos filtros.",
-    footerText: 'El estado de alquiler mostrado es el último publicado. Los cambios hechos aquí quedan solo en este navegador hasta que se envíen a Claude con el botón "📋 Copiar cambios" y se publiquen.',
-    toastLockedClick: "Solo el administrador puede cambiar esto. Haz clic en 🔒 Editar.",
-    toastEditOn: "Modo edición activado.",
-    toastEditOff: "Modo edición desactivado.",
-    toastCopied: "¡Copiado! Ahora solo pégalo en el chat con Claude.",
-    toastCopyFail: "No pude copiar automáticamente — selecciona el texto y cópialo manualmente.",
+    footerText: "El estado de alquiler se actualiza en tiempo real. Inicia sesión para cambiar el estado de tus propios axies.",
+    toastLockedClick: "No tienes permiso para cambiar este axie.",
+    toastEditOn: "Sesión iniciada.",
+    toastEditOff: "Sesión cerrada.",
     rentedUntilLabel: "Alquilado hasta",
     tierRare: "Rara",
     tierEpic: "Épica",
@@ -225,18 +222,19 @@ const I18N = {
     statTotalLabel: "kabuuan",
     statAvailableLabel: "magagamit",
     statRentedLabel: "inuupahan",
-    lockBtnLocked: "🔒 I-edit",
-    lockBtnUnlocked: "🔓 Ineedit",
-    exportBtnLabel: "📋 Kopyahin ang mga pagbabago",
-    lockModalTitle: "🔒 Mode ng pag-edit",
-    lockModalDesc: "Ilagay ang password para mabago ang status ng pag-arkila.",
+    lockBtnLocked: "🔒 Mag-login",
+    lockBtnUnlocked: "🔓 Mag-logout",
+    lockModalTitle: "🔒 Login ng partner",
+    lockModalDesc: "Mag-login gamit ang email at password para mabago ang status ng pag-arkila ng mga axie mo.",
+    loginEmailPlaceholder: "Email",
     lockPasswordPlaceholder: "Password",
-    lockErrorText: "Maling password.",
+    lockErrorText: "Mali ang email o password.",
     cancelBtn: "Kanselahin",
     enterBtn: "Pasukin",
-    exportModalTitle: "📋 Kopyahin ang mga pagbabago",
-    exportModalDesc: "I-paste ang tekstong ito sa isang mensahe kay Claude, hinihiling na i-publish ang mga pagbabago.",
-    closeBtn: "Isara",
+    myAccountLabel: "Aking account",
+    commissionLabel: "Komisyon",
+    adminLabel: "Admin",
+    ownerLabel: "May-ari",
     tabStandard: "Standard",
     tabMorph: "✨ Na-morph",
     searchLabel: "Maghanap gamit ang ID",
@@ -249,12 +247,10 @@ const I18N = {
     collectibleLabel: "Makokolekta",
     showAllLabel: "Ipakita lahat ng axies na hindi makokolekta",
     emptyMsg: "Walang nahanap na axie sa mga filter na ito.",
-    footerText: 'Ang status ng pag-arkila na ipinapakita ay ang huling na-publish. Ang mga pagbabagong ginawa dito ay nasa browser na ito lang hanggang ipadala kay Claude gamit ang button na "📋 Kopyahin ang mga pagbabago" at ma-publish.',
-    toastLockedClick: "Tanging ang admin lang ang makakapagbago nito. I-click ang 🔒 I-edit.",
-    toastEditOn: "Naka-on ang edit mode.",
-    toastEditOff: "Naka-off ang edit mode.",
-    toastCopied: "Nakopya! Ngayon i-paste na lang sa chat kay Claude.",
-    toastCopyFail: "Hindi awtomatikong nakopya — piliin ang teksto at kopyahin nang manu-mano.",
+    footerText: "Real-time ang status ng pag-arkila na ipinapakita. Mag-login para mabago ang status ng sarili mong mga axie.",
+    toastLockedClick: "Wala kang pahintulot na baguhin ang axie na ito.",
+    toastEditOn: "Naka-login na.",
+    toastEditOff: "Naka-logout na.",
     rentedUntilLabel: "Inuupahan hanggang",
     tierRare: "Bihira",
     tierEpic: "Epiko",
@@ -511,7 +507,7 @@ function saveState(state) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
 }
 
-let state = loadState();
+let renterState = loadState();
 let currentView = "standard";
 let morphRenderToken = 0;
 
@@ -520,15 +516,15 @@ AXIE_DATA.forEach((axie) => {
   AXIE_BY_ID[axie.id] = axie;
 });
 
-const EDIT_PASSWORD_HASH = "de3d43caad2bd3c4f0622fc60deecd06b34a0f25a80e30b81fe051a3c54799bb";
-const EDIT_SESSION_KEY = "aluguelAxieEditUnlocked";
-let editUnlocked = sessionStorage.getItem(EDIT_SESSION_KEY) === "true";
+const firebaseApp = firebase.initializeApp(FIREBASE_CONFIG);
+const auth = firebase.auth();
+const db = firebase.firestore();
 
-async function sha256Hex(str) {
-  const enc = new TextEncoder().encode(str);
-  const buf = await crypto.subtle.digest("SHA-256", enc);
-  return Array.from(new Uint8Array(buf)).map((b) => b.toString(16).padStart(2, "0")).join("");
-}
+let currentUser = null;
+let currentPartner = null;
+let isAdmin = false;
+let axieStatus = {};
+let statusUnsubscribe = null;
 
 function showToast(msg) {
   const toast = document.getElementById("toast");
@@ -540,23 +536,45 @@ function showToast(msg) {
   }, 2500);
 }
 
+function normalizeWallet(w) {
+  return (w || "").toLowerCase();
+}
+
+function canEditAxie(axie) {
+  if (!currentUser) return false;
+  if (isAdmin) return true;
+  if (!currentPartner) return false;
+  return normalizeWallet(currentPartner.walletAddress) === normalizeWallet(axie.ownerWallet);
+}
+
 function updateLockUI() {
   const lockBtn = document.getElementById("lockBtn");
-  lockBtn.textContent = editUnlocked ? t("lockBtnUnlocked") : t("lockBtnLocked");
-  lockBtn.classList.toggle("unlocked", editUnlocked);
-  document.body.classList.toggle("edit-locked", !editUnlocked);
-  document.getElementById("exportBtn").style.display = editUnlocked ? "inline-block" : "none";
-  document.getElementById("exportBtn").textContent = t("exportBtnLabel");
+  const accountInfo = document.getElementById("accountInfo");
+  lockBtn.textContent = currentUser ? t("lockBtnUnlocked") : t("lockBtnLocked");
+  lockBtn.classList.toggle("unlocked", !!currentUser);
+  document.body.classList.toggle("edit-locked", !currentUser);
+  if (currentUser) {
+    const name = currentPartner ? currentPartner.displayName : currentUser.email;
+    const roleLabel = isAdmin
+      ? t("adminLabel")
+      : `${t("commissionLabel")}: ${currentPartner ? currentPartner.commissionPercent : 0}%`;
+    accountInfo.textContent = `👤 ${name} · ${roleLabel}`;
+    accountInfo.style.display = "inline-block";
+  } else {
+    accountInfo.style.display = "none";
+  }
 }
 
 function openLockModal() {
   const modal = document.getElementById("lockModal");
+  const emailInput = document.getElementById("loginEmailInput");
   const input = document.getElementById("lockPasswordInput");
   const error = document.getElementById("lockError");
   error.style.display = "none";
+  emailInput.value = "";
   input.value = "";
   modal.style.display = "flex";
-  input.focus();
+  emailInput.focus();
 }
 
 function closeLockModal() {
@@ -564,82 +582,88 @@ function closeLockModal() {
 }
 
 async function tryUnlock() {
+  const emailInput = document.getElementById("loginEmailInput");
   const input = document.getElementById("lockPasswordInput");
   const error = document.getElementById("lockError");
-  const hash = await sha256Hex(input.value);
-  if (hash === EDIT_PASSWORD_HASH) {
-    editUnlocked = true;
-    sessionStorage.setItem(EDIT_SESSION_KEY, "true");
-    updateLockUI();
+  error.style.display = "none";
+  try {
+    await auth.signInWithEmailAndPassword(emailInput.value.trim(), input.value);
     closeLockModal();
-    showToast(t("toastEditOn"));
-    switchView();
-  } else {
+  } catch (e) {
     error.style.display = "block";
   }
 }
 
-function buildChangesPayload() {
-  const changes = {};
-  Object.keys(state).forEach((id) => {
-    const axie = AXIE_BY_ID[id];
-    if (!axie) return;
-    const entry = state[id];
-    const publishedRented = axie.rented || false;
-    const publishedTier = axie.rentedTier || 0;
-    if (!!entry.rented !== publishedRented || (entry.rentedTier || 0) !== publishedTier) {
-      changes[id] = { rented: !!entry.rented, rentedTier: entry.rentedTier || 0 };
-    }
-  });
-  return JSON.stringify(changes);
-}
-
-async function openExportModal() {
-  const json = buildChangesPayload();
-  const textarea = document.getElementById("exportTextarea");
-  textarea.value = json;
-  document.getElementById("exportModal").style.display = "flex";
-  textarea.focus();
-  textarea.select();
+async function loadPartnerProfile(user) {
+  const tokenResult = await user.getIdTokenResult();
+  isAdmin = tokenResult.claims.admin === true;
   try {
-    await navigator.clipboard.writeText(json);
-    showToast(t("toastCopied"));
+    const doc = await db.collection("partners").doc(user.uid).get();
+    currentPartner = doc.exists ? doc.data() : null;
   } catch (e) {
-    showToast(t("toastCopyFail"));
+    currentPartner = null;
   }
 }
 
-function closeExportModal() {
-  document.getElementById("exportModal").style.display = "none";
+function subscribeAxieStatus() {
+  if (statusUnsubscribe) return;
+  statusUnsubscribe = db.collection("axieStatus").onSnapshot(
+    (snapshot) => {
+      snapshot.docChanges().forEach((change) => {
+        const data = change.doc.data();
+        axieStatus[change.doc.id] = { rented: !!data.rented, rentedTier: data.rentedTier || 0 };
+      });
+      if (currentView !== "top100") renderGrid();
+    },
+    (err) => console.error("Erro ao ler status dos axies", err)
+  );
 }
+
+auth.onAuthStateChanged(async (user) => {
+  currentUser = user;
+  if (user) {
+    await loadPartnerProfile(user);
+  } else {
+    currentPartner = null;
+    isAdmin = false;
+  }
+  updateLockUI();
+  if (currentView !== "top100") renderGrid();
+});
+
+subscribeAxieStatus();
 
 function tierLabels() {
   return [t("tierRare"), t("tierEpic"), t("tierMystic"), t("tierFinal")];
 }
 
-function getEntry(id) {
-  if (!state[id]) {
-    const published = AXIE_BY_ID[id] || {};
-    state[id] = {
-      rented: published.rented || false,
-      rentedTier: published.rentedTier || 0,
-      renterName: "",
-    };
-  }
-  if (state[id].rentedTier === undefined) {
-    state[id].rentedTier = 0;
-  }
-  if (state[id].renterName === undefined) {
-    state[id].renterName = "";
-  }
-  return state[id];
+function getStatus(id) {
+  return axieStatus[id] || { rented: false, rentedTier: 0 };
 }
 
-function updateEntry(id, patch) {
-  const entry = getEntry(id);
-  Object.assign(entry, patch);
-  state[id] = entry;
-  saveState(state);
+function getRenterName(id) {
+  return (renterState[id] && renterState[id].renterName) || "";
+}
+
+function setRenterName(id, name) {
+  renterState[id] = { renterName: name };
+  saveState(renterState);
+}
+
+async function setRentalStatus(axie, rented, rentedTier) {
+  if (!canEditAxie(axie)) {
+    showToast(t("toastLockedClick"));
+    return false;
+  }
+  try {
+    await db.collection("axieStatus").doc(axie.id).update({ rented, rentedTier });
+    axieStatus[axie.id] = { rented, rentedTier };
+    return true;
+  } catch (e) {
+    console.error("Erro ao salvar status do axie", e);
+    showToast(t("toastLockedClick"));
+    return false;
+  }
 }
 
 function populateClassFilter() {
@@ -672,12 +696,12 @@ function renderGrid() {
   const showAll = document.getElementById("filterShowAll").checked;
 
   let items = AXIE_DATA.filter((axie) => {
-    const entry = getEntry(axie.id);
+    const status = getStatus(axie.id);
     if (!showAll && !axie.collectible) return false;
     if (searchId && !axie.id.includes(searchId)) return false;
     if (filterClass && axie.class !== filterClass) return false;
-    if (filterStatus === "disponivel" && entry.rented) return false;
-    if (filterStatus === "alugado" && !entry.rented) return false;
+    if (filterStatus === "disponivel" && status.rented) return false;
+    if (filterStatus === "alugado" && !status.rented) return false;
     if (filterCollectibleTag && !axieHasCollectibleTag(axie, filterCollectibleTag)) return false;
     return true;
   });
@@ -790,17 +814,18 @@ function populateCollectibleFilter() {
     });
 }
 
-function tierRowHtml(entry, axieId) {
+function tierRowHtml(axie, status) {
+  const editable = canEditAxie(axie);
   const items = tierLabels().map((label, i) => {
     const tier = i + 1;
-    const filled = entry.rentedTier >= tier;
+    const filled = status.rentedTier >= tier;
     return `<div class="tier-item ${filled ? "filled" : ""}" data-tier="${tier}" title="${label}">
       <span class="tier-dot"></span>
       <span class="tier-label">${label}</span>
     </div>`;
   }).join("");
-  const renterField = editUnlocked
-    ? `<input type="text" class="renter-input" data-axie-id="${axieId}" placeholder="${t("renterNamePlaceholder")}" value="${escapeHtml(entry.renterName)}">`
+  const renterField = editable
+    ? `<input type="text" class="renter-input" data-axie-id="${axie.id}" placeholder="${t("renterNamePlaceholder")}" value="${escapeHtml(getRenterName(axie.id))}">`
     : "";
   return `
     <div class="card-row tier-row-label">
@@ -824,14 +849,17 @@ function morphPartsHtml(axie) {
 }
 
 function buildCard(axie) {
-  const entry = getEntry(axie.id);
+  const status = getStatus(axie.id);
 
   const card = document.createElement("div");
-  card.className = "card " + (entry.rented ? "alugado" : "disponivel");
+  card.className = "card " + (status.rented ? "alugado" : "disponivel");
 
   const badgeClass = CLASS_CLASS_MAP[axie.class] || "c-mech";
 
   const isMorphView = currentView === "morph" && axie.isMorphed;
+
+  const ownerName = typeof PARTNER_NAMES !== "undefined" ? PARTNER_NAMES[normalizeWallet(axie.ownerWallet)] : null;
+  const showOwnerBadge = typeof PARTNER_NAMES !== "undefined" && Object.keys(PARTNER_NAMES).length > 1 && ownerName;
 
   card.innerHTML = `
     <div class="card-photo">
@@ -845,61 +873,58 @@ function buildCard(axie) {
       <div class="card-id">#${axie.id}</div>
       <span class="class-badge" style="background: var(--${badgeClass})">${axie.class || "?"}</span>
     </div>
+    ${showOwnerBadge ? `<div class="owner-badge">${t("ownerLabel")}: ${escapeHtml(ownerName)}</div>` : ""}
     ${collectibleTagsHtml(axie)}
     ${currentView === "morph" ? morphPartsHtml(axie) : ""}
 
-    <div class="status-toggle ${entry.rented ? "alugado" : "disponivel"}">
+    <div class="status-toggle ${status.rented ? "alugado" : "disponivel"}">
       <span class="dot"></span>
-      <span class="status-label">${entry.rented ? t("optRented") : t("optAvailable")}</span>
+      <span class="status-label">${status.rented ? t("optRented") : t("optAvailable")}</span>
     </div>
 
-    ${tierRowHtml(entry, axie.id)}
+    ${tierRowHtml(axie, status)}
   `;
 
   const renterInput = card.querySelector(".renter-input");
   if (renterInput) {
     renterInput.addEventListener("input", (e) => {
-      updateEntry(axie.id, { renterName: e.target.value });
+      setRenterName(axie.id, e.target.value);
     });
   }
 
   function refreshCardVisual() {
-    const e = getEntry(axie.id);
-    card.className = "card " + (e.rented ? "alugado" : "disponivel");
+    const s = getStatus(axie.id);
+    card.className = "card " + (s.rented ? "alugado" : "disponivel");
     const toggleEl = card.querySelector(".status-toggle");
-    toggleEl.className = "status-toggle " + (e.rented ? "alugado" : "disponivel");
-    toggleEl.querySelector(".status-label").textContent = e.rented ? t("optRented") : t("optAvailable");
+    toggleEl.className = "status-toggle " + (s.rented ? "alugado" : "disponivel");
+    toggleEl.querySelector(".status-label").textContent = s.rented ? t("optRented") : t("optAvailable");
     card.querySelectorAll(".tier-item").forEach((item) => {
       const tier = Number(item.dataset.tier);
-      item.classList.toggle("filled", e.rentedTier >= tier);
+      item.classList.toggle("filled", s.rentedTier >= tier);
     });
     updateStats();
   }
 
   const toggle = card.querySelector(".status-toggle");
-  toggle.addEventListener("click", () => {
-    if (!editUnlocked) {
+  toggle.addEventListener("click", async () => {
+    if (!canEditAxie(axie)) {
       showToast(t("toastLockedClick"));
       return;
     }
-    const e = getEntry(axie.id);
-    if (e.rented) {
-      updateEntry(axie.id, { rented: false, rentedTier: 0 });
-    } else {
-      updateEntry(axie.id, { rented: true, rentedTier: 1 });
-    }
-    refreshCardVisual();
+    const s = getStatus(axie.id);
+    const ok = s.rented ? await setRentalStatus(axie, false, 0) : await setRentalStatus(axie, true, 1);
+    if (ok) refreshCardVisual();
   });
 
   card.querySelectorAll(".tier-item").forEach((item) => {
-    item.addEventListener("click", () => {
-      if (!editUnlocked) {
+    item.addEventListener("click", async () => {
+      if (!canEditAxie(axie)) {
         showToast(t("toastLockedClick"));
         return;
       }
       const tier = Number(item.dataset.tier);
-      updateEntry(axie.id, { rented: true, rentedTier: tier });
-      refreshCardVisual();
+      const ok = await setRentalStatus(axie, true, tier);
+      if (ok) refreshCardVisual();
     });
   });
 
@@ -912,7 +937,7 @@ function updateStats() {
   const total = visibleAxies.length;
   let alugados = 0;
   visibleAxies.forEach((axie) => {
-    if (getEntry(axie.id).rented) alugados++;
+    if (getStatus(axie.id).rented) alugados++;
   });
   document.getElementById("statTotal").textContent = total;
   document.getElementById("statAlugado").textContent = alugados;
@@ -951,12 +976,9 @@ function init() {
   updateLockUI();
 
   document.getElementById("lockBtn").addEventListener("click", () => {
-    if (editUnlocked) {
-      editUnlocked = false;
-      sessionStorage.removeItem(EDIT_SESSION_KEY);
-      updateLockUI();
+    if (currentUser) {
+      auth.signOut();
       showToast(t("toastEditOff"));
-      switchView();
     } else {
       openLockModal();
     }
@@ -967,14 +989,11 @@ function init() {
   document.getElementById("lockPasswordInput").addEventListener("keydown", (e) => {
     if (e.key === "Enter") tryUnlock();
   });
+  document.getElementById("loginEmailInput").addEventListener("keydown", (e) => {
+    if (e.key === "Enter") tryUnlock();
+  });
   document.getElementById("lockModal").addEventListener("click", (e) => {
     if (e.target.id === "lockModal") closeLockModal();
-  });
-
-  document.getElementById("exportBtn").addEventListener("click", openExportModal);
-  document.getElementById("exportClose").addEventListener("click", closeExportModal);
-  document.getElementById("exportModal").addEventListener("click", (e) => {
-    if (e.target.id === "exportModal") closeExportModal();
   });
 
   switchView();

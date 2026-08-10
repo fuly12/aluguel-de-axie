@@ -248,6 +248,29 @@ body {
   border-color: var(--green);
 }
 
+.account-info {
+  background: #1a2233;
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.owner-badge {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin: 2px 0;
+}
+
+#lockModal input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px;
+}
+
 .edit-locked .status-toggle,
 .edit-locked .tier-item {
   cursor: default;

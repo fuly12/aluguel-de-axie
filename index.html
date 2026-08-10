@@ -22,7 +22,7 @@
     <span id="statDisponivel">0</span> <span data-i18n="statAvailableLabel"></span> ·
     <span id="statAlugado">0</span> <span data-i18n="statRentedLabel"></span>
   </div>
-  <button id="exportBtn" class="lock-btn" style="display:none" data-i18n="exportBtnLabel"></button>
+  <div id="accountInfo" class="account-info" style="display:none"></div>
   <button id="lockBtn" class="lock-btn"></button>
 </header>
 
@@ -54,22 +54,12 @@
   <div class="modal-box">
     <h3 data-i18n="lockModalTitle"></h3>
     <p data-i18n="lockModalDesc"></p>
-    <input type="password" id="lockPasswordInput" data-i18n-placeholder="lockPasswordPlaceholder">
+    <input type="email" id="loginEmailInput" data-i18n-placeholder="loginEmailPlaceholder" autocomplete="username">
+    <input type="password" id="lockPasswordInput" data-i18n-placeholder="lockPasswordPlaceholder" autocomplete="current-password">
     <div class="modal-error" id="lockError" style="display:none" data-i18n="lockErrorText"></div>
     <div class="modal-actions">
       <button id="lockCancel" class="modal-btn secondary" data-i18n="cancelBtn"></button>
       <button id="lockConfirm" class="modal-btn primary" data-i18n="enterBtn"></button>
-    </div>
-  </div>
-</div>
-
-<div id="exportModal" class="modal-overlay" style="display:none">
-  <div class="modal-box">
-    <h3 data-i18n="exportModalTitle"></h3>
-    <p data-i18n="exportModalDesc"></p>
-    <textarea id="exportTextarea" readonly rows="6"></textarea>
-    <div class="modal-actions">
-      <button id="exportClose" class="modal-btn primary" data-i18n="closeBtn"></button>
     </div>
   </div>
 </div>
@@ -139,6 +129,11 @@
 <script src="axie-renderer.bundle.js"></script>
 <script src="data.js"></script>
 <script src="top100.js"></script>
+<script src="partners.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
