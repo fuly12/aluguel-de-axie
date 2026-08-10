@@ -30,9 +30,7 @@ const AXIE_DATA = [
       "tail": "Rice"
     },
     "morphGenesHex": "0x20000000000003000180e041040800000003000008208502000300082000400200030008082084060003000c106081040002060810808006000300001080c306",
-    "level": 60,
-    "rented": true,
-    "rentedTier": 4
+    "level": 60
   },
   {
     "id": "1789",
@@ -65,9 +63,7 @@ const AXIE_DATA = [
       "tail": "Ant"
     },
     "morphGenesHex": "0x1800000000000300000180410308000000030010108045020003000c284040020002060c2060c106000206042820c406000206042000c1020003000408604302",
-    "level": 60,
-    "rented": true,
-    "rentedTier": 4
+    "level": 60
   },
   {
     "id": "1876",
@@ -96,9 +92,7 @@ const AXIE_DATA = [
       "tail": "Koi"
     },
     "morphGenesHex": "0x30001004021040c0000000300002060440400010000288040020003000808008402000300102840840600030000106085020003001008a04506",
-    "level": 52,
-    "rented": true,
-    "rentedTier": 4
+    "level": 52
   },
   {
     "id": "2635",
@@ -127,9 +121,7 @@ const AXIE_DATA = [
       "tail": "Nimo"
     },
     "morphGenesHex": "0x200000000000030001014070c41000000001001020a0830400010010104044020003001020808506000300102040840600030010288082020003001010a08404",
-    "level": 49,
-    "rented": true,
-    "rentedTier": 4
+    "level": 49
   },
   {
     "id": "4437",
@@ -158,9 +150,7 @@ const AXIE_DATA = [
       "tail": "Ranchu"
     },
     "morphGenesHex": "0x1000000000000500034100c084080000000300101041050a000300002881000a0003000018a1020c000300081041840c000300101001800c000300102081800a",
-    "level": 60,
-    "rented": true,
-    "rentedTier": 4
+    "level": 60
   },
   {
     "id": "4619",
@@ -189,9 +179,7 @@ const AXIE_DATA = [
       "tail": "Navaga"
     },
     "morphGenesHex": "0x2800000000000500030040c0c208000000030014104105080003001410810208000300040801040c0003000c18814408000300142861400a0003001028a1820a",
-    "level": 60,
-    "rented": true,
-    "rentedTier": 3
+    "level": 60
   },
   {
     "id": "4908",
@@ -220,9 +208,7 @@ const AXIE_DATA = [
       "tail": "Nimo"
     },
     "morphGenesHex": "0x1800000000000500020140200308000000030010202140080001000020a104080003001020a1400a000300102061440c0001001028a18008000100101001430a",
-    "level": 41,
-    "rented": false,
-    "rentedTier": 0
+    "level": 41
   },
   {
     "id": "34937",
@@ -251,9 +237,7 @@ const AXIE_DATA = [
       "tail": "Potato Leaf"
     },
     "morphGenesHex": "0x1800000000000700010040b0c1100000000300042001420800030000280145080003000c2041820a000300042881440a000100042001430a0003000c28814408",
-    "level": 52,
-    "rented": true,
-    "rentedTier": 4
+    "level": 52
   },
   {
     "id": "46497",
@@ -282,9 +266,7 @@ const AXIE_DATA = [
       "tail": "Nimo"
     },
     "morphGenesHex": "0x70002404060c20c00000003001020a1400a000100002801030a000300102021440c000300102081840a0003001028214408000300101061400a",
-    "level": 51,
-    "rented": false,
-    "rentedTier": 0
+    "level": 51
   },
   {
     "id": "46502",
@@ -313,9 +295,7 @@ const AXIE_DATA = [
       "tail": "Nimo"
     },
     "morphGenesHex": "0x800000000000700018120d0800c0000000300102081000a00030000204104080003001020a14008000300102061810a0001001028610508000300101081040a",
-    "level": 51,
-    "rented": false,
-    "rentedTier": 0
+    "level": 51
   },
   {
     "id": "48742",
@@ -337,9 +317,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "88047",
@@ -365,9 +343,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 40,
-    "rented": false,
-    "rentedTier": 0
+    "level": 40
   },
   {
     "id": "134390",
@@ -393,9 +369,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 30,
-    "rented": false,
-    "rentedTier": 0
+    "level": 30
   },
   {
     "id": "138292",
@@ -421,9 +395,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 54,
-    "rented": false,
-    "rentedTier": 0
+    "level": 54
   },
   {
     "id": "210750",
@@ -445,9 +417,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "221366",
@@ -480,9 +450,7 @@ const AXIE_DATA = [
       "tail": "Nimo"
     },
     "morphGenesHex": "0x1000000000000100000120c0820c0000000300102040430a000300001041400a0001000408810006000300102000c2020003019028410506000100101041420a",
-    "level": 49,
-    "rented": false,
-    "rentedTier": 0
+    "level": 49
   },
   {
     "id": "237489",
@@ -504,9 +472,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "248420",
@@ -528,9 +494,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 20,
-    "rented": false,
-    "rentedTier": 0
+    "level": 20
   },
   {
     "id": "276818",
@@ -565,9 +529,7 @@ const AXIE_DATA = [
       "tail": "Cottontail"
     },
     "morphGenesHex": "0x180000000000010001419010830c00000003000c2821020400030194286043020002060c1040420a00030008082183040003018c10618102000100000860c306",
-    "level": 50,
-    "rented": false,
-    "rentedTier": 0
+    "level": 50
   },
   {
     "id": "317566",
@@ -589,9 +551,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 19
   },
   {
     "id": "363299",
@@ -613,9 +573,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "410306",
@@ -637,9 +595,29 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
+  },
+  {
+    "id": "410306",
+    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-mavis",
+      "ears": "ears-beetle-spike",
+      "mouth": "mouth-nut-cracker",
+      "horn": "horn-rose-bud",
+      "back": "back-jaguar",
+      "tail": "tail-potato-leaf"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [],
+    "collectible": false,
+    "genesisTitle": null,
+    "genesisParts": {},
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 9
   },
   {
     "id": "454659",
@@ -665,9 +643,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 40,
-    "rented": false,
-    "rentedTier": 0
+    "level": 40
   },
   {
     "id": "553543",
@@ -689,9 +665,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 20,
-    "rented": false,
-    "rentedTier": 0
+    "level": 20
   },
   {
     "id": "555046",
@@ -717,9 +691,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 51,
-    "rented": false,
-    "rentedTier": 0
+    "level": 51
   },
   {
     "id": "577232",
@@ -741,9 +713,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "601657",
@@ -765,9 +735,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "620460",
@@ -789,9 +757,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "797565",
@@ -813,9 +779,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "820392",
@@ -837,9 +801,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "912968",
@@ -861,9 +823,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "915300",
@@ -885,9 +845,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "945159",
@@ -909,9 +867,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "952220",
@@ -933,9 +889,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "952525",
@@ -961,9 +915,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 56,
-    "rented": false,
-    "rentedTier": 0
+    "level": 56
   },
   {
     "id": "957193",
@@ -985,9 +937,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 1,
-    "rented": false,
-    "rentedTier": 0
+    "level": 1
   },
   {
     "id": "987686",
@@ -1009,9 +959,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 41,
-    "rented": false,
-    "rentedTier": 0
+    "level": 41
   },
   {
     "id": "1022623",
@@ -1037,9 +985,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 57,
-    "rented": false,
-    "rentedTier": 0
+    "level": 57
   },
   {
     "id": "1102811",
@@ -1061,9 +1007,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1119489",
@@ -1085,9 +1029,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1161482",
@@ -1109,9 +1051,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1162261",
@@ -1133,9 +1073,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1229435",
@@ -1157,9 +1095,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 17,
-    "rented": false,
-    "rentedTier": 0
+    "level": 17
   },
   {
     "id": "1240240",
@@ -1181,9 +1117,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1338940",
@@ -1205,9 +1139,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1409772",
@@ -1229,9 +1161,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1409909",
@@ -1253,9 +1183,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1417786",
@@ -1277,9 +1205,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1477717",
@@ -1301,9 +1227,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1485447",
@@ -1325,9 +1249,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1514225",
@@ -1349,9 +1271,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1535955",
@@ -1373,9 +1293,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1547633",
@@ -1397,9 +1315,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1599575",
@@ -1421,9 +1337,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1599642",
@@ -1445,9 +1359,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1638400",
@@ -1469,9 +1381,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1653385",
@@ -1493,9 +1403,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1658988",
@@ -1517,9 +1425,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 20,
-    "rented": false,
-    "rentedTier": 0
+    "level": 20
   },
   {
     "id": "1673758",
@@ -1541,9 +1447,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1710203",
@@ -1565,9 +1469,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1752741",
@@ -1589,9 +1491,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1791611",
@@ -1613,9 +1513,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "1940659",
@@ -1637,9 +1535,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 19
   },
   {
     "id": "1949499",
@@ -1661,9 +1557,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 19
   },
   {
     "id": "2035356",
@@ -1685,9 +1579,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 20,
-    "rented": false,
-    "rentedTier": 0
+    "level": 20
   },
   {
     "id": "2077625",
@@ -1709,9 +1601,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "2205940",
@@ -1733,9 +1623,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "2237551",
@@ -1757,9 +1645,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "2240492",
@@ -1781,9 +1667,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "2253336",
@@ -1805,9 +1689,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "2273247",
@@ -1829,9 +1711,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 7,
-    "rented": false,
-    "rentedTier": 0
+    "level": 7
   },
   {
     "id": "2320756",
@@ -1853,9 +1733,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "2324671",
@@ -1877,9 +1755,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "2345123",
@@ -1901,9 +1777,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "2413066",
@@ -1925,9 +1799,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "2429037",
@@ -1949,9 +1821,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 7,
-    "rented": false,
-    "rentedTier": 0
+    "level": 7
   },
   {
     "id": "2465411",
@@ -1977,9 +1847,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 45,
-    "rented": false,
-    "rentedTier": 0
+    "level": 45
   },
   {
     "id": "2481232",
@@ -2001,9 +1869,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "2488958",
@@ -2025,9 +1891,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "2513348",
@@ -2049,9 +1913,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 6,
-    "rented": false,
-    "rentedTier": 0
+    "level": 6
   },
   {
     "id": "2519772",
@@ -2073,9 +1935,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 20,
-    "rented": false,
-    "rentedTier": 0
+    "level": 20
   },
   {
     "id": "2528386",
@@ -2097,9 +1957,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "2534316",
@@ -2121,9 +1979,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 20,
-    "rented": false,
-    "rentedTier": 0
+    "level": 20
   },
   {
     "id": "2535837",
@@ -2145,9 +2001,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "2611850",
@@ -2169,9 +2023,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "2615068",
@@ -2193,9 +2045,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "2641068",
@@ -2217,9 +2067,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 19
   },
   {
     "id": "2781232",
@@ -2241,9 +2089,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "2789696",
@@ -2265,9 +2111,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "2868636",
@@ -2289,9 +2133,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "2904658",
@@ -2313,9 +2155,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 19
   },
   {
     "id": "2913503",
@@ -2337,9 +2177,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 44,
-    "rented": false,
-    "rentedTier": 0
+    "level": 44
   },
   {
     "id": "2923345",
@@ -2361,9 +2199,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "2960460",
@@ -2385,9 +2221,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "2987034",
@@ -2409,9 +2243,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3004317",
@@ -2433,9 +2265,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3054117",
@@ -2457,9 +2287,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3114973",
@@ -2481,9 +2309,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 1,
-    "rented": false,
-    "rentedTier": 0
+    "level": 1
   },
   {
     "id": "3131975",
@@ -2505,9 +2331,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3164291",
@@ -2529,9 +2353,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3232108",
@@ -2553,9 +2375,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3250042",
@@ -2581,9 +2401,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 37,
-    "rented": false,
-    "rentedTier": 0
+    "level": 37
   },
   {
     "id": "3319399",
@@ -2605,9 +2423,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3344545",
@@ -2629,9 +2445,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3371101",
@@ -2657,9 +2471,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 42,
-    "rented": false,
-    "rentedTier": 0
+    "level": 42
   },
   {
     "id": "3391638",
@@ -2681,9 +2493,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3445276",
@@ -2705,9 +2515,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 19
   },
   {
     "id": "3495516",
@@ -2729,9 +2537,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3539743",
@@ -2753,9 +2559,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3542459",
@@ -2777,9 +2581,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3596810",
@@ -2801,9 +2603,29 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
+  },
+  {
+    "id": "3596810",
+    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-lucas",
+      "ears": "ears-lotus",
+      "mouth": "mouth-serious",
+      "horn": "horn-shoal-star",
+      "back": "back-pumpkin",
+      "tail": "tail-carrot"
+    },
+    "bodyShape": "Fuzzy",
+    "specialGenes": [],
+    "collectible": false,
+    "genesisTitle": null,
+    "genesisParts": {},
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 9
   },
   {
     "id": "3602420",
@@ -2825,9 +2647,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3602420",
@@ -2849,9 +2669,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3639131",
@@ -2873,9 +2691,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3642216",
@@ -2897,9 +2713,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3644684",
@@ -2921,9 +2735,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3651770",
@@ -2945,9 +2757,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3654295",
@@ -2969,9 +2779,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3673896",
@@ -2993,9 +2801,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 5,
-    "rented": false,
-    "rentedTier": 0
+    "level": 5
   },
   {
     "id": "3684522",
@@ -3017,9 +2823,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 6,
-    "rented": false,
-    "rentedTier": 0
+    "level": 6
   },
   {
     "id": "3699526",
@@ -3041,9 +2845,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 7,
-    "rented": false,
-    "rentedTier": 0
+    "level": 7
   },
   {
     "id": "3702647",
@@ -3065,9 +2867,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3713787",
@@ -3089,9 +2889,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3792040",
@@ -3113,9 +2911,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3806066",
@@ -3137,9 +2933,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 1,
-    "rented": false,
-    "rentedTier": 0
+    "level": 1
   },
   {
     "id": "3838754",
@@ -3161,9 +2955,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "3845610",
@@ -3185,9 +2977,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4009558",
@@ -3209,9 +2999,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4052162",
@@ -3233,9 +3021,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4071169",
@@ -3257,9 +3043,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4091069",
@@ -3281,9 +3065,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 19
   },
   {
     "id": "4120828",
@@ -3305,9 +3087,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4121933",
@@ -3329,9 +3109,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4129850",
@@ -3353,9 +3131,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4157339",
@@ -3377,9 +3153,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4191213",
@@ -3401,9 +3175,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4244219",
@@ -3425,9 +3197,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4310173",
@@ -3449,9 +3219,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4348582",
@@ -3473,9 +3241,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4375402",
@@ -3501,9 +3267,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 44,
-    "rented": false,
-    "rentedTier": 0
+    "level": 44
   },
   {
     "id": "4387374",
@@ -3525,9 +3289,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4465509",
@@ -3549,9 +3311,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 39,
-    "rented": false,
-    "rentedTier": 0
+    "level": 39
   },
   {
     "id": "4502689",
@@ -3573,9 +3333,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4542710",
@@ -3597,9 +3355,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 3,
-    "rented": false,
-    "rentedTier": 0
+    "level": 3
   },
   {
     "id": "4563324",
@@ -3621,9 +3377,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4628129",
@@ -3645,9 +3399,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4634581",
@@ -3669,9 +3421,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4642487",
@@ -3693,9 +3443,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4642487",
@@ -3717,9 +3465,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4652426",
@@ -3741,9 +3487,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4795825",
@@ -3765,9 +3509,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4943411",
@@ -3789,9 +3531,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4967624",
@@ -3813,9 +3553,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4968946",
@@ -3837,9 +3575,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4971743",
@@ -3861,9 +3597,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "4995302",
@@ -3885,9 +3619,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 19
   },
   {
     "id": "5009787",
@@ -3913,9 +3645,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 46,
-    "rented": false,
-    "rentedTier": 0
+    "level": 46
   },
   {
     "id": "5038221",
@@ -3937,9 +3667,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5062624",
@@ -3961,9 +3689,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5109530",
@@ -3985,9 +3711,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5121189",
@@ -4009,9 +3733,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5194647",
@@ -4033,9 +3755,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 19
   },
   {
     "id": "5204863",
@@ -4057,9 +3777,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 1,
-    "rented": false,
-    "rentedTier": 0
+    "level": 1
   },
   {
     "id": "5210821",
@@ -4081,9 +3799,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5217590",
@@ -4105,9 +3821,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5226449",
@@ -4129,9 +3843,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 19
   },
   {
     "id": "5251137",
@@ -4153,9 +3865,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5270685",
@@ -4177,9 +3887,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 19
   },
   {
     "id": "5283878",
@@ -4201,9 +3909,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5305682",
@@ -4225,9 +3931,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 20,
-    "rented": false,
-    "rentedTier": 0
+    "level": 20
   },
   {
     "id": "5443931",
@@ -4249,9 +3953,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5478184",
@@ -4273,9 +3975,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5485713",
@@ -4297,9 +3997,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 19
   },
   {
     "id": "5562404",
@@ -4321,9 +4019,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 3,
-    "rented": false,
-    "rentedTier": 0
+    "level": 3
   },
   {
     "id": "5579812",
@@ -4345,9 +4041,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5656743",
@@ -4369,9 +4063,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5669361",
@@ -4393,9 +4085,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5682974",
@@ -4417,9 +4107,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5700267",
@@ -4441,9 +4129,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5711649",
@@ -4469,9 +4155,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 49,
-    "rented": false,
-    "rentedTier": 0
+    "level": 49
   },
   {
     "id": "5744390",
@@ -4493,9 +4177,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5745371",
@@ -4517,9 +4199,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5764604",
@@ -4541,9 +4221,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 19
   },
   {
     "id": "5779084",
@@ -4565,9 +4243,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5912472",
@@ -4589,9 +4265,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5920501",
@@ -4613,9 +4287,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 7,
-    "rented": false,
-    "rentedTier": 0
+    "level": 7
   },
   {
     "id": "5958135",
@@ -4637,9 +4309,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5958247",
@@ -4661,9 +4331,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "5998302",
@@ -4685,9 +4353,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6005900",
@@ -4709,9 +4375,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6017152",
@@ -4733,9 +4397,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 19
   },
   {
     "id": "6084548",
@@ -4757,9 +4419,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 10,
-    "rented": false,
-    "rentedTier": 0
+    "level": 10
   },
   {
     "id": "6153228",
@@ -4781,9 +4441,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6185500",
@@ -4805,9 +4463,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 3,
-    "rented": false,
-    "rentedTier": 0
+    "level": 3
   },
   {
     "id": "6190375",
@@ -4829,9 +4485,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6190399",
@@ -4853,9 +4507,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 45,
-    "rented": false,
-    "rentedTier": 0
+    "level": 45
   },
   {
     "id": "6313117",
@@ -4877,9 +4529,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6338070",
@@ -4901,9 +4551,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6360664",
@@ -4925,9 +4573,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6376460",
@@ -4949,9 +4595,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6388109",
@@ -4973,9 +4617,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6393690",
@@ -4997,9 +4639,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6447141",
@@ -5021,9 +4661,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6510847",
@@ -5045,9 +4683,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6574345",
@@ -5069,9 +4705,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6607642",
@@ -5093,9 +4727,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6646730",
@@ -5117,9 +4749,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6662080",
@@ -5141,9 +4771,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6696625",
@@ -5165,9 +4793,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6781245",
@@ -5189,9 +4815,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6785679",
@@ -5213,9 +4837,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6786427",
@@ -5237,9 +4859,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6795422",
@@ -5261,9 +4881,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6821317",
@@ -5285,9 +4903,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6864456",
@@ -5309,9 +4925,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6893798",
@@ -5333,9 +4947,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6932189",
@@ -5357,9 +4969,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "6946824",
@@ -5381,9 +4991,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 21,
-    "rented": false,
-    "rentedTier": 0
+    "level": 21
   },
   {
     "id": "7028307",
@@ -5405,9 +5013,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "7085326",
@@ -5429,9 +5035,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 20,
-    "rented": false,
-    "rentedTier": 0
+    "level": 20
   },
   {
     "id": "7092256",
@@ -5453,9 +5057,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "7169743",
@@ -5477,9 +5079,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "7190618",
@@ -5501,9 +5101,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "7210436",
@@ -5525,33 +5123,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
-  },
-  {
-    "id": "7247414",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-blossom",
-      "ears": "ears-leafy",
-      "mouth": "mouth-serious",
-      "horn": "horn-leaf-bug",
-      "back": "back-pumpkin",
-      "tail": "tail-carrot"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "7275801",
@@ -5577,9 +5149,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 46,
-    "rented": false,
-    "rentedTier": 0
+    "level": 46
   },
   {
     "id": "7312866",
@@ -5601,9 +5171,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "7370860",
@@ -5625,9 +5193,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 20,
-    "rented": false,
-    "rentedTier": 0
+    "level": 20
   },
   {
     "id": "7410308",
@@ -5649,9 +5215,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 5,
-    "rented": false,
-    "rentedTier": 0
+    "level": 5
   },
   {
     "id": "7431870",
@@ -5673,9 +5237,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "7483456",
@@ -5697,9 +5259,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 29,
-    "rented": false,
-    "rentedTier": 0
+    "level": 29
   },
   {
     "id": "7613608",
@@ -5721,9 +5281,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "7620976",
@@ -5745,9 +5303,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "7667391",
@@ -5769,9 +5325,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "7689035",
@@ -5793,9 +5347,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 23,
-    "rented": false,
-    "rentedTier": 0
+    "level": 23
   },
   {
     "id": "7697601",
@@ -5817,9 +5369,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "7703910",
@@ -5841,9 +5391,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "7713081",
@@ -5869,9 +5417,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 51,
-    "rented": false,
-    "rentedTier": 0
+    "level": 51
   },
   {
     "id": "7794631",
@@ -5893,9 +5439,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "7811186",
@@ -5917,9 +5461,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 20,
-    "rented": false,
-    "rentedTier": 0
+    "level": 20
   },
   {
     "id": "7883024",
@@ -5941,9 +5483,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "7914291",
@@ -5965,9 +5505,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 20,
-    "rented": false,
-    "rentedTier": 0
+    "level": 20
   },
   {
     "id": "7923781",
@@ -5989,9 +5527,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 3,
-    "rented": false,
-    "rentedTier": 0
+    "level": 3
   },
   {
     "id": "7964106",
@@ -6013,9 +5549,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "7977597",
@@ -6037,9 +5571,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8011074",
@@ -6065,9 +5597,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 51,
-    "rented": false,
-    "rentedTier": 0
+    "level": 51
   },
   {
     "id": "8050960",
@@ -6089,9 +5619,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8071979",
@@ -6113,9 +5641,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8087219",
@@ -6137,9 +5663,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8139480",
@@ -6161,9 +5685,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8151130",
@@ -6185,9 +5707,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8174436",
@@ -6209,9 +5729,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8189365",
@@ -6233,9 +5751,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8207297",
@@ -6257,9 +5773,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 20,
-    "rented": false,
-    "rentedTier": 0
+    "level": 20
   },
   {
     "id": "8210468",
@@ -6285,9 +5799,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 45,
-    "rented": false,
-    "rentedTier": 0
+    "level": 45
   },
   {
     "id": "8309242",
@@ -6313,9 +5825,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 50,
-    "rented": false,
-    "rentedTier": 0
+    "level": 50
   },
   {
     "id": "8322000",
@@ -6337,9 +5847,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8348594",
@@ -6361,9 +5869,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8411980",
@@ -6385,9 +5891,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8495194",
@@ -6409,9 +5913,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8547784",
@@ -6433,9 +5935,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8582577",
@@ -6457,9 +5957,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8585368",
@@ -6481,9 +5979,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8590644",
@@ -6505,9 +6001,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8621834",
@@ -6529,9 +6023,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8621941",
@@ -6553,9 +6045,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 7,
-    "rented": false,
-    "rentedTier": 0
+    "level": 7
   },
   {
     "id": "8634120",
@@ -6577,9 +6067,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8644810",
@@ -6601,9 +6089,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8675005",
@@ -6625,9 +6111,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8704946",
@@ -6649,9 +6133,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8710961",
@@ -6673,9 +6155,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 44,
-    "rented": false,
-    "rentedTier": 0
+    "level": 44
   },
   {
     "id": "8802297",
@@ -6697,9 +6177,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8882291",
@@ -6721,9 +6199,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "8911405",
@@ -6745,9 +6221,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9023542",
@@ -6780,9 +6254,7 @@ const AXIE_DATA = [
       "tail": "Hot Butt"
     },
     "morphGenesHex": "0x100000000000010002412090830c00000003000c10404402000300081040820400010004084042060003001408414202000300082840c10a0002060c3040c20c",
-    "level": 54,
-    "rented": false,
-    "rentedTier": 0
+    "level": 54
   },
   {
     "id": "9064226",
@@ -6804,9 +6276,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9096183",
@@ -6828,9 +6298,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9112381",
@@ -6852,9 +6320,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9145416",
@@ -6880,9 +6346,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 38,
-    "rented": false,
-    "rentedTier": 0
+    "level": 38
   },
   {
     "id": "9149014",
@@ -6904,9 +6368,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 45,
-    "rented": false,
-    "rentedTier": 0
+    "level": 45
   },
   {
     "id": "9193332",
@@ -6928,9 +6390,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9205580",
@@ -6952,9 +6412,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9206705",
@@ -6976,9 +6434,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9255463",
@@ -7000,9 +6456,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9266731",
@@ -7024,9 +6478,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9288037",
@@ -7048,9 +6500,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9320748",
@@ -7072,9 +6522,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9325183",
@@ -7096,9 +6544,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9368798",
@@ -7120,9 +6566,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9381986",
@@ -7144,9 +6588,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9398891",
@@ -7168,9 +6610,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9407070",
@@ -7192,9 +6632,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9420330",
@@ -7220,9 +6658,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 44,
-    "rented": false,
-    "rentedTier": 0
+    "level": 44
   },
   {
     "id": "9472579",
@@ -7244,9 +6680,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9514915",
@@ -7268,9 +6702,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 10,
-    "rented": false,
-    "rentedTier": 0
+    "level": 10
   },
   {
     "id": "9613100",
@@ -7292,9 +6724,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9659048",
@@ -7320,9 +6750,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 46,
-    "rented": false,
-    "rentedTier": 0
+    "level": 46
   },
   {
     "id": "9668457",
@@ -7344,9 +6772,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9681272",
@@ -7368,9 +6794,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9689831",
@@ -7392,9 +6816,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9714587",
@@ -7416,9 +6838,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9722127",
@@ -7440,9 +6860,29 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
+  },
+  {
+    "id": "9722127",
+    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
+    "class": "Aquatic",
+    "parts": {
+      "eyes": "eyes-gero",
+      "ears": "ears-tiny-fan",
+      "mouth": "mouth-goda",
+      "horn": "horn-anemone",
+      "back": "back-anemone",
+      "tail": "tail-gerbil"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [],
+    "collectible": false,
+    "genesisTitle": null,
+    "genesisParts": {},
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 9
   },
   {
     "id": "9736387",
@@ -7464,9 +6904,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9736646",
@@ -7488,9 +6926,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9738164",
@@ -7512,9 +6948,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 44,
-    "rented": false,
-    "rentedTier": 0
+    "level": 44
   },
   {
     "id": "9751101",
@@ -7536,9 +6970,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9766963",
@@ -7560,9 +6992,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9784998",
@@ -7584,9 +7014,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9791201",
@@ -7608,9 +7036,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9792281",
@@ -7632,9 +7058,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9792281",
@@ -7656,9 +7080,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9795593",
@@ -7680,9 +7102,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9815713",
@@ -7708,9 +7128,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 43,
-    "rented": false,
-    "rentedTier": 0
+    "level": 43
   },
   {
     "id": "9829493",
@@ -7732,9 +7150,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9891030",
@@ -7756,9 +7172,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9891236",
@@ -7780,9 +7194,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9902909",
@@ -7804,9 +7216,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 20,
-    "rented": false,
-    "rentedTier": 0
+    "level": 20
   },
   {
     "id": "9905766",
@@ -7828,9 +7238,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9907196",
@@ -7852,9 +7260,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9911844",
@@ -7876,9 +7282,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9937091",
@@ -7900,9 +7304,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9963788",
@@ -7924,9 +7326,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9996362",
@@ -7948,9 +7348,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "9996886",
@@ -7972,9 +7370,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10019767",
@@ -7996,9 +7392,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10021114",
@@ -8020,9 +7414,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10039042",
@@ -8044,9 +7436,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10041943",
@@ -8068,9 +7458,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10053910",
@@ -8092,9 +7480,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10090029",
@@ -8116,9 +7502,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10105602",
@@ -8140,9 +7524,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10105705",
@@ -8164,9 +7546,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10105775",
@@ -8188,9 +7568,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10123748",
@@ -8212,9 +7590,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10144966",
@@ -8236,9 +7612,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10153873",
@@ -8260,9 +7634,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10165474",
@@ -8284,9 +7656,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 44,
-    "rented": false,
-    "rentedTier": 0
+    "level": 44
   },
   {
     "id": "10197304",
@@ -8308,9 +7678,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10209692",
@@ -8332,9 +7700,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10210472",
@@ -8356,9 +7722,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10241723",
@@ -8380,9 +7744,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 29,
-    "rented": false,
-    "rentedTier": 0
+    "level": 29
   },
   {
     "id": "10244254",
@@ -8404,9 +7766,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 46,
-    "rented": false,
-    "rentedTier": 0
+    "level": 46
   },
   {
     "id": "10257429",
@@ -8428,9 +7788,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10284258",
@@ -8452,9 +7810,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10306597",
@@ -8476,9 +7832,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10374125",
@@ -8500,9 +7854,29 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 19
+  },
+  {
+    "id": "10374125",
+    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-confused",
+      "ears": "ears-clover",
+      "mouth": "mouth-serious",
+      "horn": "horn-cactus",
+      "back": "back-pumpkin",
+      "tail": "tail-hot-butt"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [],
+    "collectible": false,
+    "genesisTitle": null,
+    "genesisParts": {},
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 19
   },
   {
     "id": "10384969",
@@ -8524,9 +7898,29 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
+  },
+  {
+    "id": "10384969",
+    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-confused",
+      "ears": "ears-hollow",
+      "mouth": "mouth-serious",
+      "horn": "horn-cactus",
+      "back": "back-pumpkin",
+      "tail": "tail-carrot"
+    },
+    "bodyShape": "Spiky",
+    "specialGenes": [],
+    "collectible": false,
+    "genesisTitle": null,
+    "genesisParts": {},
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 9
   },
   {
     "id": "10388526",
@@ -8548,9 +7942,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10437274",
@@ -8572,9 +7964,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 39,
-    "rented": false,
-    "rentedTier": 0
+    "level": 39
   },
   {
     "id": "10451798",
@@ -8596,9 +7986,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10470395",
@@ -8620,9 +8008,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10473455",
@@ -8644,9 +8030,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10473455",
@@ -8668,9 +8052,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10474707",
@@ -8696,9 +8078,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 47,
-    "rented": false,
-    "rentedTier": 0
+    "level": 47
   },
   {
     "id": "10485117",
@@ -8720,9 +8100,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10497333",
@@ -8744,9 +8122,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10514832",
@@ -8768,9 +8144,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 31,
-    "rented": false,
-    "rentedTier": 0
+    "level": 31
   },
   {
     "id": "10525296",
@@ -8792,9 +8166,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10584330",
@@ -8816,9 +8188,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10592391",
@@ -8840,9 +8210,29 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
+  },
+  {
+    "id": "10592391",
+    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-confused",
+      "ears": "ears-hollow",
+      "mouth": "mouth-serious",
+      "horn": "horn-cactus",
+      "back": "back-bidens",
+      "tail": "tail-cattail"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [],
+    "collectible": false,
+    "genesisTitle": null,
+    "genesisParts": {},
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 9
   },
   {
     "id": "10605968",
@@ -8864,9 +8254,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10627597",
@@ -8888,9 +8276,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10627747",
@@ -8912,9 +8298,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10670115",
@@ -8936,9 +8320,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 39,
-    "rented": false,
-    "rentedTier": 0
+    "level": 39
   },
   {
     "id": "10692658",
@@ -8960,9 +8342,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 19
   },
   {
     "id": "10709775",
@@ -8984,9 +8364,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 19
   },
   {
     "id": "10710193",
@@ -9008,9 +8386,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10715774",
@@ -9032,9 +8408,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10747335",
@@ -9056,9 +8430,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10747954",
@@ -9080,9 +8452,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10748101",
@@ -9104,9 +8474,29 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
+  },
+  {
+    "id": "10748101",
+    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-papi",
+      "ears": "ears-lotus",
+      "mouth": "mouth-zigzag",
+      "horn": "horn-cactus",
+      "back": "back-bidens",
+      "tail": "tail-hot-butt"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [],
+    "collectible": false,
+    "genesisTitle": null,
+    "genesisParts": {},
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 9
   },
   {
     "id": "10768608",
@@ -9128,9 +8518,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10768608",
@@ -9152,9 +8540,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10784474",
@@ -9176,9 +8562,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 1,
-    "rented": false,
-    "rentedTier": 0
+    "level": 1
   },
   {
     "id": "10797933",
@@ -9200,9 +8584,29 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 19
+  },
+  {
+    "id": "10797933",
+    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
+    "class": "Aquatic",
+    "parts": {
+      "eyes": "eyes-clear",
+      "ears": "ears-inkling",
+      "mouth": "mouth-lam",
+      "horn": "horn-lagging",
+      "back": "back-anemone",
+      "tail": "tail-nimo"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [],
+    "collectible": false,
+    "genesisTitle": null,
+    "genesisParts": {},
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 19
   },
   {
     "id": "10809308",
@@ -9224,9 +8628,29 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
+  },
+  {
+    "id": "10935609",
+    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
+    "class": "Aquatic",
+    "parts": {
+      "eyes": "eyes-neo",
+      "ears": "ears-risky-bird",
+      "mouth": "mouth-lam",
+      "horn": "horn-pocky",
+      "back": "back-balloon",
+      "tail": "tail-feather-fan"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [],
+    "collectible": false,
+    "genesisTitle": null,
+    "genesisParts": {},
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 9
   },
   {
     "id": "10966195",
@@ -9248,9 +8672,29 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
+  },
+  {
+    "id": "10966195",
+    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-clear",
+      "ears": "ears-lotus",
+      "mouth": "mouth-zigzag",
+      "horn": "horn-cactus",
+      "back": "back-bidens",
+      "tail": "tail-hot-butt"
+    },
+    "bodyShape": "Bigyak",
+    "specialGenes": [],
+    "collectible": false,
+    "genesisTitle": null,
+    "genesisParts": {},
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 9
   },
   {
     "id": "10976897",
@@ -9272,9 +8716,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "10987064",
@@ -9296,9 +8738,29 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
+  },
+  {
+    "id": "10987064",
+    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-papi",
+      "ears": "ears-clover",
+      "mouth": "mouth-serious",
+      "horn": "horn-cactus",
+      "back": "back-pumpkin",
+      "tail": "tail-hatsune"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [],
+    "collectible": false,
+    "genesisTitle": null,
+    "genesisParts": {},
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 9
   },
   {
     "id": "11011930",
@@ -9320,9 +8782,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11030847",
@@ -9344,9 +8804,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11051587",
@@ -9368,9 +8826,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11053604",
@@ -9392,9 +8848,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11058078",
@@ -9416,9 +8870,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11060080",
@@ -9440,9 +8892,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11066302",
@@ -9464,33 +8914,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
-  },
-  {
-    "id": "11077880",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Aquatic",
-    "parts": {
-      "eyes": "eyes-puppy",
-      "ears": "ears-bubblemaker",
-      "mouth": "mouth-risky-fish",
-      "horn": "horn-oranda",
-      "back": "back-blue-moon",
-      "tail": "tail-hatsune"
-    },
-    "bodyShape": "Wetdog",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11107659",
@@ -9512,9 +8936,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11136065",
@@ -9536,9 +8958,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11150182",
@@ -9560,9 +8980,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 19
   },
   {
     "id": "11181919",
@@ -9584,9 +9002,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11200171",
@@ -9612,33 +9028,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 42,
-    "rented": false,
-    "rentedTier": 0
-  },
-  {
-    "id": "11204280",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Aquatic",
-    "parts": {
-      "eyes": "eyes-telescope",
-      "ears": "ears-nimo",
-      "mouth": "mouth-piranha",
-      "horn": "horn-oranda",
-      "back": "back-blue-moon",
-      "tail": "tail-swallow"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 42
   },
   {
     "id": "11281195",
@@ -9660,9 +9050,29 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
+  },
+  {
+    "id": "11281195",
+    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
+    "class": "Aquatic",
+    "parts": {
+      "eyes": "eyes-clear",
+      "ears": "ears-gill",
+      "mouth": "mouth-piranha",
+      "horn": "horn-scaly-spoon",
+      "back": "back-blue-moon",
+      "tail": "tail-koi"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [],
+    "collectible": false,
+    "genesisTitle": null,
+    "genesisParts": {},
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 9
   },
   {
     "id": "11290295",
@@ -9684,9 +9094,29 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
+  },
+  {
+    "id": "11290295",
+    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-confused",
+      "ears": "ears-clover",
+      "mouth": "mouth-serious",
+      "horn": "horn-cactus",
+      "back": "back-pumpkin",
+      "tail": "tail-carrot"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [],
+    "collectible": false,
+    "genesisTitle": null,
+    "genesisParts": {},
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 9
   },
   {
     "id": "11292582",
@@ -9708,21 +9138,19 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
-    "id": "11295684",
+    "id": "11292582",
     "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
+    "class": "Reptile",
     "parts": {
-      "eyes": "eyes-topaz",
+      "eyes": "eyes-gero",
       "ears": "ears-lotus",
-      "mouth": "mouth-serious",
-      "horn": "horn-cactus",
-      "back": "back-pumpkin",
-      "tail": "tail-carrot"
+      "mouth": "mouth-tiny-turtle",
+      "horn": "horn-lagging",
+      "back": "back-jaguar",
+      "tail": "tail-cloud"
     },
     "bodyShape": "Normal",
     "specialGenes": [],
@@ -9732,9 +9160,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11295726",
@@ -9756,9 +9182,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11297201",
@@ -9780,23 +9204,21 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
-    "id": "11297399",
+    "id": "11297201",
     "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
     "class": "Plant",
     "parts": {
-      "eyes": "eyes-papi",
+      "eyes": "eyes-confused",
       "ears": "ears-lotus",
-      "mouth": "mouth-serious",
-      "horn": "horn-cactus",
-      "back": "back-watering-can",
-      "tail": "tail-carrot"
+      "mouth": "mouth-axie-kiss",
+      "horn": "horn-feather-spear",
+      "back": "back-pumpkin",
+      "tail": "tail-hot-butt"
     },
-    "bodyShape": "Fuzzy",
+    "bodyShape": "Wetdog",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -9804,9 +9226,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11297440",
@@ -9828,9 +9248,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11297475",
@@ -9852,9 +9270,29 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
+  },
+  {
+    "id": "11297475",
+    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
+    "class": "Plant",
+    "parts": {
+      "eyes": "eyes-papi",
+      "ears": "ears-lotus",
+      "mouth": "mouth-serious",
+      "horn": "horn-cactus",
+      "back": "back-pumpkin",
+      "tail": "tail-carrot"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [],
+    "collectible": false,
+    "genesisTitle": null,
+    "genesisParts": {},
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 9
   },
   {
     "id": "11297837",
@@ -9876,9 +9314,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11297880",
@@ -9900,33 +9336,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
-  },
-  {
-    "id": "11298324",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-papi",
-      "ears": "ears-clover",
-      "mouth": "mouth-serious",
-      "horn": "horn-cactus",
-      "back": "back-pumpkin",
-      "tail": "tail-hatsune"
-    },
-    "bodyShape": "Bigyak",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11299441",
@@ -9952,9 +9362,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 38,
-    "rented": false,
-    "rentedTier": 0
+    "level": 38
   },
   {
     "id": "11299980",
@@ -9976,9 +9384,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11300457",
@@ -10000,20 +9406,18 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
-    "id": "11301226",
+    "id": "11300457",
     "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
     "class": "Plant",
     "parts": {
       "eyes": "eyes-confused",
-      "ears": "ears-pogona",
-      "mouth": "mouth-little-owl",
+      "ears": "ears-owl",
+      "mouth": "mouth-serious",
       "horn": "horn-cactus",
-      "back": "back-hermit",
+      "back": "back-bidens",
       "tail": "tail-carrot"
     },
     "bodyShape": "Normal",
@@ -10024,9 +9428,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11303040",
@@ -10048,9 +9450,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11311482",
@@ -10072,9 +9472,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11311497",
@@ -10096,9 +9494,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11324474",
@@ -10120,57 +9516,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
-  },
-  {
-    "id": "11338944",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-little-owl",
-      "ears": "ears-lotus",
-      "mouth": "mouth-serious",
-      "horn": "horn-cactus",
-      "back": "back-pumpkin",
-      "tail": "tail-carrot"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
-  },
-  {
-    "id": "11347688",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-papi",
-      "ears": "ears-lotus",
-      "mouth": "mouth-zigzag",
-      "horn": "horn-cactus",
-      "back": "back-pumpkin",
-      "tail": "tail-carrot"
-    },
-    "bodyShape": "Fuzzy",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11354271",
@@ -10192,9 +9538,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11386344",
@@ -10216,9 +9560,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11387813",
@@ -10244,9 +9586,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 43,
-    "rented": false,
-    "rentedTier": 0
+    "level": 43
   },
   {
     "id": "11389099",
@@ -10272,9 +9612,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 18,
-    "rented": false,
-    "rentedTier": 0
+    "level": 18
   },
   {
     "id": "11419767",
@@ -10300,37 +9638,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 54,
-    "rented": false,
-    "rentedTier": 0
-  },
-  {
-    "id": "11419767",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Reptile",
-    "parts": {
-      "eyes": "eyes-mavis",
-      "ears": "ears-peace-maker",
-      "mouth": "mouth-kotaro",
-      "horn": "horn-scaly-spoon",
-      "back": "back-tri-spikes",
-      "tail": "tail-evil-eye-2"
-    },
-    "bodyShape": "Fuzzy",
-    "specialGenes": [
-      "Nightmare"
-    ],
-    "collectible": true,
-    "genesisTitle": null,
-    "genesisParts": {
-      "Nightmare": 1
-    },
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 54,
-    "rented": false,
-    "rentedTier": 0
+    "level": 54
   },
   {
     "id": "11435149",
@@ -10352,9 +9660,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11436719",
@@ -10382,9 +9688,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 47,
-    "rented": false,
-    "rentedTier": 0
+    "level": 47
   },
   {
     "id": "11439635",
@@ -10406,9 +9710,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 3,
-    "rented": false,
-    "rentedTier": 0
+    "level": 3
   },
   {
     "id": "11445757",
@@ -10434,9 +9736,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 43,
-    "rented": false,
-    "rentedTier": 0
+    "level": 43
   },
   {
     "id": "11450938",
@@ -10458,81 +9758,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 20,
-    "rented": false,
-    "rentedTier": 0
-  },
-  {
-    "id": "11451989",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-papi",
-      "ears": "ears-belieber",
-      "mouth": "mouth-serious",
-      "horn": "horn-cactus",
-      "back": "back-pumpkin",
-      "tail": "tail-carrot"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
-  },
-  {
-    "id": "11463170",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Aquatic",
-    "parts": {
-      "eyes": "eyes-clear",
-      "ears": "ears-beetle-spike",
-      "mouth": "mouth-risky-fish",
-      "horn": "horn-caterpillars",
-      "back": "back-goldfish",
-      "tail": "tail-nimo"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
-  },
-  {
-    "id": "11473623",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-little-peas",
-      "ears": "ears-lotus",
-      "mouth": "mouth-serious",
-      "horn": "horn-cactus",
-      "back": "back-pumpkin",
-      "tail": "tail-carrot"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 20
   },
   {
     "id": "11506025",
@@ -10567,33 +9793,7 @@ const AXIE_DATA = [
       "tail": "Cloud"
     },
     "morphGenesHex": "0x28000000000000018140a050c41000000003001408a102040001000c28a1450400030014304083040002060c18a105080002069410a0c5060003000820a0400c",
-    "level": 60,
-    "rented": false,
-    "rentedTier": 0
-  },
-  {
-    "id": "11536214",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-confused",
-      "ears": "ears-clover",
-      "mouth": "mouth-serious",
-      "horn": "horn-cactus",
-      "back": "back-pumpkin",
-      "tail": "tail-carrot"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 60
   },
   {
     "id": "11539891",
@@ -10615,9 +9815,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 13,
-    "rented": false,
-    "rentedTier": 0
+    "level": 13
   },
   {
     "id": "11554699",
@@ -10643,9 +9841,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 46,
-    "rented": false,
-    "rentedTier": 0
+    "level": 46
   },
   {
     "id": "11562943",
@@ -10667,9 +9863,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11596067",
@@ -10691,9 +9885,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 39,
-    "rented": false,
-    "rentedTier": 0
+    "level": 39
   },
   {
     "id": "11602225",
@@ -10715,9 +9907,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 10,
-    "rented": false,
-    "rentedTier": 0
+    "level": 10
   },
   {
     "id": "11607809",
@@ -10743,9 +9933,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 41,
-    "rented": false,
-    "rentedTier": 0
+    "level": 41
   },
   {
     "id": "11607841",
@@ -10771,9 +9959,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 47,
-    "rented": false,
-    "rentedTier": 0
+    "level": 47
   },
   {
     "id": "11638147",
@@ -10802,9 +9988,7 @@ const AXIE_DATA = [
       "tail": "Nimo"
     },
     "morphGenesHex": "0x18000000000007000240a050840c0000000100102001020a0001000028814008000100102001050c0001001020014208000300102881450a0003001010010508",
-    "level": 35,
-    "rented": false,
-    "rentedTier": 0
+    "level": 35
   },
   {
     "id": "11650469",
@@ -10830,9 +10014,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 56,
-    "rented": false,
-    "rentedTier": 0
+    "level": 56
   },
   {
     "id": "11677185",
@@ -10858,9 +10040,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 43,
-    "rented": false,
-    "rentedTier": 0
+    "level": 43
   },
   {
     "id": "11679590",
@@ -10882,9 +10062,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 10,
-    "rented": false,
-    "rentedTier": 0
+    "level": 10
   },
   {
     "id": "11685553",
@@ -10906,9 +10084,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 10,
-    "rented": false,
-    "rentedTier": 0
+    "level": 10
   },
   {
     "id": "11696000",
@@ -10934,9 +10110,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 52,
-    "rented": false,
-    "rentedTier": 0
+    "level": 52
   },
   {
     "id": "11698700",
@@ -10962,9 +10136,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 45,
-    "rented": false,
-    "rentedTier": 0
+    "level": 45
   },
   {
     "id": "11700160",
@@ -10990,9 +10162,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 45,
-    "rented": false,
-    "rentedTier": 0
+    "level": 45
   },
   {
     "id": "11703217",
@@ -11018,9 +10188,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 51,
-    "rented": false,
-    "rentedTier": 0
+    "level": 51
   },
   {
     "id": "11704754",
@@ -11046,9 +10214,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 43,
-    "rented": false,
-    "rentedTier": 0
+    "level": 43
   },
   {
     "id": "11720748",
@@ -11074,9 +10240,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 46,
-    "rented": false,
-    "rentedTier": 0
+    "level": 46
   },
   {
     "id": "11721328",
@@ -11102,9 +10266,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 45,
-    "rented": false,
-    "rentedTier": 0
+    "level": 45
   },
   {
     "id": "11743388",
@@ -11130,9 +10292,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 49,
-    "rented": false,
-    "rentedTier": 0
+    "level": 49
   },
   {
     "id": "11744782",
@@ -11158,9 +10318,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 46,
-    "rented": false,
-    "rentedTier": 0
+    "level": 46
   },
   {
     "id": "11751068",
@@ -11193,9 +10351,7 @@ const AXIE_DATA = [
       "tail": "Nimo"
     },
     "morphGenesHex": "0x80000000000001000080c040c30800000003001428a1450a00030008202142080001000018808006000206100821410800030004200105040003001010808404",
-    "level": 52,
-    "rented": false,
-    "rentedTier": 0
+    "level": 52
   },
   {
     "id": "11789052",
@@ -11221,9 +10377,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 52,
-    "rented": false,
-    "rentedTier": 0
+    "level": 52
   },
   {
     "id": "11814895",
@@ -11249,33 +10403,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 51,
-    "rented": false,
-    "rentedTier": 0
-  },
-  {
-    "id": "11838570",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-scar",
-      "ears": "ears-tiny-fan",
-      "mouth": "mouth-doubletalk",
-      "horn": "horn-bamboo-shoot",
-      "back": "back-tri-feather",
-      "tail": "tail-potato-leaf"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 51
   },
   {
     "id": "11844634",
@@ -11297,9 +10425,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "11858236",
@@ -11321,9 +10447,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19,
-    "rented": false,
-    "rentedTier": 0
+    "level": 19
   },
   {
     "id": "11872931",
@@ -11349,9 +10473,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 51,
-    "rented": false,
-    "rentedTier": 0
+    "level": 51
   },
   {
     "id": "11873847",
@@ -11377,9 +10499,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 46,
-    "rented": false,
-    "rentedTier": 0
+    "level": 46
   },
   {
     "id": "11909872",
@@ -11401,9 +10521,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 42,
-    "rented": false,
-    "rentedTier": 0
+    "level": 42
   },
   {
     "id": "11921575",
@@ -11425,33 +10543,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 49,
-    "rented": false,
-    "rentedTier": 0
-  },
-  {
-    "id": "11932235",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-gecko",
-      "ears": "ears-zen",
-      "mouth": "mouth-piranha",
-      "horn": "horn-bamboo-shoot",
-      "back": "back-sponge",
-      "tail": "tail-feather-fan"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 49
   },
   {
     "id": "11937265",
@@ -11473,9 +10565,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 52,
-    "rented": false,
-    "rentedTier": 0
+    "level": 52
   },
   {
     "id": "11965469",
@@ -11497,9 +10587,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 8,
-    "rented": false,
-    "rentedTier": 0
+    "level": 8
   },
   {
     "id": "11991092",
@@ -11532,9 +10620,7 @@ const AXIE_DATA = [
       "tail": "Ranchu"
     },
     "morphGenesHex": "0x1000281209102100000000300042040400a0002061010808404000300043021810a0003000828214406000300081020c506000300102080c00c",
-    "level": 60,
-    "rented": false,
-    "rentedTier": 0
+    "level": 60
   },
   {
     "id": "11992788",
@@ -11560,9 +10646,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 53,
-    "rented": false,
-    "rentedTier": 0
+    "level": 53
   },
   {
     "id": "12000337",
@@ -11584,9 +10668,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 55,
-    "rented": false,
-    "rentedTier": 0
+    "level": 55
   },
   {
     "id": "12001170",
@@ -11612,9 +10694,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 42,
-    "rented": false,
-    "rentedTier": 0
+    "level": 42
   },
   {
     "id": "12008114",
@@ -11647,9 +10727,33 @@ const AXIE_DATA = [
       "tail": "Cloud"
     },
     "morphGenesHex": "0x10000000000001000100a09044080000000300081040850200020600284080080001000808804402000300082841420600030008106081080003000820410208",
-    "level": 54,
-    "rented": false,
-    "rentedTier": 0
+    "level": 54
+  },
+  {
+    "id": "12009239",
+    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
+    "class": "Dusk",
+    "parts": {
+      "eyes": "eyes-chubby",
+      "ears": "ears-pink-cheek",
+      "mouth": "mouth-axie-kiss",
+      "horn": "horn-killah-clamp-2",
+      "back": "back-cupid-2",
+      "tail": "tail-gerbil"
+    },
+    "bodyShape": "Normal",
+    "specialGenes": [
+      "Nightmare"
+    ],
+    "collectible": true,
+    "genesisTitle": null,
+    "genesisParts": {
+      "Nightmare": 1
+    },
+    "isMorphed": false,
+    "morphParts": null,
+    "morphGenesHex": null,
+    "level": 40
   },
   {
     "id": "12017932",
@@ -11675,9 +10779,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 51,
-    "rented": false,
-    "rentedTier": 0
+    "level": 51
   },
   {
     "id": "12019341",
@@ -11710,44 +10812,7 @@ const AXIE_DATA = [
       "tail": "Cloud"
     },
     "morphGenesHex": "0x100000000000010002602091020c000000030004204082020002060c28a0800a0001000c20808406000300082880400c000300081020420c000300082021400a",
-    "level": 52,
-    "rented": false,
-    "rentedTier": 0
-  },
-  {
-    "id": "12019341",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Bird",
-    "parts": {
-      "eyes": "eyes-mavis-2",
-      "ears": "ears-pink-cheek",
-      "mouth": "mouth-doombringer-2",
-      "horn": "horn-wing-horn-2",
-      "back": "back-cupid-2",
-      "tail": "tail-cloud-2"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [
-      "Nightmare"
-    ],
-    "collectible": true,
-    "genesisTitle": null,
-    "genesisParts": {
-      "Nightmare": 1
-    },
-    "isMorphed": true,
-    "morphParts": {
-      "eyes": "Nerdy",
-      "ears": "Sakura",
-      "mouth": "Silence Whisper",
-      "horn": "Wing Horn",
-      "back": "Cupid",
-      "tail": "Cloud"
-    },
-    "morphGenesHex": "0x100000000000010002602091020c000000030004204082020002060c28a0800a0001000c20808406000300082880400c000300081020420c000300082021400a",
-    "level": 52,
-    "rented": false,
-    "rentedTier": 0
+    "level": 52
   },
   {
     "id": "12021026",
@@ -11780,9 +10845,7 @@ const AXIE_DATA = [
       "tail": "Cottontail"
     },
     "morphGenesHex": "0x28000000000001000100a080c00000000003001408a043080003000c2861430a0002061430a085040003000c106105080003001410a0c1080003000008004504",
-    "level": 60,
-    "rented": false,
-    "rentedTier": 0
+    "level": 60
   },
   {
     "id": "12032746",
@@ -11804,9 +10867,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12033335",
@@ -11832,9 +10893,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 50,
-    "rented": false,
-    "rentedTier": 0
+    "level": 50
   },
   {
     "id": "12036240",
@@ -11860,9 +10919,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 54,
-    "rented": false,
-    "rentedTier": 0
+    "level": 54
   },
   {
     "id": "12036812",
@@ -11895,9 +10952,7 @@ const AXIE_DATA = [
       "tail": "Snake Jar"
     },
     "morphGenesHex": "0x180000000000010001c0a070830000000002061010204308000100081060830a000100001800c304000300143021810c0003000c088103040003001420808308",
-    "level": 54,
-    "rented": false,
-    "rentedTier": 0
+    "level": 54
   },
   {
     "id": "12037853",
@@ -11919,9 +10974,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 46,
-    "rented": false,
-    "rentedTier": 0
+    "level": 46
   },
   {
     "id": "12037890",
@@ -11954,9 +11007,7 @@ const AXIE_DATA = [
       "tail": "Ranchu"
     },
     "morphGenesHex": "0x80000000000001000140402004080000000300101021410a0001001410a08404000206102821810c000300082841420a000100101040c20c0003001020a04002",
-    "level": 50,
-    "rented": true,
-    "rentedTier": 4
+    "level": 50
   },
   {
     "id": "12039103",
@@ -11982,9 +11033,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 51,
-    "rented": false,
-    "rentedTier": 0
+    "level": 51
   },
   {
     "id": "12040698",
@@ -12010,9 +11059,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 51,
-    "rented": false,
-    "rentedTier": 0
+    "level": 51
   },
   {
     "id": "12044892",
@@ -12045,9 +11092,7 @@ const AXIE_DATA = [
       "tail": "Snake Jar"
     },
     "morphGenesHex": "0x90000000000001000381c0208204000000020610106043080001000c2861430a0003000018a1440a0003001430a1410c00030008108042020003001420214008",
-    "level": 57,
-    "rented": false,
-    "rentedTier": 0
+    "level": 57
   },
   {
     "id": "12045111",
@@ -12073,9 +11118,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 43,
-    "rented": false,
-    "rentedTier": 0
+    "level": 43
   },
   {
     "id": "12045782",
@@ -12101,9 +11144,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 47,
-    "rented": false,
-    "rentedTier": 0
+    "level": 47
   },
   {
     "id": "12060244",
@@ -12125,9 +11166,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 1,
-    "rented": false,
-    "rentedTier": 0
+    "level": 1
   },
   {
     "id": "12060496",
@@ -12160,9 +11199,7 @@ const AXIE_DATA = [
       "tail": "Bloodfin"
     },
     "morphGenesHex": "0x8000000000001000380e09082080000000300142861050a0003000428214408000100001800c0060003000c1080440200030008106044080002061010a10404",
-    "level": 54,
-    "rented": false,
-    "rentedTier": 0
+    "level": 54
   },
   {
     "id": "12064406",
@@ -12195,9 +11232,7 @@ const AXIE_DATA = [
       "tail": "Cottontail"
     },
     "morphGenesHex": "0x8000000000001000080c0d0830800000003000c28a1450a0001000c2881420a000300001800c006000300043021840200030008286044060002060008a10308",
-    "level": 57,
-    "rented": false,
-    "rentedTier": 0
+    "level": 57
   },
   {
     "id": "12097034",
@@ -12226,9 +11261,7 @@ const AXIE_DATA = [
       "tail": "Nimo"
     },
     "morphGenesHex": "0x180000000000070001c10040840c000000030010200100080001001028a1020a000300102001820c000300102041410a0003001028a1400a0003001010a10408",
-    "level": 53,
-    "rented": false,
-    "rentedTier": 0
+    "level": 53
   },
   {
     "id": "12102183",
@@ -12250,9 +11283,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 45,
-    "rented": false,
-    "rentedTier": 0
+    "level": 45
   },
   {
     "id": "12106774",
@@ -12278,9 +11309,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 42,
-    "rented": false,
-    "rentedTier": 0
+    "level": 42
   },
   {
     "id": "12112093",
@@ -12302,9 +11331,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 43,
-    "rented": false,
-    "rentedTier": 0
+    "level": 43
   },
   {
     "id": "12125297",
@@ -12330,9 +11357,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 43,
-    "rented": false,
-    "rentedTier": 0
+    "level": 43
   },
   {
     "id": "12128079",
@@ -12354,9 +11379,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 43,
-    "rented": false,
-    "rentedTier": 0
+    "level": 43
   },
   {
     "id": "12128267",
@@ -12378,9 +11401,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 46,
-    "rented": false,
-    "rentedTier": 0
+    "level": 46
   },
   {
     "id": "12128861",
@@ -12402,9 +11423,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 12,
-    "rented": false,
-    "rentedTier": 0
+    "level": 12
   },
   {
     "id": "12131201",
@@ -12426,9 +11445,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 35,
-    "rented": false,
-    "rentedTier": 0
+    "level": 35
   },
   {
     "id": "12139047",
@@ -12450,9 +11467,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12140296",
@@ -12474,9 +11489,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12141693",
@@ -12509,9 +11522,7 @@ const AXIE_DATA = [
       "tail": "Snake Jar"
     },
     "morphGenesHex": "0x2800000000000100020160b0020000000003001408a045020001000c2861440200030014104085040003000c206182020002061410a0c5060003001420004002",
-    "level": 54,
-    "rented": false,
-    "rentedTier": 0
+    "level": 54
   },
   {
     "id": "12148734",
@@ -12533,9 +11544,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 37,
-    "rented": false,
-    "rentedTier": 0
+    "level": 37
   },
   {
     "id": "12163292",
@@ -12557,9 +11566,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 10,
-    "rented": false,
-    "rentedTier": 0
+    "level": 10
   },
   {
     "id": "12166425",
@@ -12581,9 +11588,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12166425",
@@ -12605,9 +11610,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12168040",
@@ -12629,9 +11632,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 21,
-    "rented": false,
-    "rentedTier": 0
+    "level": 21
   },
   {
     "id": "12170865",
@@ -12653,9 +11654,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12175778",
@@ -12677,9 +11676,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 33,
-    "rented": false,
-    "rentedTier": 0
+    "level": 33
   },
   {
     "id": "12176106",
@@ -12701,9 +11698,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12178750",
@@ -12725,9 +11720,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 10,
-    "rented": false,
-    "rentedTier": 0
+    "level": 10
   },
   {
     "id": "12180127",
@@ -12749,9 +11742,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12183023",
@@ -12773,9 +11764,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 29,
-    "rented": false,
-    "rentedTier": 0
+    "level": 29
   },
   {
     "id": "12186297",
@@ -12797,9 +11786,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12187516",
@@ -12821,9 +11808,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 18,
-    "rented": false,
-    "rentedTier": 0
+    "level": 18
   },
   {
     "id": "12189327",
@@ -12845,9 +11830,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12191665",
@@ -12869,9 +11852,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12191867",
@@ -12893,33 +11874,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
-  },
-  {
-    "id": "12194571",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Aquatic",
-    "parts": {
-      "eyes": "eyes-clear",
-      "ears": "ears-gill",
-      "mouth": "mouth-nut-cracker",
-      "horn": "horn-oranda",
-      "back": "back-blue-moon",
-      "tail": "tail-koi"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12195144",
@@ -12941,9 +11896,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12195268",
@@ -12965,9 +11918,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12197005",
@@ -12989,9 +11940,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 8,
-    "rented": false,
-    "rentedTier": 0
+    "level": 8
   },
   {
     "id": "12197008",
@@ -13013,9 +11962,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12197008",
@@ -13037,9 +11984,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12197012",
@@ -13061,9 +12006,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12197020",
@@ -13085,9 +12028,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12197024",
@@ -13109,9 +12050,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 8,
-    "rented": false,
-    "rentedTier": 0
+    "level": 8
   },
   {
     "id": "12197034",
@@ -13133,9 +12072,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 7,
-    "rented": false,
-    "rentedTier": 0
+    "level": 7
   },
   {
     "id": "12197037",
@@ -13157,9 +12094,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 6,
-    "rented": false,
-    "rentedTier": 0
+    "level": 6
   },
   {
     "id": "12197042",
@@ -13181,9 +12116,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 8,
-    "rented": false,
-    "rentedTier": 0
+    "level": 8
   },
   {
     "id": "12197044",
@@ -13205,9 +12138,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12197049",
@@ -13229,9 +12160,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 8,
-    "rented": false,
-    "rentedTier": 0
+    "level": 8
   },
   {
     "id": "12197052",
@@ -13253,9 +12182,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12197849",
@@ -13277,9 +12204,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12197854",
@@ -13301,9 +12226,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 4,
-    "rented": false,
-    "rentedTier": 0
+    "level": 4
   },
   {
     "id": "12197858",
@@ -13325,9 +12248,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12198451",
@@ -13349,9 +12270,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12199063",
@@ -13373,9 +12292,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 3,
-    "rented": false,
-    "rentedTier": 0
+    "level": 3
   },
   {
     "id": "12201532",
@@ -13397,9 +12314,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12201945",
@@ -13421,9 +12336,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 20,
-    "rented": false,
-    "rentedTier": 0
+    "level": 20
   },
   {
     "id": "12202096",
@@ -13445,9 +12358,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12203654",
@@ -13469,9 +12380,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12204636",
@@ -13493,9 +12402,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 1,
-    "rented": false,
-    "rentedTier": 0
+    "level": 1
   },
   {
     "id": "12204857",
@@ -13517,9 +12424,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 12,
-    "rented": false,
-    "rentedTier": 0
+    "level": 12
   },
   {
     "id": "12205133",
@@ -13541,9 +12446,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 15,
-    "rented": false,
-    "rentedTier": 0
+    "level": 15
   },
   {
     "id": "12205444",
@@ -13565,9 +12468,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12205917",
@@ -13589,9 +12490,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12205917",
@@ -13613,9 +12512,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12221605",
@@ -13637,9 +12534,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 2,
-    "rented": false,
-    "rentedTier": 0
+    "level": 2
   },
   {
     "id": "12224082",
@@ -13661,9 +12556,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 6,
-    "rented": false,
-    "rentedTier": 0
+    "level": 6
   },
   {
     "id": "12224448",
@@ -13685,9 +12578,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12224724",
@@ -13709,9 +12600,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 1,
-    "rented": false,
-    "rentedTier": 0
+    "level": 1
   },
   {
     "id": "12224960",
@@ -13733,9 +12622,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 6,
-    "rented": false,
-    "rentedTier": 0
+    "level": 6
   },
   {
     "id": "12225254",
@@ -13757,9 +12644,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12225556",
@@ -13781,9 +12666,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12225689",
@@ -13805,9 +12688,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 4,
-    "rented": false,
-    "rentedTier": 0
+    "level": 4
   },
   {
     "id": "12225943",
@@ -13829,9 +12710,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12225943",
@@ -13853,9 +12732,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12225950",
@@ -13877,9 +12754,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 8,
-    "rented": false,
-    "rentedTier": 0
+    "level": 8
   },
   {
     "id": "12226966",
@@ -13901,9 +12776,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 8,
-    "rented": false,
-    "rentedTier": 0
+    "level": 8
   },
   {
     "id": "12227399",
@@ -13925,9 +12798,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 1,
-    "rented": false,
-    "rentedTier": 0
+    "level": 1
   },
   {
     "id": "12227805",
@@ -13949,9 +12820,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 1,
-    "rented": false,
-    "rentedTier": 0
+    "level": 1
   },
   {
     "id": "12228673",
@@ -13973,9 +12842,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 1,
-    "rented": false,
-    "rentedTier": 0
+    "level": 1
   },
   {
     "id": "12228952",
@@ -13997,9 +12864,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 2,
-    "rented": false,
-    "rentedTier": 0
+    "level": 2
   },
   {
     "id": "12233599",
@@ -14021,9 +12886,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 1,
-    "rented": false,
-    "rentedTier": 0
+    "level": 1
   },
   {
     "id": "12234203",
@@ -14045,9 +12908,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 9,
-    "rented": false,
-    "rentedTier": 0
+    "level": 9
   },
   {
     "id": "12234838",
@@ -14069,9 +12930,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 1,
-    "rented": false,
-    "rentedTier": 0
+    "level": 1
   },
   {
     "id": "12235378",
@@ -14093,9 +12952,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 1,
-    "rented": false,
-    "rentedTier": 0
+    "level": 1
   },
   {
     "id": "12235685",
@@ -14117,9 +12974,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 1,
-    "rented": false,
-    "rentedTier": 0
+    "level": 1
   },
   {
     "id": "12235995",
@@ -14141,9 +12996,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 1,
-    "rented": false,
-    "rentedTier": 0
+    "level": 1
   },
   {
     "id": "12236406",
@@ -14165,9 +13018,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 1,
-    "rented": false,
-    "rentedTier": 0
+    "level": 1
   },
   {
     "id": "12236630",
@@ -14189,9 +13040,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 1,
-    "rented": false,
-    "rentedTier": 0
+    "level": 1
   },
   {
     "id": "12237532",
@@ -14213,8 +13062,6 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 1,
-    "rented": false,
-    "rentedTier": 0
+    "level": 1
   }
 ];
