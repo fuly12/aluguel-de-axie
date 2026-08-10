@@ -14,6 +14,31 @@ const CLASS_CLASS_MAP = {
   Reptile: "c-reptile",
 };
 
+const COLLECTIBLE_SORT_ORDER = [
+  "Mystic",
+  "ORIGIN",
+  "MEO",
+  "MEO II",
+  "NightmareShiny",
+  "SummerShiny2022",
+  "Xmas2019",
+  "Xmas2018",
+  "Japan",
+  "Nightmare",
+  "Summer2022",
+];
+
+function collectibleSortRank(axie) {
+  const tags = [...(axie.specialGenes || [])];
+  if (axie.genesisTitle) tags.push(axie.genesisTitle);
+  let best = COLLECTIBLE_SORT_ORDER.length;
+  tags.forEach((tag) => {
+    const idx = COLLECTIBLE_SORT_ORDER.indexOf(tag);
+    if (idx !== -1 && idx < best) best = idx;
+  });
+  return best;
+}
+
 const TAG_LABELS_BY_LANG = {
   pt: {
     Nightmare: "Nightmare", NightmareShiny: "Nightmare Shiny", Japan: "Japonês",
@@ -710,7 +735,11 @@ function renderGrid() {
     return true;
   });
 
-  items.sort((a, b) => (b.level ?? -1) - (a.level ?? -1));
+  items.sort((a, b) => {
+    const levelDiff = (b.level ?? -1) - (a.level ?? -1);
+    if (levelDiff !== 0) return levelDiff;
+    return collectibleSortRank(a) - collectibleSortRank(b);
+  });
 
   if (items.length === 0) {
     grid.innerHTML = `<div class="empty">${t("emptyMsg")}</div>`;
