@@ -16,10 +16,13 @@
     <button class="lang-btn flag-es" data-lang="es" title="Español"><span class="flag-accent"></span><span class="flag-label">ES</span></button>
     <button class="lang-btn flag-fil" data-lang="fil" title="Filipino"><span class="flag-accent"></span><span class="flag-label">FIL</span></button>
   </div>
-  <div class="stats">
-    <span id="statTotal">0</span> <span data-i18n="statTotalLabel"></span> ·
-    <span id="statDisponivel">0</span> <span data-i18n="statAvailableLabel"></span> ·
-    <span id="statAlugado">0</span> <span data-i18n="statRentedLabel"></span>
+  <div class="stats-wrap">
+    <div class="stats">
+      <span id="statTotal">0</span> <span data-i18n="statTotalLabel"></span> ·
+      <span id="statDisponivel">0</span> <span data-i18n="statAvailableLabel"></span> ·
+      <span id="statAlugado">0</span> <span data-i18n="statRentedLabel"></span>
+    </div>
+    <div id="statsByOwner" class="stats-by-owner"></div>
   </div>
   <div id="accountInfo" class="account-info" style="display:none"></div>
   <button id="lockBtn" class="lock-btn"></button>

@@ -995,12 +995,28 @@ function updateStats() {
   const visibleAxies = showAll ? AXIE_DATA : AXIE_DATA.filter((axie) => axie.collectible);
   const total = visibleAxies.length;
   let alugados = 0;
+  const rentedByOwner = {};
   visibleAxies.forEach((axie) => {
-    if (getStatus(axie.id).rented) alugados++;
+    if (getStatus(axie.id).rented) {
+      alugados++;
+      const wallet = normalizeWallet(axie.ownerWallet);
+      rentedByOwner[wallet] = (rentedByOwner[wallet] || 0) + 1;
+    }
   });
   document.getElementById("statTotal").textContent = total;
   document.getElementById("statAlugado").textContent = alugados;
   document.getElementById("statDisponivel").textContent = total - alugados;
+  updateStatsByOwner(rentedByOwner);
+}
+
+function updateStatsByOwner(rentedByOwner) {
+  const el = document.getElementById("statsByOwner");
+  if (!el || typeof PARTNER_NAMES === "undefined") return;
+  const parts = Object.entries(PARTNER_NAMES).map(([wallet, name]) => {
+    const count = rentedByOwner[normalizeWallet(wallet)] || 0;
+    return `${escapeHtml(name)}: <strong>${count}</strong> ${t("statRentedLabel")}`;
+  });
+  el.innerHTML = parts.join(" &middot; ");
 }
 
 function init() {

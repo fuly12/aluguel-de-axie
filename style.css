@@ -250,9 +250,12 @@ body {
   font-size: 0.7rem;
 }
 
+.stats-wrap { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
 .stats { color: var(--muted); font-size: 0.95rem; }
 .stats #statDisponivel { color: var(--green); font-weight: 600; }
 .stats #statAlugado { color: var(--red); font-weight: 600; }
+.stats-by-owner { color: var(--muted); font-size: 0.78rem; }
+.stats-by-owner strong { color: var(--red); }
 
 .lock-btn {
   background: var(--card);
