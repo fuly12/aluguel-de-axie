@@ -99,6 +99,7 @@ const I18N = {
     optAvailable: "Disponível",
     optRented: "Alugado",
     collectibleLabel: "Colecionável",
+    filterAvailableBtn: "✅ Apenas Axies disponíveis para aluguel",
     showAllLabel: "Mostrar todos os axies não colecionáveis",
     emptyMsg: "Nenhum axie encontrado com esses filtros.",
     footerText: "O status de aluguel é atualizado em tempo real. Faça login pra alterar o status dos seus próprios axies.",
@@ -161,6 +162,7 @@ const I18N = {
     optAvailable: "Available",
     optRented: "Rented",
     collectibleLabel: "Collectible",
+    filterAvailableBtn: "✅ Only Axies available to rent",
     showAllLabel: "Show all non-collectible axies",
     emptyMsg: "No axie found with these filters.",
     footerText: "The rental status shown updates in real time. Log in to change the status of your own axies.",
@@ -223,6 +225,7 @@ const I18N = {
     optAvailable: "Disponible",
     optRented: "Alquilado",
     collectibleLabel: "Coleccionable",
+    filterAvailableBtn: "✅ Solo Axies disponibles para alquilar",
     showAllLabel: "Mostrar todos los axies no coleccionables",
     emptyMsg: "No se encontró ningún axie con estos filtros.",
     footerText: "El estado de alquiler se actualiza en tiempo real. Inicia sesión para cambiar el estado de tus propios axies.",
@@ -285,6 +288,7 @@ const I18N = {
     optAvailable: "Magagamit",
     optRented: "Inuupahan",
     collectibleLabel: "Makokolekta",
+    filterAvailableBtn: "✅ Axies lang na pwedeng arkilahin",
     showAllLabel: "Ipakita lahat ng axies na hindi makokolekta",
     emptyMsg: "Walang nahanap na axie sa mga filter na ito.",
     footerText: "Real-time ang status ng pag-arkila na ipinapakita. Mag-login para mabago ang status ng sarili mong mga axie.",
@@ -747,6 +751,8 @@ function renderGrid() {
   const filterCollectibleTag = document.getElementById("filterCollectibleTag").value;
   const showAll = document.getElementById("filterShowAll").checked;
 
+  document.getElementById("filterAvailableBtn").classList.toggle("active", filterStatus === "disponivel");
+
   let items = AXIE_DATA.filter((axie) => {
     const status = getStatus(axie.id);
     if (!showAll && !axie.collectible) return false;
@@ -1033,6 +1039,12 @@ function init() {
   ["searchId", "filterClass", "filterStatus", "filterCollectibleTag", "filterShowAll"].forEach((id) => {
     document.getElementById(id).addEventListener("input", renderGrid);
     document.getElementById(id).addEventListener("change", renderGrid);
+  });
+
+  document.getElementById("filterAvailableBtn").addEventListener("click", () => {
+    const statusSelect = document.getElementById("filterStatus");
+    statusSelect.value = statusSelect.value === "disponivel" ? "" : "disponivel";
+    renderGrid();
   });
 
   document.getElementById("top100SeasonSelect").addEventListener("change", (e) => {
