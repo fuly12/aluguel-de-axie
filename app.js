@@ -68,7 +68,7 @@ const TAG_LABELS_BY_LANG = {
 
 const I18N = {
   pt: {
-    title: "🐾 Aluguel de Axies",
+    title: "🐾 Aluguel de Axies do Fuly",
     discordContact: "Discord para contato:",
     associatesLabel: "🤝 Associados",
     associatesInstructions: "Interessados em alugar? Procure o dono do Axie — o Discord dele aparece logo abaixo da imagem de cada um.",
@@ -130,7 +130,7 @@ const I18N = {
     renterNamePlaceholder: "Nome do locatário",
   },
   en: {
-    title: "🐾 Axie Rentals",
+    title: "🐾 Fuly's Axie Rentals",
     discordContact: "Discord contact:",
     associatesLabel: "🤝 Associates",
     associatesInstructions: "Interested in renting? Look for the Axie's owner — their Discord shows up right below each Axie's image.",
@@ -192,7 +192,7 @@ const I18N = {
     renterNamePlaceholder: "Renter name",
   },
   es: {
-    title: "🐾 Alquiler de Axies",
+    title: "🐾 Alquiler de Axies de Fuly",
     discordContact: "Contacto de Discord:",
     associatesLabel: "🤝 Asociados",
     associatesInstructions: "¿Interesado en alquilar? Busca al dueño del Axie — su Discord aparece justo debajo de la imagen de cada uno.",
@@ -254,7 +254,7 @@ const I18N = {
     renterNamePlaceholder: "Nombre del inquilino",
   },
   fil: {
-    title: "🐾 Pag-arkila ng Axies",
+    title: "🐾 Pag-arkila ng Axies ni Fuly",
     discordContact: "Discord para sa kontak:",
     associatesLabel: "🤝 Mga Kasosyo",
     associatesInstructions: "Interesado mag-arkila? Hanapin ang may-ari ng Axie — makikita ang Discord niya sa ibaba mismo ng larawan ng bawat Axie.",
