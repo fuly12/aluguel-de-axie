@@ -610,28 +610,6 @@ const AXIE_DATA = [
     "level": 9
   },
   {
-    "id": "820392",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Aquatic",
-    "parts": {
-      "eyes": "eyes-gero",
-      "ears": "ears-nimo",
-      "mouth": "mouth-risky-fish",
-      "horn": "horn-oranda",
-      "back": "back-goldfish",
-      "tail": "tail-the-last-one"
-    },
-    "bodyShape": "Fuzzy",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
     "id": "912968",
     "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
     "class": "Plant",
@@ -826,28 +804,6 @@ const AXIE_DATA = [
       "horn": "horn-kestrel",
       "back": "back-pigeon-post",
       "tail": "tail-granmas-fan"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
-    "id": "1119489",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Aquatic",
-    "parts": {
-      "eyes": "eyes-little-peas",
-      "ears": "ears-pogona",
-      "mouth": "mouth-lam",
-      "horn": "horn-oranda",
-      "back": "back-goldfish",
-      "tail": "tail-thorny-caterpillar"
     },
     "bodyShape": "Normal",
     "specialGenes": [],
@@ -2074,28 +2030,6 @@ const AXIE_DATA = [
     "level": 9
   },
   {
-    "id": "2948946",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-papi",
-      "ears": "ears-rosa",
-      "mouth": "mouth-serious",
-      "horn": "horn-little-branch",
-      "back": "back-pumpkin",
-      "tail": "tail-hot-butt"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
     "id": "2960460",
     "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
     "class": "Aquatic",
@@ -2852,28 +2786,6 @@ const AXIE_DATA = [
     "level": 9
   },
   {
-    "id": "4067604",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-chubby",
-      "ears": "ears-zen",
-      "mouth": "mouth-pincer",
-      "horn": "horn-beech",
-      "back": "back-blue-moon",
-      "tail": "tail-granmas-fan"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
     "id": "4071169",
     "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
     "class": "Aquatic",
@@ -3016,28 +2928,6 @@ const AXIE_DATA = [
       "horn": "horn-anemone",
       "back": "back-goldfish",
       "tail": "tail-swallow"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
-    "id": "4231580",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Aquatic",
-    "parts": {
-      "eyes": "eyes-clear",
-      "ears": "ears-inkling",
-      "mouth": "mouth-risky-fish",
-      "horn": "horn-shoal-star",
-      "back": "back-turnip",
-      "tail": "tail-nimo"
     },
     "bodyShape": "Normal",
     "specialGenes": [],
@@ -3496,28 +3386,6 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": null,
     "level": 46
-  },
-  {
-    "id": "5035161",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-papi",
-      "ears": "ears-clover",
-      "mouth": "mouth-serious",
-      "horn": "horn-cactus",
-      "back": "back-pumpkin",
-      "tail": "tail-hot-butt"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
   },
   {
     "id": "5035161",
@@ -4866,28 +4734,6 @@ const AXIE_DATA = [
     "level": 9
   },
   {
-    "id": "6914218",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-papi",
-      "ears": "ears-clover",
-      "mouth": "mouth-serious",
-      "horn": "horn-cactus",
-      "back": "back-pumpkin",
-      "tail": "tail-carrot"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
     "id": "6932189",
     "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
     "class": "Plant",
@@ -4942,50 +4788,6 @@ const AXIE_DATA = [
       "horn": "horn-shoal-star",
       "back": "back-goldfish",
       "tail": "tail-nimo"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
-    "id": "6949981",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Aquatic",
-    "parts": {
-      "eyes": "eyes-clear",
-      "ears": "ears-bubblemaker",
-      "mouth": "mouth-risky-fish",
-      "horn": "horn-shoal-star",
-      "back": "back-goldfish",
-      "tail": "tail-nimo"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
-    "id": "7021558",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-confused",
-      "ears": "ears-swirl",
-      "mouth": "mouth-mosquito",
-      "horn": "horn-wing-horn",
-      "back": "back-pumpkin",
-      "tail": "tail-carrot"
     },
     "bodyShape": "Normal",
     "specialGenes": [],
@@ -5140,28 +4942,6 @@ const AXIE_DATA = [
       "horn": "horn-anemone",
       "back": "back-anemone",
       "tail": "tail-nimo"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
-    "id": "7247414",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-blossom",
-      "ears": "ears-leafy",
-      "mouth": "mouth-serious",
-      "horn": "horn-leaf-bug",
-      "back": "back-pumpkin",
-      "tail": "tail-carrot"
     },
     "bodyShape": "Normal",
     "specialGenes": [],
@@ -7568,28 +7348,6 @@ const AXIE_DATA = [
     "level": 9
   },
   {
-    "id": "10123748",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-papi",
-      "ears": "ears-sakura",
-      "mouth": "mouth-serious",
-      "horn": "horn-leaf-bug",
-      "back": "back-pumpkin",
-      "tail": "tail-carrot"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
     "id": "10144966",
     "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
     "class": "Aquatic",
@@ -7876,28 +7634,6 @@ const AXIE_DATA = [
     "level": 9
   },
   {
-    "id": "10417064",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-papi",
-      "ears": "ears-beetle-spike",
-      "mouth": "mouth-zigzag",
-      "horn": "horn-cactus",
-      "back": "back-bidens",
-      "tail": "tail-hot-butt"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
     "id": "10437274",
     "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
     "class": "Reptile",
@@ -8120,28 +7856,6 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": null,
     "level": 9
-  },
-  {
-    "id": "10611368",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-confused",
-      "ears": "ears-small-frill",
-      "mouth": "mouth-serious",
-      "horn": "horn-leaf-bug",
-      "back": "back-pumpkin",
-      "tail": "tail-yam"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 1
   },
   {
     "id": "10611368",
@@ -8606,28 +8320,6 @@ const AXIE_DATA = [
     "level": 9
   },
   {
-    "id": "11077880",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Aquatic",
-    "parts": {
-      "eyes": "eyes-puppy",
-      "ears": "ears-bubblemaker",
-      "mouth": "mouth-risky-fish",
-      "horn": "horn-oranda",
-      "back": "back-blue-moon",
-      "tail": "tail-hatsune"
-    },
-    "bodyShape": "Wetdog",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
     "id": "11107659",
     "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
     "class": "Aquatic",
@@ -8764,50 +8456,6 @@ const AXIE_DATA = [
     "level": 9
   },
   {
-    "id": "11204280",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Aquatic",
-    "parts": {
-      "eyes": "eyes-telescope",
-      "ears": "ears-nimo",
-      "mouth": "mouth-piranha",
-      "horn": "horn-oranda",
-      "back": "back-blue-moon",
-      "tail": "tail-swallow"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
-    "id": "11295684",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-topaz",
-      "ears": "ears-lotus",
-      "mouth": "mouth-serious",
-      "horn": "horn-cactus",
-      "back": "back-pumpkin",
-      "tail": "tail-carrot"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
     "id": "11295684",
     "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
     "class": "Plant",
@@ -8842,28 +8490,6 @@ const AXIE_DATA = [
       "tail": "tail-carrot"
     },
     "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
-    "id": "11297399",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-papi",
-      "ears": "ears-lotus",
-      "mouth": "mouth-serious",
-      "horn": "horn-cactus",
-      "back": "back-watering-can",
-      "tail": "tail-carrot"
-    },
-    "bodyShape": "Fuzzy",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -8984,28 +8610,6 @@ const AXIE_DATA = [
     "level": 9
   },
   {
-    "id": "11298324",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-papi",
-      "ears": "ears-clover",
-      "mouth": "mouth-serious",
-      "horn": "horn-cactus",
-      "back": "back-pumpkin",
-      "tail": "tail-hatsune"
-    },
-    "bodyShape": "Bigyak",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
     "id": "11299441",
     "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
     "class": "Bird",
@@ -9041,28 +8645,6 @@ const AXIE_DATA = [
       "mouth": "mouth-serious",
       "horn": "horn-cactus",
       "back": "back-pumpkin",
-      "tail": "tail-carrot"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
-    "id": "11301226",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-confused",
-      "ears": "ears-pogona",
-      "mouth": "mouth-little-owl",
-      "horn": "horn-cactus",
-      "back": "back-hermit",
       "tail": "tail-carrot"
     },
     "bodyShape": "Normal",
@@ -9208,50 +8790,6 @@ const AXIE_DATA = [
     "level": 9
   },
   {
-    "id": "11338944",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-little-owl",
-      "ears": "ears-lotus",
-      "mouth": "mouth-serious",
-      "horn": "horn-cactus",
-      "back": "back-pumpkin",
-      "tail": "tail-carrot"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
-    "id": "11347688",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-papi",
-      "ears": "ears-lotus",
-      "mouth": "mouth-zigzag",
-      "horn": "horn-cactus",
-      "back": "back-pumpkin",
-      "tail": "tail-carrot"
-    },
-    "bodyShape": "Fuzzy",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
     "id": "11347688",
     "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
     "class": "Plant",
@@ -9368,32 +8906,6 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": null,
     "level": 18
-  },
-  {
-    "id": "11419767",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Reptile",
-    "parts": {
-      "eyes": "eyes-mavis",
-      "ears": "ears-peace-maker",
-      "mouth": "mouth-kotaro",
-      "horn": "horn-scaly-spoon",
-      "back": "back-tri-spikes",
-      "tail": "tail-evil-eye-2"
-    },
-    "bodyShape": "Fuzzy",
-    "specialGenes": [
-      "Nightmare"
-    ],
-    "collectible": true,
-    "genesisTitle": null,
-    "genesisParts": {
-      "Nightmare": 1
-    },
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 54
   },
   {
     "id": "11419767",
@@ -9564,28 +9076,6 @@ const AXIE_DATA = [
     "level": 9
   },
   {
-    "id": "11451989",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-papi",
-      "ears": "ears-belieber",
-      "mouth": "mouth-serious",
-      "horn": "horn-cactus",
-      "back": "back-pumpkin",
-      "tail": "tail-carrot"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
     "id": "11463170",
     "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
     "class": "Aquatic",
@@ -9596,50 +9086,6 @@ const AXIE_DATA = [
       "horn": "horn-caterpillars",
       "back": "back-goldfish",
       "tail": "tail-nimo"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
-    "id": "11463170",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Aquatic",
-    "parts": {
-      "eyes": "eyes-clear",
-      "ears": "ears-beetle-spike",
-      "mouth": "mouth-risky-fish",
-      "horn": "horn-caterpillars",
-      "back": "back-goldfish",
-      "tail": "tail-nimo"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
-    "id": "11473623",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-little-peas",
-      "ears": "ears-lotus",
-      "mouth": "mouth-serious",
-      "horn": "horn-cactus",
-      "back": "back-pumpkin",
-      "tail": "tail-carrot"
     },
     "bodyShape": "Normal",
     "specialGenes": [],
@@ -9700,28 +9146,6 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": "0x28000000000000018140a050c41000000003001408a102040001000c28a1450400030014304083040002060c18a105080002069410a0c5060003000820a0400c",
     "level": 60
-  },
-  {
-    "id": "11536214",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-confused",
-      "ears": "ears-clover",
-      "mouth": "mouth-serious",
-      "horn": "horn-cactus",
-      "back": "back-pumpkin",
-      "tail": "tail-carrot"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
   },
   {
     "id": "11536214",
@@ -10364,28 +9788,6 @@ const AXIE_DATA = [
     "level": 19
   },
   {
-    "id": "11838570",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-scar",
-      "ears": "ears-tiny-fan",
-      "mouth": "mouth-doubletalk",
-      "horn": "horn-bamboo-shoot",
-      "back": "back-tri-feather",
-      "tail": "tail-potato-leaf"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 19
-  },
-  {
     "id": "11844634",
     "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
     "class": "Plant",
@@ -10524,28 +9926,6 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": null,
     "level": 49
-  },
-  {
-    "id": "11932235",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-gecko",
-      "ears": "ears-zen",
-      "mouth": "mouth-piranha",
-      "horn": "horn-bamboo-shoot",
-      "back": "back-sponge",
-      "tail": "tail-feather-fan"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
   },
   {
     "id": "11932235",
@@ -10764,32 +10144,6 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": null,
     "level": 51
-  },
-  {
-    "id": "12019341",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Bird",
-    "parts": {
-      "eyes": "eyes-mavis-2",
-      "ears": "ears-pink-cheek",
-      "mouth": "mouth-doombringer-2",
-      "horn": "horn-wing-horn-2",
-      "back": "back-cupid-2",
-      "tail": "tail-cloud-2"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [
-      "Nightmare"
-    ],
-    "collectible": true,
-    "genesisTitle": null,
-    "genesisParts": {
-      "Nightmare": 1
-    },
-    "isMorphed": true,
-    "morphParts": null,
-    "morphGenesHex": "0x100000000000010002602091020c000000030004204082020002060c28a0800a0001000c20808406000300082880400c000300081020420c000300082021400a",
-    "level": 52
   },
   {
     "id": "12019341",
@@ -11768,28 +11122,6 @@ const AXIE_DATA = [
       "horn": "horn-wing-horn",
       "back": "back-kingfisher",
       "tail": "tail-gravel-ant"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 9
-  },
-  {
-    "id": "12194571",
-    "ownerWallet": "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8",
-    "class": "Aquatic",
-    "parts": {
-      "eyes": "eyes-clear",
-      "ears": "ears-gill",
-      "mouth": "mouth-nut-cracker",
-      "horn": "horn-oranda",
-      "back": "back-blue-moon",
-      "tail": "tail-koi"
     },
     "bodyShape": "Normal",
     "specialGenes": [],
@@ -13228,28 +12560,6 @@ const AXIE_DATA = [
       "tail": "tail-koi"
     },
     "bodyShape": "Curly",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 1
-  },
-  {
-    "id": "1289039",
-    "ownerWallet": "0xaae8248ce459912bef4e5d42f4f35d302766e664",
-    "class": "Aquatic",
-    "parts": {
-      "eyes": "eyes-sleepless",
-      "ears": "ears-bubblemaker",
-      "mouth": "mouth-risky-fish",
-      "horn": "horn-shoal-star",
-      "back": "back-goldfish",
-      "tail": "tail-koi"
-    },
-    "bodyShape": "Normal",
     "specialGenes": [],
     "collectible": false,
     "genesisTitle": null,
@@ -16550,28 +15860,6 @@ const AXIE_DATA = [
     "level": 22
   },
   {
-    "id": "11671309",
-    "ownerWallet": "0xaae8248ce459912bef4e5d42f4f35d302766e664",
-    "class": "Dawn",
-    "parts": {
-      "eyes": "eyes-bookworm",
-      "ears": "ears-innocent-lamb",
-      "mouth": "mouth-zigzag",
-      "horn": "horn-scaly-spoon",
-      "back": "back-mint",
-      "tail": "tail-fish-snack"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 22
-  },
-  {
     "id": "11681715",
     "ownerWallet": "0xaae8248ce459912bef4e5d42f4f35d302766e664",
     "class": "Dusk",
@@ -16596,28 +15884,6 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": "0x900000000000010001c180908410000000020600280143040001000028604302000300043021830a00010008280081040003000830a1820c000300082820c20a",
     "level": 49
-  },
-  {
-    "id": "11685997",
-    "ownerWallet": "0xaae8248ce459912bef4e5d42f4f35d302766e664",
-    "class": "Plant",
-    "parts": {
-      "eyes": "eyes-cucumber-slice",
-      "ears": "ears-innocent-lamb",
-      "mouth": "mouth-silence-whisper",
-      "horn": "horn-rose-bud-2",
-      "back": "back-hermit",
-      "tail": "tail-cattail"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 28
   },
   {
     "id": "11685997",
@@ -18116,28 +17382,6 @@ const AXIE_DATA = [
     "morphParts": null,
     "morphGenesHex": null,
     "level": 52
-  },
-  {
-    "id": "12135798",
-    "ownerWallet": "0xaae8248ce459912bef4e5d42f4f35d302766e664",
-    "class": "Reptile",
-    "parts": {
-      "eyes": "eyes-cucumber-slice",
-      "ears": "ears-lotus",
-      "mouth": "mouth-kotaro",
-      "horn": "horn-parasite",
-      "back": "back-red-ear-2",
-      "tail": "tail-tiny-dino"
-    },
-    "bodyShape": "Normal",
-    "specialGenes": [],
-    "collectible": false,
-    "genesisTitle": null,
-    "genesisParts": {},
-    "isMorphed": false,
-    "morphParts": null,
-    "morphGenesHex": null,
-    "level": 25
   },
   {
     "id": "12135798",
