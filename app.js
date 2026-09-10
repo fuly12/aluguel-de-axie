@@ -667,7 +667,7 @@ function subscribeAxieStatus() {
     (snapshot) => {
       snapshot.docChanges().forEach((change) => {
         const data = change.doc.data();
-        axieStatus[change.doc.id] = { rented: !!data.rented, rentedTier: data.rentedTier || 0 };
+        axieStatus[change.doc.id] = { rentedTiers: Array.isArray(data.rentedTiers) ? data.rentedTiers : [] };
       });
       if (currentView !== "top100") renderGrid();
     },
@@ -694,7 +694,11 @@ function tierLabels() {
 }
 
 function getStatus(id) {
-  return axieStatus[id] || { rented: false, rentedTier: 0 };
+  return axieStatus[id] || { rentedTiers: [] };
+}
+
+function isRented(status) {
+  return !!(status.rentedTiers && status.rentedTiers.length > 0);
 }
 
 function getRenterName(id) {
@@ -706,14 +710,14 @@ function setRenterName(id, name) {
   saveState(renterState);
 }
 
-async function setRentalStatus(axie, rented, rentedTier) {
+async function setRentalStatus(axie, rentedTiers) {
   if (!canEditAxie(axie)) {
     showToast(t("toastLockedClick"));
     return false;
   }
   try {
-    await db.collection("axieStatus").doc(axie.id).update({ rented, rentedTier });
-    axieStatus[axie.id] = { rented, rentedTier };
+    await db.collection("axieStatus").doc(axie.id).update({ rentedTiers });
+    axieStatus[axie.id] = { rentedTiers };
     return true;
   } catch (e) {
     console.error("Erro ao salvar status do axie", e);
@@ -758,8 +762,8 @@ function renderGrid() {
     if (!showAll && !axie.collectible) return false;
     if (searchId && !axie.id.includes(searchId)) return false;
     if (filterClass && axie.class !== filterClass) return false;
-    if (filterStatus === "disponivel" && status.rented) return false;
-    if (filterStatus === "alugado" && !status.rented) return false;
+    if (filterStatus === "disponivel" && isRented(status)) return false;
+    if (filterStatus === "alugado" && !isRented(status)) return false;
     if (filterCollectibleTag && !axieHasCollectibleTag(axie, filterCollectibleTag)) return false;
     return true;
   });
@@ -882,7 +886,7 @@ function tierRowHtml(axie, status) {
   const editable = canEditAxie(axie);
   const items = tierLabels().map((label, i) => {
     const tier = i + 1;
-    const filled = status.rentedTier >= tier;
+    const filled = (status.rentedTiers || []).includes(tier);
     return `<div class="tier-item ${filled ? "filled" : ""}" data-tier="${tier}" title="${label}">
       <span class="tier-dot"></span>
       <span class="tier-label">${label}</span>
@@ -914,9 +918,10 @@ function morphPartsHtml(axie) {
 
 function buildCard(axie) {
   const status = getStatus(axie.id);
+  const rented = isRented(status);
 
   const card = document.createElement("div");
-  card.className = "card " + (status.rented ? "alugado" : "disponivel");
+  card.className = "card " + (rented ? "alugado" : "disponivel");
 
   const badgeClass = CLASS_CLASS_MAP[axie.class] || "c-mech";
 
@@ -942,9 +947,9 @@ function buildCard(axie) {
     ${collectibleTagsHtml(axie)}
     ${currentView === "morph" ? morphPartsHtml(axie) : ""}
 
-    <div class="status-toggle ${status.rented ? "alugado" : "disponivel"}">
+    <div class="status-toggle ${rented ? "alugado" : "disponivel"}">
       <span class="dot"></span>
-      <span class="status-label">${status.rented ? t("optRented") : t("optAvailable")}</span>
+      <span class="status-label">${rented ? t("optRented") : t("optAvailable")}</span>
     </div>
 
     ${tierRowHtml(axie, status)}
@@ -959,13 +964,14 @@ function buildCard(axie) {
 
   function refreshCardVisual() {
     const s = getStatus(axie.id);
-    card.className = "card " + (s.rented ? "alugado" : "disponivel");
+    const r = isRented(s);
+    card.className = "card " + (r ? "alugado" : "disponivel");
     const toggleEl = card.querySelector(".status-toggle");
-    toggleEl.className = "status-toggle " + (s.rented ? "alugado" : "disponivel");
-    toggleEl.querySelector(".status-label").textContent = s.rented ? t("optRented") : t("optAvailable");
+    toggleEl.className = "status-toggle " + (r ? "alugado" : "disponivel");
+    toggleEl.querySelector(".status-label").textContent = r ? t("optRented") : t("optAvailable");
     card.querySelectorAll(".tier-item").forEach((item) => {
       const tier = Number(item.dataset.tier);
-      item.classList.toggle("filled", s.rentedTier >= tier);
+      item.classList.toggle("filled", (s.rentedTiers || []).includes(tier));
     });
     updateStats();
   }
@@ -977,7 +983,8 @@ function buildCard(axie) {
       return;
     }
     const s = getStatus(axie.id);
-    const ok = s.rented ? await setRentalStatus(axie, false, 0) : await setRentalStatus(axie, true, 1);
+    const newTiers = isRented(s) ? [] : [1, 2, 3, 4];
+    const ok = await setRentalStatus(axie, newTiers);
     if (ok) refreshCardVisual();
   });
 
@@ -988,7 +995,12 @@ function buildCard(axie) {
         return;
       }
       const tier = Number(item.dataset.tier);
-      const ok = await setRentalStatus(axie, true, tier);
+      const s = getStatus(axie.id);
+      const current = s.rentedTiers || [];
+      const newTiers = current.includes(tier)
+        ? current.filter((tItem) => tItem !== tier)
+        : [...current, tier].sort((a, b) => a - b);
+      const ok = await setRentalStatus(axie, newTiers);
       if (ok) refreshCardVisual();
     });
   });
@@ -1003,7 +1015,7 @@ function updateStats() {
   let alugados = 0;
   const rentedByOwner = {};
   visibleAxies.forEach((axie) => {
-    if (getStatus(axie.id).rented) {
+    if (isRented(getStatus(axie.id))) {
       alugados++;
       const wallet = normalizeWallet(axie.ownerWallet);
       rentedByOwner[wallet] = (rentedByOwner[wallet] || 0) + 1;
