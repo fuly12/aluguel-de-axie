@@ -984,7 +984,7 @@ function buildCard(axie) {
       <div class="card-id">#${axie.id}</div>
       <span class="class-badge" style="background: var(--${badgeClass})">${axie.class || "?"}</span>
     </div>
-    ${showOwnerBadge ? `<div class="owner-badge">${t("ownerLabel")}: <span class="owner-name">${escapeHtml(ownerName)}</span>${discordButtonHtml(axie.ownerWallet, discordHandle, "badge")}</div>` : ""}
+    ${showOwnerBadge ? `<div class="owner-badge">${t("ownerLabel")}: ${escapeHtml(ownerName)}${discordButtonHtml(axie.ownerWallet, discordHandle, "badge")}</div>` : ""}
     ${collectibleTagsHtml(axie)}
     ${currentView === "morph" ? morphPartsHtml(axie) : ""}
 
