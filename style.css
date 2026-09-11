@@ -284,9 +284,15 @@ body {
 }
 
 .owner-badge {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: var(--muted);
-  margin: 2px 0;
+  margin: 4px 0;
+}
+
+.owner-name {
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 0.95rem;
 }
 
 .discord-tag,
