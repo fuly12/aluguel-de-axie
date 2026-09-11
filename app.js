@@ -89,6 +89,7 @@ const I18N = {
     adminLabel: "Admin",
     ownerLabel: "Dono",
     discordLabel: "Discord",
+    discordBtnLabel: "Falar no Discord",
     tabStandard: "Padrão",
     tabMorph: "✨ Morfado",
     searchLabel: "Buscar por ID",
@@ -119,7 +120,7 @@ const I18N = {
     updatedAtLabel: "Atualizado em",
     top100SeasonSelectLabel: "Ver temporada/era",
     promoTicketTitle: "🎫 Tiquete de Morph",
-    promoTicketSubtitle: "Garanta o seu por apenas US$ 1 — fale com fuly_12 no Discord",
+    promoTicketSubtitle: "Garanta o seu por apenas US$ 1",
     priceTableTitle: "💰 Preços por Era",
     priceTableNote: "Valores em AXS, cobrados por cada era de aluguel.",
     commonLabel: "Axie Comum",
@@ -127,7 +128,6 @@ const I18N = {
     perEraLabel: "por era",
     slipsLabel: "Fortune Slips à venda:",
     slipsFor: "por",
-    slipsContactSuffix: "fale com fuly_12 no Discord",
     renterNamePlaceholder: "Nome do locatário",
   },
   en: {
@@ -152,6 +152,7 @@ const I18N = {
     adminLabel: "Admin",
     ownerLabel: "Owner",
     discordLabel: "Discord",
+    discordBtnLabel: "Chat on Discord",
     tabStandard: "Standard",
     tabMorph: "✨ Morphed",
     searchLabel: "Search by ID",
@@ -182,7 +183,7 @@ const I18N = {
     updatedAtLabel: "Updated on",
     top100SeasonSelectLabel: "View season/era",
     promoTicketTitle: "🎫 Morph Ticket",
-    promoTicketSubtitle: "Get yours for just US$ 1 — message fuly_12 on Discord",
+    promoTicketSubtitle: "Get yours for just US$ 1",
     priceTableTitle: "💰 Prices per Era",
     priceTableNote: "Values in AXS, charged per rental era.",
     commonLabel: "Common Axie",
@@ -190,7 +191,6 @@ const I18N = {
     perEraLabel: "per era",
     slipsLabel: "Fortune Slips for sale:",
     slipsFor: "for",
-    slipsContactSuffix: "message fuly_12 on Discord",
     renterNamePlaceholder: "Renter name",
   },
   es: {
@@ -215,6 +215,7 @@ const I18N = {
     adminLabel: "Admin",
     ownerLabel: "Dueño",
     discordLabel: "Discord",
+    discordBtnLabel: "Hablar por Discord",
     tabStandard: "Estándar",
     tabMorph: "✨ Transformado",
     searchLabel: "Buscar por ID",
@@ -245,7 +246,7 @@ const I18N = {
     updatedAtLabel: "Actualizado el",
     top100SeasonSelectLabel: "Ver temporada/era",
     promoTicketTitle: "🎫 Ticket de Morph",
-    promoTicketSubtitle: "Consigue el tuyo por solo US$ 1 — escribe a fuly_12 en Discord",
+    promoTicketSubtitle: "Consigue el tuyo por solo US$ 1",
     priceTableTitle: "💰 Precios por Era",
     priceTableNote: "Valores en AXS, cobrados por cada era de alquiler.",
     commonLabel: "Axie Común",
@@ -253,7 +254,6 @@ const I18N = {
     perEraLabel: "por era",
     slipsLabel: "Fortune Slips a la venta:",
     slipsFor: "por",
-    slipsContactSuffix: "escribe a fuly_12 en Discord",
     renterNamePlaceholder: "Nombre del inquilino",
   },
   fil: {
@@ -278,6 +278,7 @@ const I18N = {
     adminLabel: "Admin",
     ownerLabel: "May-ari",
     discordLabel: "Discord",
+    discordBtnLabel: "Mag-chat sa Discord",
     tabStandard: "Standard",
     tabMorph: "✨ Na-morph",
     searchLabel: "Maghanap gamit ang ID",
@@ -308,7 +309,7 @@ const I18N = {
     updatedAtLabel: "Na-update noong",
     top100SeasonSelectLabel: "Tingnan ang season/era",
     promoTicketTitle: "🎫 Morph Ticket",
-    promoTicketSubtitle: "Kunin ang sa'yo sa US$ 1 lang — mag-message kay fuly_12 sa Discord",
+    promoTicketSubtitle: "Kunin ang sa'yo sa US$ 1 lang",
     priceTableTitle: "💰 Presyo bawat Era",
     priceTableNote: "Halaga sa AXS, sisingilin bawat era ng pag-arkila.",
     commonLabel: "Karaniwang Axie",
@@ -316,7 +317,6 @@ const I18N = {
     perEraLabel: "bawat era",
     slipsLabel: "Fortune Slips na ibinebenta:",
     slipsFor: "para sa",
-    slipsContactSuffix: "mag-message kay fuly_12 sa Discord",
     renterNamePlaceholder: "Pangalan ng umuupa",
   },
 };
@@ -363,6 +363,7 @@ function setLanguage(lang) {
   populateCollectibleFilter();
   renderPriceTable();
   renderAssociatesBanner();
+  renderPromoDiscordButtons();
   switchView();
 }
 
@@ -594,6 +595,33 @@ function showToast(msg) {
 
 function normalizeWallet(w) {
   return (w || "").toLowerCase();
+}
+
+const DISCORD_ICON_SVG = '<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 0 0-.079.036c-.21.369-.444.85-.608 1.23a18.566 18.566 0 0 0-5.487 0 12.36 12.36 0 0 0-.617-1.23.077.077 0 0 0-.079-.036c-1.714.29-3.354.8-4.885 1.491a.07.07 0 0 0-.032.027C.533 9.093-.32 13.555.099 17.961a.08.08 0 0 0 .031.055 20.03 20.03 0 0 0 5.993 2.98.078.078 0 0 0 .084-.026 13.83 13.83 0 0 0 1.226-1.963.074.074 0 0 0-.041-.104 13.201 13.201 0 0 1-1.872-.878.075.075 0 0 1-.008-.125c.126-.093.252-.19.372-.287a.075.075 0 0 1 .078-.01c3.927 1.764 8.18 1.764 12.061 0a.075.075 0 0 1 .079.009c.12.098.246.195.373.288a.075.075 0 0 1-.006.125c-.598.344-1.22.635-1.873.877a.075.075 0 0 0-.041.105c.36.687.772 1.341 1.225 1.962a.077.077 0 0 0 .084.028 19.963 19.963 0 0 0 6.002-2.981.076.076 0 0 0 .032-.054c.5-5.094-.838-9.52-3.549-13.442a.06.06 0 0 0-.031-.028ZM8.02 15.278c-1.182 0-2.157-1.069-2.157-2.38 0-1.312.956-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.312-.956 2.38-2.157 2.38Zm7.975 0c-1.183 0-2.157-1.069-2.157-2.38 0-1.312.955-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.312-.946 2.38-2.157 2.38Z"/></svg>';
+
+function discordProfileUrl(userId) {
+  return `https://discord.com/users/${userId}`;
+}
+
+function discordButtonHtml(wallet, handle, variant) {
+  if (!handle) return "";
+  const userId = typeof PARTNER_DISCORD_ID !== "undefined" ? PARTNER_DISCORD_ID[normalizeWallet(wallet)] : null;
+  const label = variant === "promo" ? `${t("discordBtnLabel")}: ${escapeHtml(handle)}` : `${t("discordLabel")}: ${escapeHtml(handle)}`;
+  const inner = `${DISCORD_ICON_SVG}<span>${label}</span>`;
+  if (!userId) {
+    return `<span class="discord-tag discord-tag-${variant}">${inner}</span>`;
+  }
+  return `<a class="discord-btn discord-btn-${variant}" href="${discordProfileUrl(userId)}" target="_blank" rel="noopener noreferrer">${inner}</a>`;
+}
+
+function renderPromoDiscordButtons() {
+  const fulyWallet = "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8";
+  const handle = typeof PARTNER_DISCORD !== "undefined" ? PARTNER_DISCORD[fulyWallet] : null;
+  const html = discordButtonHtml(fulyWallet, handle, "promo");
+  const ticketEl = document.getElementById("promoTicketDiscord");
+  const slipsEl = document.getElementById("slipsDiscord");
+  if (ticketEl) ticketEl.innerHTML = html;
+  if (slipsEl) slipsEl.innerHTML = html;
 }
 
 function canEditAxie(axie) {
@@ -956,7 +984,7 @@ function buildCard(axie) {
       <div class="card-id">#${axie.id}</div>
       <span class="class-badge" style="background: var(--${badgeClass})">${axie.class || "?"}</span>
     </div>
-    ${showOwnerBadge ? `<div class="owner-badge">${t("ownerLabel")}: ${escapeHtml(ownerName)}${discordHandle ? `<span class="owner-discord">${t("discordLabel")}: ${escapeHtml(discordHandle)}</span>` : ""}</div>` : ""}
+    ${showOwnerBadge ? `<div class="owner-badge">${t("ownerLabel")}: ${escapeHtml(ownerName)}${discordButtonHtml(axie.ownerWallet, discordHandle, "badge")}</div>` : ""}
     ${collectibleTagsHtml(axie)}
     ${currentView === "morph" ? morphPartsHtml(axie) : ""}
 
@@ -1057,6 +1085,7 @@ function init() {
   populateOwnerFilter();
   renderPriceTable();
   renderAssociatesBanner();
+  renderPromoDiscordButtons();
 
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.addEventListener("click", () => setLanguage(btn.dataset.lang));

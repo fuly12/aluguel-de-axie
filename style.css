@@ -289,8 +289,45 @@ body {
   margin: 2px 0;
 }
 
-.owner-discord {
+.discord-tag,
+.discord-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   margin-left: 10px;
+}
+
+.discord-btn {
+  color: #fff;
+  background: #5865f2;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-weight: 600;
+  transition: background 0.15s ease;
+}
+
+.discord-btn:hover {
+  background: #4752c4;
+}
+
+.discord-btn-promo {
+  margin-left: 0;
+  margin-top: 8px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  align-self: flex-start;
+}
+
+.discord-tag-promo {
+  margin-left: 0;
+  margin-top: 8px;
+  color: #d7d9ff;
+}
+
+.promo-text {
+  display: flex;
+  flex-direction: column;
 }
 
 #lockModal input {
