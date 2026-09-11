@@ -753,6 +753,7 @@ function renderGrid() {
   const filterClass = document.getElementById("filterClass").value;
   const filterStatus = document.getElementById("filterStatus").value;
   const filterCollectibleTag = document.getElementById("filterCollectibleTag").value;
+  const filterOwner = document.getElementById("filterOwner").value;
   const showAll = document.getElementById("filterShowAll").checked;
 
   document.getElementById("filterAvailableBtn").classList.toggle("active", filterStatus === "disponivel");
@@ -765,6 +766,7 @@ function renderGrid() {
     if (filterStatus === "disponivel" && isRented(status)) return false;
     if (filterStatus === "alugado" && !isRented(status)) return false;
     if (filterCollectibleTag && !axieHasCollectibleTag(axie, filterCollectibleTag)) return false;
+    if (filterOwner && normalizeWallet(axie.ownerWallet) !== normalizeWallet(filterOwner)) return false;
     return true;
   });
 
@@ -862,6 +864,17 @@ function axieHasCollectibleTag(axie, value) {
   if ((axie.specialGenes || []).includes(value)) return true;
   if (axie.genesisTitle === value) return true;
   return false;
+}
+
+function populateOwnerFilter() {
+  const select = document.getElementById("filterOwner");
+  if (typeof PARTNER_NAMES === "undefined") return;
+  Object.entries(PARTNER_NAMES).forEach(([wallet, name]) => {
+    const opt = document.createElement("option");
+    opt.value = wallet;
+    opt.textContent = name;
+    select.appendChild(opt);
+  });
 }
 
 function populateCollectibleFilter() {
@@ -1041,6 +1054,7 @@ function init() {
   translateStaticUI();
   populateClassFilter();
   populateCollectibleFilter();
+  populateOwnerFilter();
   renderPriceTable();
   renderAssociatesBanner();
 
@@ -1048,7 +1062,7 @@ function init() {
     btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
   });
 
-  ["searchId", "filterClass", "filterStatus", "filterCollectibleTag", "filterShowAll"].forEach((id) => {
+  ["searchId", "filterClass", "filterStatus", "filterCollectibleTag", "filterOwner", "filterShowAll"].forEach((id) => {
     document.getElementById(id).addEventListener("input", renderGrid);
     document.getElementById(id).addEventListener("change", renderGrid);
   });
