@@ -112,8 +112,6 @@ const I18N = {
     tierFinal: "Final",
     morphPartsTitle: "✨ Partes após o morph",
     partEyes: "Olhos", partEars: "Orelhas", partMouth: "Boca", partHorn: "Chifre", partBack: "Costas", partTail: "Cauda",
-    morphGenerating: "Gerando imagem morfada...",
-    morphFailed: "Não foi possível gerar a imagem morfada.",
     seasonLabel: "Temporada",
     updatedAtLabel: "Atualizado em",
     top100SeasonSelectLabel: "Ver temporada/era",
@@ -175,8 +173,6 @@ const I18N = {
     tierFinal: "Final",
     morphPartsTitle: "✨ Parts after the morph",
     partEyes: "Eyes", partEars: "Ears", partMouth: "Mouth", partHorn: "Horn", partBack: "Back", partTail: "Tail",
-    morphGenerating: "Generating morphed image...",
-    morphFailed: "Couldn't generate the morphed image.",
     seasonLabel: "Season",
     updatedAtLabel: "Updated on",
     top100SeasonSelectLabel: "View season/era",
@@ -238,8 +234,6 @@ const I18N = {
     tierFinal: "Final",
     morphPartsTitle: "✨ Partes después del morph",
     partEyes: "Ojos", partEars: "Orejas", partMouth: "Boca", partHorn: "Cuerno", partBack: "Espalda", partTail: "Cola",
-    morphGenerating: "Generando imagen transformada...",
-    morphFailed: "No se pudo generar la imagen transformada.",
     seasonLabel: "Temporada",
     updatedAtLabel: "Actualizado el",
     top100SeasonSelectLabel: "Ver temporada/era",
@@ -301,8 +295,6 @@ const I18N = {
     tierFinal: "Final",
     morphPartsTitle: "✨ Mga parte pagkatapos ng morph",
     partEyes: "Mata", partEars: "Tainga", partMouth: "Bibig", partHorn: "Sungay", partBack: "Likod", partTail: "Buntot",
-    morphGenerating: "Gumagawa ng na-morph na larawan...",
-    morphFailed: "Hindi magawa ang na-morph na larawan.",
     seasonLabel: "Season",
     updatedAtLabel: "Na-update noong",
     top100SeasonSelectLabel: "Tingnan ang season/era",
@@ -556,10 +548,6 @@ function renderTop100AxieImage(genesHex, imgEl, myToken) {
 }
 
 let currentView = "standard";
-let morphRenderToken = 0;
-let morphObserver = null;
-let morphRenderQueue = [];
-let morphRenderQueueRunning = false;
 
 const AXIE_BY_ID = {};
 AXIE_DATA.forEach((axie) => {
@@ -771,6 +759,10 @@ function imageUrl(id) {
   return `https://axiecdn.axieinfinity.com/axies/${id}/axie/axie-full-transparent.png`;
 }
 
+function morphImageUrl(id) {
+  return `morph-images/${id}.png`;
+}
+
 function partsSummary(parts) {
   if (!parts || Object.keys(parts).length === 0) return "";
   return Object.values(parts).filter(Boolean).join(", ");
@@ -816,69 +808,6 @@ function renderGrid() {
   });
 
   updateStats();
-
-  if (currentView === "morph") {
-    queueMorphRenders(items);
-  } else if (morphObserver) {
-    morphObserver.disconnect();
-    morphObserver = null;
-  }
-}
-
-function queueMorphRenders(items) {
-  const myToken = ++morphRenderToken;
-  if (!window.AxieRenderer) {
-    console.warn("AxieRenderer não carregado — mostrando imagem padrão.");
-    return;
-  }
-
-  if (morphObserver) morphObserver.disconnect();
-  morphRenderQueue = [];
-
-  const axieById = {};
-  items.forEach((axie) => {
-    if (axie.morphGenesHex) axieById[axie.id] = axie;
-  });
-
-  morphObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        const axieId = entry.target.dataset.axieId;
-        morphObserver.unobserve(entry.target);
-        const axie = axieById[axieId];
-        if (axie) enqueueMorphRender(axie, myToken);
-      });
-    },
-    { rootMargin: "300px", threshold: 0.01 }
-  );
-
-  items.forEach((axie) => {
-    if (!axie.morphGenesHex) return;
-    const imgEl = document.getElementById(`axie-img-${axie.id}`);
-    if (!imgEl) return;
-    imgEl.dataset.axieId = axie.id;
-    morphObserver.observe(imgEl);
-  });
-}
-
-function enqueueMorphRender(axie, token) {
-  morphRenderQueue.push({ axie, token });
-  runMorphRenderQueue();
-}
-
-async function runMorphRenderQueue() {
-  if (morphRenderQueueRunning) return;
-  morphRenderQueueRunning = true;
-  while (morphRenderQueue.length > 0) {
-    const { axie, token } = morphRenderQueue.shift();
-    if (token !== morphRenderToken) continue;
-    const imgEl = document.getElementById(`axie-img-${axie.id}`);
-    const statusEl = document.getElementById(`morph-status-${axie.id}`);
-    if (!imgEl) continue;
-    await renderMorphImage(axie, imgEl, statusEl);
-  }
-  morphRenderQueueRunning = false;
 }
 
 function isBlankImage(dataUrl) {
@@ -912,49 +841,6 @@ function isBlankImage(dataUrl) {
     };
     img.onerror = () => resolve(true);
     img.src = dataUrl;
-  });
-}
-
-function renderMorphImage(axie, imgEl, statusEl) {
-  return new Promise((resolve) => {
-    const tempId = `morph-temp-${axie.id}`;
-    const tempContainer = document.createElement("div");
-    tempContainer.id = tempId;
-    tempContainer.style.position = "fixed";
-    tempContainer.style.top = "-9999px";
-    tempContainer.style.left = "-9999px";
-    tempContainer.style.width = "300px";
-    tempContainer.style.height = "300px";
-    document.body.appendChild(tempContainer);
-
-    const cleanup = () => {
-      if (document.body.contains(tempContainer)) document.body.removeChild(tempContainer);
-      resolve();
-    };
-
-    (async () => {
-      try {
-        if (statusEl) statusEl.textContent = t("morphGenerating");
-        const renderer = new window.AxieRenderer(tempId);
-        await renderer.render(axie.morphGenesHex, 0.3, 95);
-        await new Promise((r) => setTimeout(r, 150));
-        const dataUrl = renderer.extractImage();
-        renderer.destroy();
-        if (dataUrl && dataUrl.length > 100 && !(await isBlankImage(dataUrl))) {
-          imgEl.src = dataUrl;
-          imgEl.style.visibility = "visible";
-          if (statusEl) statusEl.textContent = "";
-        } else if (statusEl) {
-          statusEl.textContent = `${t("morphFailed")} (saída em branco)`;
-        }
-      } catch (err) {
-        console.error("Erro ao renderizar morph do axie", axie.id, err);
-        const shortMsg = (err.message || "").slice(0, 160);
-        if (statusEl) statusEl.textContent = `${t("morphFailed")}: ${shortMsg}`;
-      } finally {
-        cleanup();
-      }
-    })();
   });
 }
 
@@ -1053,14 +939,15 @@ function buildCard(axie) {
   const showOwnerBadge = typeof PARTNER_NAMES !== "undefined" && Object.keys(PARTNER_NAMES).length > 1 && ownerName;
   const discordHandle = typeof PARTNER_DISCORD !== "undefined" ? PARTNER_DISCORD[normalizeWallet(axie.ownerWallet)] : null;
 
+  const photoSrc = isMorphView ? morphImageUrl(axie.id) : imageUrl(axie.id);
   card.innerHTML = `
     <div class="card-photo">
-      <img id="axie-img-${axie.id}" src="${imageUrl(axie.id)}" alt="Axie ${axie.id}" loading="lazy" title="${partsSummary(axie.parts)}"
-           onerror="this.style.visibility='hidden'">
+      <img id="axie-img-${axie.id}" src="${photoSrc}" alt="Axie ${axie.id}" loading="lazy" title="${partsSummary(axie.parts)}"
+           data-fallback="${imageUrl(axie.id)}"
+           onerror="if (this.src !== this.dataset.fallback) { this.src = this.dataset.fallback; } else { this.style.visibility='hidden'; }">
       ${isMorphView ? `<span class="morph-ribbon">${t("tabMorph")}</span>` : ""}
       ${axie.level != null ? `<span class="level-badge">Lv. ${axie.level}</span>` : ""}
     </div>
-    ${isMorphView ? `<div class="morph-status" id="morph-status-${axie.id}"></div>` : ""}
     <div class="card-info">
       <div class="card-id">#${axie.id}</div>
       <span class="class-badge" style="background: var(--${badgeClass})">${axie.class || "?"}</span>

@@ -472,13 +472,6 @@ body {
   position: relative;
 }
 
-.morph-status {
-  font-size: 0.7rem;
-  color: #c084fc;
-  text-align: center;
-  min-height: 1em;
-}
-
 .morph-ribbon {
   position: absolute;
   top: 6px;
