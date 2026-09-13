@@ -687,10 +687,30 @@ function subscribeAxieStatus() {
   );
 }
 
+async function migrateLegacyRenterNames() {
+  let legacyState;
+  try {
+    legacyState = JSON.parse(localStorage.getItem("aluguelAxieState_v1"));
+  } catch (e) {
+    legacyState = null;
+  }
+  if (!legacyState || typeof legacyState !== "object") return;
+
+  const entries = Object.entries(legacyState).filter(([, v]) => v && v.renterName);
+  for (const [axieId, v] of entries) {
+    const axie = AXIE_BY_ID[axieId];
+    if (!axie || !canEditAxie(axie)) continue;
+    if (getRenterName(axieId)) continue;
+    await setRenterName(axie, v.renterName);
+  }
+  localStorage.removeItem("aluguelAxieState_v1");
+}
+
 auth.onAuthStateChanged(async (user) => {
   currentUser = user;
   if (user) {
     await loadPartnerProfile(user);
+    await migrateLegacyRenterNames();
   } else {
     currentPartner = null;
     isAdmin = false;
