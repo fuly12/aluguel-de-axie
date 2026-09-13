@@ -538,7 +538,12 @@ function renderTop100AxieImage(genesHex, imgEl, myToken) {
         await new Promise((r) => setTimeout(r, 150));
         const dataUrl = renderer.extractImage();
         renderer.destroy();
-        if (myToken === top100RenderToken && dataUrl && dataUrl.length > 100) {
+        if (
+          myToken === top100RenderToken &&
+          dataUrl &&
+          dataUrl.length > 100 &&
+          !(await isBlankImage(dataUrl))
+        ) {
           imgEl.src = dataUrl;
         }
       } catch (err) {
@@ -940,11 +945,12 @@ function renderMorphImage(axie, imgEl, statusEl) {
           imgEl.style.visibility = "visible";
           if (statusEl) statusEl.textContent = "";
         } else if (statusEl) {
-          statusEl.textContent = t("morphFailed");
+          statusEl.textContent = `${t("morphFailed")} (saída em branco)`;
         }
       } catch (err) {
         console.error("Erro ao renderizar morph do axie", axie.id, err);
-        if (statusEl) statusEl.textContent = t("morphFailed");
+        const shortMsg = (err.message || "").slice(0, 160);
+        if (statusEl) statusEl.textContent = `${t("morphFailed")}: ${shortMsg}`;
       } finally {
         cleanup();
       }

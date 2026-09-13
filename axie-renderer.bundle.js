@@ -40806,6 +40806,12 @@ void main() {
         if (resourcesToLoad.length > 0) {
           await new Promise((resolve) => loader.load(resolve));
         }
+        const failedResources = Object.values(loader.resources).filter((res) => res && res.error);
+        if (failedResources.length > 0) {
+          throw new Error(
+            `Falha ao carregar ${failedResources.length} textura(s) do mixer: ${failedResources.map((r) => r.url).join(", ")}`
+          );
+        }
         const allTextures = {};
         resources.forEach((res) => {
           if (PIXI2.utils.TextureCache[res.imagePath]) {
@@ -40829,6 +40835,7 @@ void main() {
         this.app.stage.addChild(this.currentFigure);
       } catch (err) {
         console.error("Erro render:", err);
+        throw err;
       }
     }
     // Método para converter o Canvas em Imagem Base64
