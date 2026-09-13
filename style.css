@@ -444,8 +444,9 @@ body {
 
 .view-tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  padding: 12px 24px 0;
+  padding: 12px 24px;
   background: #131b2b;
 }
 

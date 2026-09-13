@@ -1,5 +1,3 @@
-const STORAGE_KEY = "aluguelAxieState_v1";
-
 const ALL_CLASSES = ["Aquatic", "Beast", "Bird", "Bug", "Dawn", "Dusk", "Mech", "Plant", "Reptile"];
 
 const CLASS_CLASS_MAP = {
@@ -552,19 +550,6 @@ function renderTop100AxieImage(genesHex, imgEl, myToken) {
   });
 }
 
-function loadState() {
-  try {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
-  } catch (e) {
-    return {};
-  }
-}
-
-function saveState(state) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-}
-
-let renterState = loadState();
 let currentView = "standard";
 let morphRenderToken = 0;
 
@@ -695,7 +680,10 @@ function subscribeAxieStatus() {
     (snapshot) => {
       snapshot.docChanges().forEach((change) => {
         const data = change.doc.data();
-        axieStatus[change.doc.id] = { rentedTiers: Array.isArray(data.rentedTiers) ? data.rentedTiers : [] };
+        axieStatus[change.doc.id] = {
+          rentedTiers: Array.isArray(data.rentedTiers) ? data.rentedTiers : [],
+          renterName: typeof data.renterName === "string" ? data.renterName : "",
+        };
       });
       if (currentView !== "top100") renderGrid();
     },
@@ -722,7 +710,7 @@ function tierLabels() {
 }
 
 function getStatus(id) {
-  return axieStatus[id] || { rentedTiers: [] };
+  return axieStatus[id] || { rentedTiers: [], renterName: "" };
 }
 
 function isRented(status) {
@@ -730,12 +718,19 @@ function isRented(status) {
 }
 
 function getRenterName(id) {
-  return (renterState[id] && renterState[id].renterName) || "";
+  return getStatus(id).renterName || "";
 }
 
-function setRenterName(id, name) {
-  renterState[id] = { renterName: name };
-  saveState(renterState);
+async function setRenterName(axie, name) {
+  if (!canEditAxie(axie)) return false;
+  try {
+    await db.collection("axieStatus").doc(axie.id).update({ renterName: name });
+    axieStatus[axie.id] = { ...getStatus(axie.id), renterName: name };
+    return true;
+  } catch (e) {
+    console.error("Erro ao salvar nome do locatário", e);
+    return false;
+  }
 }
 
 async function setRentalStatus(axie, rentedTiers) {
@@ -998,8 +993,8 @@ function buildCard(axie) {
 
   const renterInput = card.querySelector(".renter-input");
   if (renterInput) {
-    renterInput.addEventListener("input", (e) => {
-      setRenterName(axie.id, e.target.value);
+    renterInput.addEventListener("change", (e) => {
+      setRenterName(axie, e.target.value);
     });
   }
 
