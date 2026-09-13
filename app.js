@@ -876,6 +876,40 @@ async function runMorphRenderQueue() {
   morphRenderQueueRunning = false;
 }
 
+function isBlankImage(dataUrl) {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.onload = () => {
+      try {
+        const canvas = document.createElement("canvas");
+        canvas.width = img.naturalWidth || img.width;
+        canvas.height = img.naturalHeight || img.height;
+        if (!canvas.width || !canvas.height) {
+          resolve(true);
+          return;
+        }
+        const ctx = canvas.getContext("2d");
+        ctx.drawImage(img, 0, 0);
+        const data = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+        const stride = 4 * 37;
+        let visibleSamples = 0;
+        let totalSamples = 0;
+        for (let i = 0; i < data.length; i += stride) {
+          totalSamples++;
+          const alpha = data[i + 3];
+          const brightness = data[i] + data[i + 1] + data[i + 2];
+          if (alpha > 20 && brightness > 15) visibleSamples++;
+        }
+        resolve(totalSamples === 0 || visibleSamples / totalSamples < 0.02);
+      } catch (e) {
+        resolve(false);
+      }
+    };
+    img.onerror = () => resolve(true);
+    img.src = dataUrl;
+  });
+}
+
 function renderMorphImage(axie, imgEl, statusEl) {
   return new Promise((resolve) => {
     const tempId = `morph-temp-${axie.id}`;
@@ -901,7 +935,7 @@ function renderMorphImage(axie, imgEl, statusEl) {
         await new Promise((r) => setTimeout(r, 150));
         const dataUrl = renderer.extractImage();
         renderer.destroy();
-        if (dataUrl && dataUrl.length > 100) {
+        if (dataUrl && dataUrl.length > 100 && !(await isBlankImage(dataUrl))) {
           imgEl.src = dataUrl;
           imgEl.style.visibility = "visible";
           if (statusEl) statusEl.textContent = "";
