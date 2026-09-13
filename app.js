@@ -552,6 +552,9 @@ function renderTop100AxieImage(genesHex, imgEl, myToken) {
 
 let currentView = "standard";
 let morphRenderToken = 0;
+let morphObserver = null;
+let morphRenderQueue = [];
+let morphRenderQueueRunning = false;
 
 const AXIE_BY_ID = {};
 AXIE_DATA.forEach((axie) => {
@@ -811,23 +814,66 @@ function renderGrid() {
 
   if (currentView === "morph") {
     queueMorphRenders(items);
+  } else if (morphObserver) {
+    morphObserver.disconnect();
+    morphObserver = null;
   }
 }
 
-async function queueMorphRenders(items) {
+function queueMorphRenders(items) {
   const myToken = ++morphRenderToken;
   if (!window.AxieRenderer) {
     console.warn("AxieRenderer não carregado — mostrando imagem padrão.");
     return;
   }
-  for (const axie of items) {
-    if (myToken !== morphRenderToken) return;
-    if (!axie.morphGenesHex) continue;
+
+  if (morphObserver) morphObserver.disconnect();
+  morphRenderQueue = [];
+
+  const axieById = {};
+  items.forEach((axie) => {
+    if (axie.morphGenesHex) axieById[axie.id] = axie;
+  });
+
+  morphObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const axieId = entry.target.dataset.axieId;
+        morphObserver.unobserve(entry.target);
+        const axie = axieById[axieId];
+        if (axie) enqueueMorphRender(axie, myToken);
+      });
+    },
+    { rootMargin: "300px", threshold: 0.01 }
+  );
+
+  items.forEach((axie) => {
+    if (!axie.morphGenesHex) return;
+    const imgEl = document.getElementById(`axie-img-${axie.id}`);
+    if (!imgEl) return;
+    imgEl.dataset.axieId = axie.id;
+    morphObserver.observe(imgEl);
+  });
+}
+
+function enqueueMorphRender(axie, token) {
+  morphRenderQueue.push({ axie, token });
+  runMorphRenderQueue();
+}
+
+async function runMorphRenderQueue() {
+  if (morphRenderQueueRunning) return;
+  morphRenderQueueRunning = true;
+  while (morphRenderQueue.length > 0) {
+    const { axie, token } = morphRenderQueue.shift();
+    if (token !== morphRenderToken) continue;
     const imgEl = document.getElementById(`axie-img-${axie.id}`);
     const statusEl = document.getElementById(`morph-status-${axie.id}`);
     if (!imgEl) continue;
     await renderMorphImage(axie, imgEl, statusEl);
   }
+  morphRenderQueueRunning = false;
 }
 
 function renderMorphImage(axie, imgEl, statusEl) {
@@ -969,7 +1015,7 @@ function buildCard(axie) {
 
   card.innerHTML = `
     <div class="card-photo">
-      <img id="axie-img-${axie.id}" src="${imageUrl(axie.id)}" alt="Axie ${axie.id}" ${isMorphView ? "" : 'loading="lazy"'} title="${partsSummary(axie.parts)}"
+      <img id="axie-img-${axie.id}" src="${imageUrl(axie.id)}" alt="Axie ${axie.id}" loading="lazy" title="${partsSummary(axie.parts)}"
            onerror="this.style.visibility='hidden'">
       ${isMorphView ? `<span class="morph-ribbon">${t("tabMorph")}</span>` : ""}
       ${axie.level != null ? `<span class="level-badge">Lv. ${axie.level}</span>` : ""}
