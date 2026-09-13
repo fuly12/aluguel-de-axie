@@ -17,12 +17,45 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { chromium } from "playwright";
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
+
+const execFileAsync = promisify(execFile);
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.join(__dirname, "..");
 const DATA_JS_PATH = path.join(REPO_ROOT, "data.js");
 const IMAGES_DIR = path.join(REPO_ROOT, "morph-images");
 const RENDERER_BUNDLE_PATH = path.join(REPO_ROOT, "axie-renderer.bundle.js");
+
+// Both Chromium's own network stack and Node's http clients (undici/fetch) get
+// blocked (connection reset / HTTP 403) when fetching the mixer part textures
+// from axiecdn.axieinfinity.com in this environment -- but plain `curl` reaches
+// the exact same URLs fine (confirmed: curl succeeds 100% of repeated tries,
+// undici gets a 403 WAF page every time). So every request the page makes for
+// a texture is intercepted here and fetched via `curl` in a child process
+// instead; PixiJS's loader never touches the real network directly.
+async function fetchViaCurl(url) {
+  const { stdout } = await execFileAsync(
+    "curl",
+    ["-sS", "--max-time", "15", "--fail", url],
+    { encoding: "buffer", maxBuffer: 20 * 1024 * 1024 }
+  );
+  return stdout;
+}
+
+async function setupTextureProxy(page) {
+  await page.route("https://axiecdn.axieinfinity.com/**", async (route) => {
+    const url = route.request().url();
+    try {
+      const body = await fetchViaCurl(url);
+      await route.fulfill({ status: 200, contentType: "image/png", body });
+    } catch (err) {
+      console.error(`  [proxy] falha buscando ${url}: ${err.message}`);
+      await route.abort("failed");
+    }
+  });
+}
 
 function loadAxieData() {
   const content = readFileSync(DATA_JS_PATH, "utf8");
@@ -103,12 +136,14 @@ async function main() {
 
   const browser = await chromium.launch();
   let page = await browser.newPage({ viewport: { width: 400, height: 400 } });
+  await setupTextureProxy(page);
   await page.goto("about:blank");
   await page.addScriptTag({ path: RENDERER_BUNDLE_PATH });
 
   const freshPage = async () => {
     await page.close().catch(() => {});
     page = await browser.newPage({ viewport: { width: 400, height: 400 } });
+    await setupTextureProxy(page);
     await page.goto("about:blank");
     await page.addScriptTag({ path: RENDERER_BUNDLE_PATH });
   };
