@@ -468,7 +468,9 @@ function renderTop100() {
           .map(
             (axie, idx) => `
           <a class="top100-axie" href="https://app.axieinfinity.com/marketplace/axies/${axie.id}/" target="_blank" rel="noopener" title="Axie ${axie.id}">
-            <img id="top100-img-${dataset.key}-${p.rank}-${idx}" src="${axie.static_img}" alt="Axie ${axie.id}">
+            <img id="top100-img-${dataset.key}-${p.rank}-${idx}" src="${axie.is_morph ? top100ImageUrl(dataset.key, axie.id) : axie.static_img}" alt="Axie ${axie.id}"
+                 data-fallback="${axie.static_img}"
+                 onerror="if (this.src !== this.dataset.fallback) { this.src = this.dataset.fallback; } else { this.style.visibility='hidden'; }">
             ${axie.rune_img ? `<img class="rune-badge" src="${axie.rune_img}" alt="rune" loading="lazy">` : ""}
           </a>`
           )
@@ -482,69 +484,6 @@ function renderTop100() {
     </div>`
     )
     .join("");
-
-  queueTop100Renders(dataset);
-}
-
-let top100RenderToken = 0;
-
-async function queueTop100Renders(dataset) {
-  const myToken = ++top100RenderToken;
-  if (!window.AxieRenderer) {
-    console.warn("AxieRenderer não carregado — mostrando fotos atuais dos axies.");
-    return;
-  }
-  for (const p of dataset.players || []) {
-    for (let idx = 0; idx < (p.team || []).length; idx++) {
-      if (myToken !== top100RenderToken) return;
-      const axie = p.team[idx];
-      if (!axie.genes) continue;
-      const imgEl = document.getElementById(`top100-img-${dataset.key}-${p.rank}-${idx}`);
-      if (!imgEl) continue;
-      await renderTop100AxieImage(axie.genes, imgEl, myToken);
-    }
-  }
-}
-
-function renderTop100AxieImage(genesHex, imgEl, myToken) {
-  return new Promise((resolve) => {
-    const tempId = `top100-temp-${Math.random().toString(36).slice(2)}`;
-    const tempContainer = document.createElement("div");
-    tempContainer.id = tempId;
-    tempContainer.style.position = "fixed";
-    tempContainer.style.top = "-9999px";
-    tempContainer.style.left = "-9999px";
-    tempContainer.style.width = "300px";
-    tempContainer.style.height = "300px";
-    document.body.appendChild(tempContainer);
-
-    const cleanup = () => {
-      if (document.body.contains(tempContainer)) document.body.removeChild(tempContainer);
-      resolve();
-    };
-
-    (async () => {
-      try {
-        const renderer = new window.AxieRenderer(tempId);
-        await renderer.render(genesHex, 0.3, 95);
-        await new Promise((r) => setTimeout(r, 150));
-        const dataUrl = renderer.extractImage();
-        renderer.destroy();
-        if (
-          myToken === top100RenderToken &&
-          dataUrl &&
-          dataUrl.length > 100 &&
-          !(await isBlankImage(dataUrl))
-        ) {
-          imgEl.src = dataUrl;
-        }
-      } catch (err) {
-        console.error("Erro ao renderizar axie do Top 100", err);
-      } finally {
-        cleanup();
-      }
-    })();
-  });
 }
 
 let currentView = "standard";
@@ -783,6 +722,10 @@ function morphImageUrl(id) {
   return `morph-images/${id}.png`;
 }
 
+function top100ImageUrl(datasetKey, id) {
+  return `top100-images/${datasetKey}/${id}.png`;
+}
+
 function partsSummary(parts) {
   if (!parts || Object.keys(parts).length === 0) return "";
   return Object.values(parts).filter(Boolean).join(", ");
@@ -828,40 +771,6 @@ function renderGrid() {
   });
 
   updateStats();
-}
-
-function isBlankImage(dataUrl) {
-  return new Promise((resolve) => {
-    const img = new Image();
-    img.onload = () => {
-      try {
-        const canvas = document.createElement("canvas");
-        canvas.width = img.naturalWidth || img.width;
-        canvas.height = img.naturalHeight || img.height;
-        if (!canvas.width || !canvas.height) {
-          resolve(true);
-          return;
-        }
-        const ctx = canvas.getContext("2d");
-        ctx.drawImage(img, 0, 0);
-        const data = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
-        const stride = 4 * 37;
-        let visibleSamples = 0;
-        let totalSamples = 0;
-        for (let i = 0; i < data.length; i += stride) {
-          totalSamples++;
-          const alpha = data[i + 3];
-          const brightness = data[i] + data[i + 1] + data[i + 2];
-          if (alpha > 20 && brightness > 15) visibleSamples++;
-        }
-        resolve(totalSamples === 0 || visibleSamples / totalSamples < 0.02);
-      } catch (e) {
-        resolve(false);
-      }
-    };
-    img.onerror = () => resolve(true);
-    img.src = dataUrl;
-  });
 }
 
 function collectibleTagsHtml(axie) {

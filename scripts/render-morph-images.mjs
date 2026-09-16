@@ -1,7 +1,13 @@
 #!/usr/bin/env node
-// Pre-renders a static PNG for every collectible axie that has actually undergone
-// the in-game Morph transformation (axie.isMorphed && axie.morphGenesHex in data.js),
-// using the same AxieRenderer (PixiJS + Spine) bundle the site itself uses.
+// Pre-renders a static PNG for every axie that has undergone the in-game Morph
+// transformation, in two places:
+//   1. axie.isMorphed && axie.morphGenesHex in data.js (our own axies, "Morfado" tab)
+//      -> saved to morph-images/{axieId}.png
+//   2. axie.is_morph in each snapshot of TOP100_DATASETS (top100.js)
+//      -> saved to top100-images/{datasetKey}/{axieId}.png (one folder per season,
+//         since the same axie id can be morphed in one season's snapshot and not
+//         in an older one -- each season's photo is permanent once taken)
+// Both use the same AxieRenderer (PixiJS + Spine) bundle the site itself uses.
 //
 // Why: rendering the morphed look live, in each visitor's browser, turned out to be
 // fragile on mobile (silent WebGL/texture-loading failures produced a blank image).
@@ -10,8 +16,9 @@
 // of failure for site visitors.
 //
 // Run with: node scripts/render-morph-images.mjs
-// Only axies missing a file under morph-images/ are (re)rendered; existing ones are
-// left untouched, so this is cheap to run repeatedly.
+// Only axies/season-snapshots missing their file are (re)rendered; existing ones are
+// left untouched, so this is cheap and safe to run repeatedly (e.g. every time the
+// periodic automation runs, or after a new Top 100 season snapshot is added).
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
@@ -25,8 +32,11 @@ const execFileAsync = promisify(execFile);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.join(__dirname, "..");
 const DATA_JS_PATH = path.join(REPO_ROOT, "data.js");
-const IMAGES_DIR = path.join(REPO_ROOT, "morph-images");
+const TOP100_JS_PATH = path.join(REPO_ROOT, "top100.js");
+const MORPH_IMAGES_DIR = path.join(REPO_ROOT, "morph-images");
+const TOP100_IMAGES_DIR = path.join(REPO_ROOT, "top100-images");
 const RENDERER_BUNDLE_PATH = path.join(REPO_ROOT, "axie-renderer.bundle.js");
+const RENDER_TIMEOUT_MS = 25000;
 
 // Both Chromium's own network stack and Node's http clients (undici/fetch) get
 // blocked (connection reset / HTTP 403) when fetching the mixer part textures
@@ -64,10 +74,38 @@ function loadAxieData() {
   return JSON.parse(content.slice(prefix.length).replace(/;\s*$/, ""));
 }
 
-const RENDER_TIMEOUT_MS = 25000;
+function loadTop100Datasets() {
+  if (!existsSync(TOP100_JS_PATH)) return [];
+  const content = readFileSync(TOP100_JS_PATH, "utf8");
+  const prefix = "const TOP100_DATASETS = ";
+  if (!content.startsWith(prefix)) throw new Error("Unexpected top100.js format");
+  return JSON.parse(content.slice(prefix.length).replace(/;\s*$/, ""));
+}
 
-async function renderOne(page, morphGenesHex) {
-  const renderPromise = page.evaluate(async (genesHex) => {
+function collectPendingMorphTab() {
+  return loadAxieData()
+    .filter((a) => a.isMorphed && a.morphGenesHex && !existsSync(path.join(MORPH_IMAGES_DIR, `${a.id}.png`)))
+    .map((a) => ({ label: `#${a.id}`, genes: a.morphGenesHex, outFile: path.join(MORPH_IMAGES_DIR, `${a.id}.png`) }));
+}
+
+function collectPendingTop100() {
+  const pending = [];
+  for (const dataset of loadTop100Datasets()) {
+    const dir = path.join(TOP100_IMAGES_DIR, dataset.key);
+    for (const p of dataset.players || []) {
+      for (const axie of p.team || []) {
+        if (!axie.is_morph || !axie.genes) continue;
+        const outFile = path.join(dir, `${axie.id}.png`);
+        if (existsSync(outFile)) continue;
+        pending.push({ label: `Top100 ${dataset.name} #${axie.id}`, genes: axie.genes, outFile });
+      }
+    }
+  }
+  return pending;
+}
+
+async function renderOnce(page, genesHex) {
+  const renderPromise = page.evaluate(async (genes) => {
     const containerId = "render-target-" + Math.random().toString(36).slice(2);
     const container = document.createElement("div");
     container.id = containerId;
@@ -76,7 +114,7 @@ async function renderOne(page, morphGenesHex) {
     document.body.appendChild(container);
     try {
       const renderer = new window.AxieRenderer(containerId);
-      await renderer.render(genesHex, 0.3, 95);
+      await renderer.render(genes, 0.3, 95);
       await new Promise((r) => setTimeout(r, 200));
       const dataUrl = renderer.extractImage();
       renderer.destroy();
@@ -86,7 +124,7 @@ async function renderOne(page, morphGenesHex) {
     } finally {
       container.remove();
     }
-  }, morphGenesHex);
+  }, genesHex);
 
   const timeoutPromise = new Promise((resolve) =>
     setTimeout(() => resolve({ ok: false, error: `timeout apos ${RENDER_TIMEOUT_MS}ms` }), RENDER_TIMEOUT_MS)
@@ -120,19 +158,8 @@ function isDataUrlBlank(page, dataUrl) {
   }, dataUrl);
 }
 
-async function main() {
-  if (!existsSync(IMAGES_DIR)) mkdirSync(IMAGES_DIR);
-
-  const axieData = loadAxieData();
-  const pending = axieData.filter(
-    (a) => a.isMorphed && a.morphGenesHex && !existsSync(path.join(IMAGES_DIR, `${a.id}.png`))
-  );
-
-  if (pending.length === 0) {
-    console.log("Nenhuma imagem nova pra renderizar.");
-    return;
-  }
-  console.log(`Renderizando ${pending.length} imagem(ns) de axies morfados...`);
+async function renderBatch(items) {
+  if (items.length === 0) return { rendered: 0, failed: [] };
 
   const browser = await chromium.launch();
   let page = await browser.newPage({ viewport: { width: 400, height: 400 } });
@@ -151,41 +178,63 @@ async function main() {
   let rendered = 0;
   const failed = [];
 
-  for (const axie of pending) {
+  for (const item of items) {
     let result = null;
     const MAX_ATTEMPTS = 3;
     for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
-      result = await renderOne(page, axie.morphGenesHex);
+      result = await renderOnce(page, item.genes);
       if (result.ok) break;
-      console.log(`  tentativa ${attempt}/${MAX_ATTEMPTS} falhou pro #${axie.id}: ${result.error}`);
+      console.log(`  tentativa ${attempt}/${MAX_ATTEMPTS} falhou pro ${item.label}: ${result.error}`);
       if (result.error && result.error.startsWith("timeout")) await freshPage();
       await new Promise((r) => setTimeout(r, 1500));
     }
 
     if (!result.ok || !result.dataUrl || result.dataUrl.length < 200) {
-      failed.push({ id: axie.id, error: result?.error || "imagem vazia" });
-      console.log(`  FALHOU: #${axie.id}`);
+      failed.push({ label: item.label, error: result?.error || "imagem vazia" });
+      console.log(`  FALHOU: ${item.label}`);
       continue;
     }
 
     const blank = await isDataUrlBlank(page, result.dataUrl);
     if (blank) {
-      failed.push({ id: axie.id, error: "renderizacao vazia (sem conteudo visivel)" });
-      console.log(`  FALHOU (vazio): #${axie.id}`);
+      failed.push({ label: item.label, error: "renderizacao vazia (sem conteudo visivel)" });
+      console.log(`  FALHOU (vazio): ${item.label}`);
       continue;
     }
 
+    const dir = path.dirname(item.outFile);
+    if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
     const base64 = result.dataUrl.replace(/^data:image\/png;base64,/, "");
-    writeFileSync(path.join(IMAGES_DIR, `${axie.id}.png`), Buffer.from(base64, "base64"));
+    writeFileSync(item.outFile, Buffer.from(base64, "base64"));
     rendered++;
-    console.log(`  OK: #${axie.id}`);
+    console.log(`  OK: ${item.label}`);
   }
 
   await browser.close();
+  return { rendered, failed };
+}
 
-  console.log(`Concluido: ${rendered} renderizada(s), ${failed.length} falharam.`);
-  if (failed.length > 0) {
-    console.log("Falhas:", JSON.stringify(failed, null, 2));
+async function main() {
+  const morphPending = collectPendingMorphTab();
+  const top100Pending = collectPendingTop100();
+
+  if (morphPending.length === 0 && top100Pending.length === 0) {
+    console.log("Nenhuma imagem nova pra renderizar.");
+    return;
+  }
+
+  if (morphPending.length > 0) {
+    console.log(`Renderizando ${morphPending.length} imagem(ns) da aba Morfado...`);
+    const { rendered, failed } = await renderBatch(morphPending);
+    console.log(`Morfado: ${rendered} renderizada(s), ${failed.length} falharam.`);
+    if (failed.length > 0) console.log("Falhas (Morfado):", JSON.stringify(failed, null, 2));
+  }
+
+  if (top100Pending.length > 0) {
+    console.log(`Renderizando ${top100Pending.length} imagem(ns) do Top 100...`);
+    const { rendered, failed } = await renderBatch(top100Pending);
+    console.log(`Top 100: ${rendered} renderizada(s), ${failed.length} falharam.`);
+    if (failed.length > 0) console.log("Falhas (Top 100):", JSON.stringify(failed, null, 2));
   }
 }
 
