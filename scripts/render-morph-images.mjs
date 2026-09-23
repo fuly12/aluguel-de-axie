@@ -36,7 +36,29 @@ const TOP100_JS_PATH = path.join(REPO_ROOT, "top100.js");
 const MORPH_IMAGES_DIR = path.join(REPO_ROOT, "morph-images");
 const TOP100_IMAGES_DIR = path.join(REPO_ROOT, "top100-images");
 const RENDERER_BUNDLE_PATH = path.join(REPO_ROOT, "axie-renderer.bundle.js");
+const MORPH_MANIFEST_PATH = path.join(MORPH_IMAGES_DIR, "manifest.json");
+const TOP100_MANIFEST_PATH = path.join(TOP100_IMAGES_DIR, "manifest.json");
 const RENDER_TIMEOUT_MS = 25000;
+
+// The manifest records which genesHex produced the currently-saved image for each
+// key (axie id, or "{datasetKey}/{axieId}" for Top 100). A file existing on disk is
+// NOT enough on its own to call it "done" -- an axie can be re-morphed later (a part
+// changes), which changes morphGenesHex without the file going away, so the cached
+// image would silently go stale. Comparing against the manifest catches that.
+function loadManifest(manifestPath) {
+  if (!existsSync(manifestPath)) return {};
+  try {
+    return JSON.parse(readFileSync(manifestPath, "utf8"));
+  } catch (e) {
+    return {};
+  }
+}
+
+function saveManifest(manifestPath, manifest) {
+  const dir = path.dirname(manifestPath);
+  if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
+  writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + "\n");
+}
 
 // Both Chromium's own network stack and Node's http clients (undici/fetch) get
 // blocked (connection reset / HTTP 403) when fetching the mixer part textures
@@ -82,22 +104,32 @@ function loadTop100Datasets() {
   return JSON.parse(content.slice(prefix.length).replace(/;\s*$/, ""));
 }
 
-function collectPendingMorphTab() {
+function collectPendingMorphTab(manifest) {
   return loadAxieData()
-    .filter((a) => a.isMorphed && a.morphGenesHex && !existsSync(path.join(MORPH_IMAGES_DIR, `${a.id}.png`)))
-    .map((a) => ({ label: `#${a.id}`, genes: a.morphGenesHex, outFile: path.join(MORPH_IMAGES_DIR, `${a.id}.png`) }));
+    .filter((a) => a.isMorphed && a.morphGenesHex)
+    .filter((a) => {
+      const outFile = path.join(MORPH_IMAGES_DIR, `${a.id}.png`);
+      return !existsSync(outFile) || manifest[a.id] !== a.morphGenesHex;
+    })
+    .map((a) => ({
+      label: `#${a.id}`,
+      key: a.id,
+      genes: a.morphGenesHex,
+      outFile: path.join(MORPH_IMAGES_DIR, `${a.id}.png`),
+    }));
 }
 
-function collectPendingTop100() {
+function collectPendingTop100(manifest) {
   const pending = [];
   for (const dataset of loadTop100Datasets()) {
     const dir = path.join(TOP100_IMAGES_DIR, dataset.key);
     for (const p of dataset.players || []) {
       for (const axie of p.team || []) {
         if (!axie.is_morph || !axie.genes) continue;
+        const key = `${dataset.key}/${axie.id}`;
         const outFile = path.join(dir, `${axie.id}.png`);
-        if (existsSync(outFile)) continue;
-        pending.push({ label: `Top100 ${dataset.name} #${axie.id}`, genes: axie.genes, outFile });
+        if (existsSync(outFile) && manifest[key] === axie.genes) continue;
+        pending.push({ label: `Top100 ${dataset.name} #${axie.id}`, key, genes: axie.genes, outFile });
       }
     }
   }
@@ -158,7 +190,7 @@ function isDataUrlBlank(page, dataUrl) {
   }, dataUrl);
 }
 
-async function renderBatch(items) {
+async function renderBatch(items, manifest, manifestPath) {
   if (items.length === 0) return { rendered: 0, failed: [] };
 
   const browser = await chromium.launch();
@@ -206,6 +238,8 @@ async function renderBatch(items) {
     if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
     const base64 = result.dataUrl.replace(/^data:image\/png;base64,/, "");
     writeFileSync(item.outFile, Buffer.from(base64, "base64"));
+    manifest[item.key] = item.genes;
+    saveManifest(manifestPath, manifest);
     rendered++;
     console.log(`  OK: ${item.label}`);
   }
@@ -214,27 +248,68 @@ async function renderBatch(items) {
   return { rendered, failed };
 }
 
+// One-time bootstrap for a manifest that doesn't exist yet: trust every image
+// already on disk as matching the axie's current genes (we have no record of what
+// genes actually produced it), so the first run under the new manifest system
+// doesn't re-render ~1500 images that are almost certainly still correct. Anything
+// that genuinely went stale before this point won't be caught by the bootstrap --
+// only re-morphs from here on are guaranteed to be detected.
+function bootstrapMorphManifest() {
+  const manifest = {};
+  for (const a of loadAxieData()) {
+    if (a.isMorphed && a.morphGenesHex && existsSync(path.join(MORPH_IMAGES_DIR, `${a.id}.png`))) {
+      manifest[a.id] = a.morphGenesHex;
+    }
+  }
+  return manifest;
+}
+
+function bootstrapTop100Manifest() {
+  const manifest = {};
+  for (const dataset of loadTop100Datasets()) {
+    for (const p of dataset.players || []) {
+      for (const axie of p.team || []) {
+        if (!axie.is_morph || !axie.genes) continue;
+        const key = `${dataset.key}/${axie.id}`;
+        if (existsSync(path.join(TOP100_IMAGES_DIR, dataset.key, `${axie.id}.png`))) {
+          manifest[key] = axie.genes;
+        }
+      }
+    }
+  }
+  return manifest;
+}
+
 async function main() {
-  const morphPending = collectPendingMorphTab();
-  const top100Pending = collectPendingTop100();
+  const morphManifest = existsSync(MORPH_MANIFEST_PATH) ? loadManifest(MORPH_MANIFEST_PATH) : bootstrapMorphManifest();
+  const top100Manifest = existsSync(TOP100_MANIFEST_PATH) ? loadManifest(TOP100_MANIFEST_PATH) : bootstrapTop100Manifest();
+
+  const morphPending = collectPendingMorphTab(morphManifest);
+  const top100Pending = collectPendingTop100(top100Manifest);
 
   if (morphPending.length === 0 && top100Pending.length === 0) {
+    saveManifest(MORPH_MANIFEST_PATH, morphManifest);
+    saveManifest(TOP100_MANIFEST_PATH, top100Manifest);
     console.log("Nenhuma imagem nova pra renderizar.");
     return;
   }
 
   if (morphPending.length > 0) {
     console.log(`Renderizando ${morphPending.length} imagem(ns) da aba Morfado...`);
-    const { rendered, failed } = await renderBatch(morphPending);
+    const { rendered, failed } = await renderBatch(morphPending, morphManifest, MORPH_MANIFEST_PATH);
     console.log(`Morfado: ${rendered} renderizada(s), ${failed.length} falharam.`);
     if (failed.length > 0) console.log("Falhas (Morfado):", JSON.stringify(failed, null, 2));
+  } else {
+    saveManifest(MORPH_MANIFEST_PATH, morphManifest);
   }
 
   if (top100Pending.length > 0) {
     console.log(`Renderizando ${top100Pending.length} imagem(ns) do Top 100...`);
-    const { rendered, failed } = await renderBatch(top100Pending);
+    const { rendered, failed } = await renderBatch(top100Pending, top100Manifest, TOP100_MANIFEST_PATH);
     console.log(`Top 100: ${rendered} renderizada(s), ${failed.length} falharam.`);
     if (failed.length > 0) console.log("Falhas (Top 100):", JSON.stringify(failed, null, 2));
+  } else {
+    saveManifest(TOP100_MANIFEST_PATH, top100Manifest);
   }
 }
 
