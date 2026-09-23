@@ -19116,9 +19116,9 @@ const AXIE_DATA = [
     "genesisParts": {
       "Nightmare": 1
     },
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x200000000000010001e02000020c0000000206100880820a0003000428214208000300102880450c000300102881010c00030010288104080001001010a18404",
     "level": 53
   },
   {
