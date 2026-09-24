@@ -71,7 +71,7 @@ const AXIE_DATA = [
     "isMorphed": true,
     "morphParts": null,
     "morphGenesHex": "0x30001004021040c0000000300102060440400010010088040020003001020008402000300102040840600030010286085020003001010a04506",
-    "level": 55
+    "level": 56
   },
   {
     "id": "2635",
@@ -18468,9 +18468,9 @@ const AXIE_DATA = [
     "collectible": true,
     "genesisTitle": "MEO II",
     "genesisParts": {},
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x200000000000070001012051031000000003001008a1440a0003001010a14008000300102801410a000300102861010a000300102841450a0001001010414108",
     "level": 56
   },
   {
