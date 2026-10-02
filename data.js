@@ -17743,7 +17743,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 36
+    "level": 37
   },
   {
     "id": "5223",
@@ -17765,7 +17765,7 @@ const AXIE_DATA = [
     "isMorphed": true,
     "morphParts": null,
     "morphGenesHex": "0x100000000000030002c10091031000000001000c108041020001000810a0400400010004086083040003000c1080c0040003000828a041020003000c30408206",
-    "level": 42
+    "level": 43
   },
   {
     "id": "5565",
