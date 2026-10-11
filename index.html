@@ -76,6 +76,7 @@
   <button class="view-tab active" id="tabStandard" data-view="standard" data-i18n="tabStandard"></button>
   <button class="view-tab" id="tabMorph" data-view="morph" data-i18n="tabMorph"></button>
   <button class="view-tab" id="tabTop100" data-view="top100">🏆 Top 100</button>
+  <button class="view-tab" id="tabAdmin" data-view="admin" style="display:none">⏱️ Agendar Top 100</button>
 </div>
 
 <section class="filters">
@@ -139,6 +140,26 @@
     <select id="top100SeasonSelect"></select>
   </div>
   <div id="top100List" class="top100-list"></div>
+</section>
+
+<section id="adminTop100" class="top100-section" style="display:none">
+  <div class="top100-header">
+    <h2>⏱️ Agendar captura do Top 100</h2>
+  </div>
+  <p class="admin-schedule-desc">Escolha a data/hora exata e um nome para a captura. No minuto certo, o sistema busca o ranking e os times automaticamente e publica no Top 100.</p>
+  <div class="admin-schedule-form">
+    <div class="filter-group">
+      <label>Nome da temporada/captura</label>
+      <input type="text" id="scheduleSeasonName" placeholder="ex: Season 19 Final">
+    </div>
+    <div class="filter-group">
+      <label>Data e hora exata</label>
+      <input type="datetime-local" id="scheduleDateTime">
+    </div>
+    <button type="button" id="scheduleSubmitBtn" class="modal-btn primary">📅 Agendar</button>
+  </div>
+  <div class="admin-schedule-error" id="scheduleError" style="display:none"></div>
+  <div id="scheduleList" class="admin-schedule-list"></div>
 </section>
 
 <footer class="foot" data-i18n="footerText"></footer>
