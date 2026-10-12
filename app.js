@@ -627,7 +627,7 @@ async function testTop100Now() {
   const errorEl = document.getElementById("scheduleError");
   errorEl.style.display = "none";
   const name = `Teste rápido - ${new Date().toLocaleString("pt-BR")}`;
-  const targetDate = new Date(Date.now() + 5 * 60 * 1000);
+  const targetDate = new Date(Date.now() + 15 * 60 * 1000);
   try {
     await addTop100ScheduleDoc(name, targetDate);
     showToast("Teste agendado! Aparece na lista abaixo em instantes.");
