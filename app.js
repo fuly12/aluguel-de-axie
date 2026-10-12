@@ -466,13 +466,21 @@ function renderTop100() {
       <div class="top100-team">
         ${(p.team || [])
           .map(
-            (axie, idx) => `
-          <a class="top100-axie" href="https://app.axieinfinity.com/marketplace/axies/${axie.id}/" target="_blank" rel="noopener" title="Axie ${axie.id}">
-            <img id="top100-img-${dataset.key}-${p.rank}-${idx}" src="${axie.is_morph ? top100ImageUrl(dataset.key, axie.id) : axie.static_img}" alt="Axie ${axie.id}"
+            (axie, idx) => {
+              // Starters (Buba, Olek, Puffy...) are free in-game axies, not NFTs: their ids
+              // collide with unrelated marketplace axies, so there is no marketplace page to link.
+              const label = axie.is_starter ? `${escapeHtml(axie.starter_name)} (Starter)` : `Axie ${axie.id}`;
+              const linkAttrs = axie.is_starter
+                ? ""
+                : ` href="https://app.axieinfinity.com/marketplace/axies/${axie.id}/" target="_blank" rel="noopener"`;
+              return `
+          <a class="top100-axie"${linkAttrs} title="${label}">
+            <img id="top100-img-${dataset.key}-${p.rank}-${idx}" src="${axie.is_morph ? top100ImageUrl(dataset.key, axie.id) : axie.static_img}" alt="${label}"
                  data-fallback="${axie.static_img}"
-                 onerror="if (this.src !== this.dataset.fallback) { this.src = this.dataset.fallback; } else { this.style.visibility='hidden'; }">
+                 onerror="if (this.getAttribute('src') !== this.dataset.fallback) { this.src = this.dataset.fallback; } else { this.style.visibility='hidden'; }">
             ${axie.rune_img ? `<img class="rune-badge" src="${axie.rune_img}" alt="rune" loading="lazy">` : ""}
-          </a>`
+          </a>`;
+            }
           )
           .join("")}
       </div>
