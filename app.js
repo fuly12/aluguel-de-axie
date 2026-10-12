@@ -603,36 +603,18 @@ async function createTop100Schedule() {
   }
 
   try {
-    await addTop100ScheduleDoc(name, targetDate);
+    await db.collection("top100Schedule").add({
+      seasonName: name,
+      targetAt: firebase.firestore.Timestamp.fromDate(targetDate),
+      status: "pending",
+      createdAt: firebase.firestore.Timestamp.now(),
+      createdBy: currentUser ? currentUser.uid : null,
+    });
     nameInput.value = "";
     dtInput.value = "";
     showToast("Captura agendada!");
   } catch (e) {
     errorEl.textContent = "Erro ao agendar: " + e.message;
-    errorEl.style.display = "block";
-  }
-}
-
-function addTop100ScheduleDoc(name, targetDate) {
-  return db.collection("top100Schedule").add({
-    seasonName: name,
-    targetAt: firebase.firestore.Timestamp.fromDate(targetDate),
-    status: "pending",
-    createdAt: firebase.firestore.Timestamp.now(),
-    createdBy: currentUser ? currentUser.uid : null,
-  });
-}
-
-async function testTop100Now() {
-  const errorEl = document.getElementById("scheduleError");
-  errorEl.style.display = "none";
-  const name = `Teste rápido - ${new Date().toLocaleString("pt-BR")}`;
-  const targetDate = new Date(Date.now() + 5 * 60 * 1000);
-  try {
-    await addTop100ScheduleDoc(name, targetDate);
-    showToast("Teste agendado! Aparece na lista abaixo em instantes.");
-  } catch (e) {
-    errorEl.textContent = "Erro ao agendar teste: " + e.message;
     errorEl.style.display = "block";
   }
 }
@@ -1156,7 +1138,6 @@ function init() {
   });
 
   document.getElementById("scheduleSubmitBtn").addEventListener("click", createTop100Schedule);
-  document.getElementById("scheduleTestNowBtn").addEventListener("click", testTop100Now);
 
   document.querySelectorAll(".view-tab").forEach((btn) => {
     btn.addEventListener("click", () => {
