@@ -4,12 +4,10 @@
   "type": "module",
   "scripts": {
     "update-morph-data": "node scripts/update-morph-data.mjs",
-    "render-morph-images": "node scripts/render-morph-images.mjs",
-    "capture-top100": "node scripts/capture-top100.mjs"
+    "render-morph-images": "node scripts/render-morph-images.mjs"
   },
   "dependencies": {
-    "firebase-admin": "^13.10.0",
-    "playwright": "1.56.1",
-    "undici": "^8.10.0"
+    "undici": "^8.10.0",
+    "playwright": "1.56.1"
   }
 }

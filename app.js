@@ -361,24 +361,15 @@ function switchView() {
   const filtersEl = document.querySelector(".filters");
   const gridEl = document.getElementById("grid");
   const top100El = document.getElementById("top100");
-  const adminEl = document.getElementById("adminTop100");
   if (currentView === "top100") {
     filtersEl.style.display = "none";
     gridEl.style.display = "none";
     top100El.style.display = "block";
-    adminEl.style.display = "none";
     renderTop100();
-  } else if (currentView === "admin") {
-    filtersEl.style.display = "none";
-    gridEl.style.display = "none";
-    top100El.style.display = "none";
-    adminEl.style.display = "block";
-    renderScheduleList();
   } else {
     filtersEl.style.display = "flex";
     gridEl.style.display = "grid";
     top100El.style.display = "none";
-    adminEl.style.display = "none";
     renderGrid();
   }
 }
@@ -511,121 +502,6 @@ let currentPartner = null;
 let isAdmin = false;
 let axieStatus = {};
 let statusUnsubscribe = null;
-let scheduleUnsubscribe = null;
-
-const SCHEDULE_STATUS_LABELS = {
-  pending: "⏳ Pendente",
-  armed: "🎯 Programado",
-  running: "⚙️ Capturando agora",
-  done: "✅ Publicado",
-  failed: "❌ Falhou",
-  cancelled: "🚫 Cancelado",
-};
-
-function subscribeScheduleList() {
-  if (scheduleUnsubscribe || !isAdmin) return;
-  scheduleUnsubscribe = db.collection("top100Schedule").orderBy("targetAt", "desc").onSnapshot(
-    (snapshot) => {
-      const items = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
-      renderScheduleListItems(items);
-    },
-    (err) => console.error("Erro ao ler agendamentos do Top 100", err)
-  );
-}
-
-function unsubscribeScheduleList() {
-  if (scheduleUnsubscribe) {
-    scheduleUnsubscribe();
-    scheduleUnsubscribe = null;
-  }
-}
-
-function renderScheduleListItems(items) {
-  const listEl = document.getElementById("scheduleList");
-  if (!listEl) return;
-  if (items.length === 0) {
-    listEl.innerHTML = `<p style="color:var(--muted);font-size:0.85rem">Nenhum agendamento ainda.</p>`;
-    return;
-  }
-  listEl.innerHTML = items
-    .map((item) => {
-      const dt = item.targetAt && item.targetAt.toDate ? item.targetAt.toDate() : null;
-      const dtLabel = dt ? dt.toLocaleString("pt-BR") : "?";
-      const status = item.status || "pending";
-      const statusLabel = SCHEDULE_STATUS_LABELS[status] || status;
-      const canCancel = status === "pending" || status === "armed";
-      const errorLine = status === "failed" && item.error ? `<div class="schedule-row-time">Erro: ${escapeHtml(item.error)}</div>` : "";
-      return `
-      <div class="schedule-row">
-        <div class="schedule-row-main">
-          <div class="schedule-row-name">${escapeHtml(item.seasonName || "?")}</div>
-          <div class="schedule-row-time">${dtLabel}</div>
-          ${errorLine}
-        </div>
-        <span class="schedule-status ${status}">${statusLabel}</span>
-        ${canCancel ? `<button type="button" class="schedule-cancel-btn" data-schedule-id="${item.id}">Cancelar</button>` : ""}
-      </div>`;
-    })
-    .join("");
-
-  listEl.querySelectorAll(".schedule-cancel-btn").forEach((btn) => {
-    btn.addEventListener("click", () => cancelTop100Schedule(btn.dataset.scheduleId));
-  });
-}
-
-function renderScheduleList() {
-  subscribeScheduleList();
-}
-
-async function createTop100Schedule() {
-  const nameInput = document.getElementById("scheduleSeasonName");
-  const dtInput = document.getElementById("scheduleDateTime");
-  const errorEl = document.getElementById("scheduleError");
-  errorEl.style.display = "none";
-
-  const name = nameInput.value.trim();
-  const dtValue = dtInput.value;
-  if (!name) {
-    errorEl.textContent = "Digite um nome para a captura.";
-    errorEl.style.display = "block";
-    return;
-  }
-  const targetDate = dtValue ? new Date(dtValue) : null;
-  if (!targetDate || isNaN(targetDate.getTime())) {
-    errorEl.textContent = "Escolha uma data e hora válidas.";
-    errorEl.style.display = "block";
-    return;
-  }
-  if (targetDate.getTime() <= Date.now()) {
-    errorEl.textContent = "Escolha um horário no futuro.";
-    errorEl.style.display = "block";
-    return;
-  }
-
-  try {
-    await db.collection("top100Schedule").add({
-      seasonName: name,
-      targetAt: firebase.firestore.Timestamp.fromDate(targetDate),
-      status: "pending",
-      createdAt: firebase.firestore.Timestamp.now(),
-      createdBy: currentUser ? currentUser.uid : null,
-    });
-    nameInput.value = "";
-    dtInput.value = "";
-    showToast("Captura agendada!");
-  } catch (e) {
-    errorEl.textContent = "Erro ao agendar: " + e.message;
-    errorEl.style.display = "block";
-  }
-}
-
-async function cancelTop100Schedule(id) {
-  try {
-    await db.collection("top100Schedule").doc(id).update({ status: "cancelled" });
-  } catch (e) {
-    showToast("Erro ao cancelar: " + e.message);
-  }
-}
 
 function showToast(msg) {
   const toast = document.getElementById("toast");
@@ -690,15 +566,6 @@ function updateLockUI() {
     accountInfo.style.display = "inline-block";
   } else {
     accountInfo.style.display = "none";
-  }
-
-  const tabAdminBtn = document.getElementById("tabAdmin");
-  tabAdminBtn.style.display = isAdmin ? "" : "none";
-  if (!isAdmin && currentView === "admin") {
-    currentView = "standard";
-    document.querySelectorAll(".view-tab").forEach((b) => b.classList.toggle("active", b.dataset.view === "standard"));
-    unsubscribeScheduleList();
-    switchView();
   }
 }
 
@@ -1136,8 +1003,6 @@ function init() {
     currentTop100Key = e.target.value;
     renderTop100();
   });
-
-  document.getElementById("scheduleSubmitBtn").addEventListener("click", createTop100Schedule);
 
   document.querySelectorAll(".view-tab").forEach((btn) => {
     btn.addEventListener("click", () => {
