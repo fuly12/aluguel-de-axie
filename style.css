@@ -942,4 +942,24 @@ body {
   width: 34px;
   height: 34px;
   object-fit: contain;
+  z-index: 2;
+}
+
+.top100-axie .charm-row {
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  z-index: 1;
+}
+
+.top100-axie .charm-icon {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 3px;
 }

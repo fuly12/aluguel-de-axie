@@ -472,6 +472,14 @@ function renderTop100() {
                  data-fallback="${axie.static_img}"
                  onerror="if (this.src !== this.dataset.fallback) { this.src = this.dataset.fallback; } else { this.style.visibility='hidden'; }">
             ${axie.rune_img ? `<img class="rune-badge" src="${axie.rune_img}" alt="rune" loading="lazy">` : ""}
+            ${
+              (axie.charms || []).some((c) => c.img)
+                ? `<div class="charm-row">${(axie.charms || [])
+                    .filter((c) => c.img)
+                    .map((c) => `<img class="charm-icon" src="${c.img}" alt="${escapeHtml(c.name || c.part || "charm")}" title="${escapeHtml(c.name || "")}" loading="lazy">`)
+                    .join("")}</div>`
+                : ""
+            }
           </a>`
           )
           .join("")}
