@@ -18486,9 +18486,9 @@ const AXIE_DATA = [
     "collectible": true,
     "genesisTitle": "MEO II",
     "genesisParts": {},
-    "isMorphed": false,
+    "isMorphed": true,
     "morphParts": null,
-    "morphGenesHex": null,
+    "morphGenesHex": "0x180000000000070001c0c040801000000001000c2081020a000100042041020a0001000820a183080003000c20010108000300102881030a000300142001850c",
     "level": 35
   },
   {
