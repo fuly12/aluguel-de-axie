@@ -687,7 +687,7 @@ function getRenterName(id) {
 async function setRenterName(axie, name) {
   if (!canEditAxie(axie)) return false;
   try {
-    await db.collection("axieStatus").doc(axie.id).update({ renterName: name });
+    await db.collection("axieStatus").doc(axie.id).set({ renterName: name }, { merge: true });
     axieStatus[axie.id] = { ...getStatus(axie.id), renterName: name };
     return true;
   } catch (e) {
@@ -702,7 +702,7 @@ async function setRentalStatus(axie, rentedTiers) {
     return false;
   }
   try {
-    await db.collection("axieStatus").doc(axie.id).update({ rentedTiers });
+    await db.collection("axieStatus").doc(axie.id).set({ rentedTiers }, { merge: true });
     axieStatus[axie.id] = { rentedTiers };
     return true;
   } catch (e) {
