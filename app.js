@@ -120,6 +120,7 @@ const I18N = {
     priceTableTitle: "💰 Preços por Era",
     priceTableNote: "Valores em AXS, cobrados por cada era de aluguel.",
     commonLabel: "Axie Comum",
+    originLabel: "Origem",
     shinyLabel: "Shiny",
     perEraLabel: "por era",
     slipsLabel: "Fortune Slips à venda:",
@@ -181,6 +182,7 @@ const I18N = {
     priceTableTitle: "💰 Prices per Era",
     priceTableNote: "Values in AXS, charged per rental era.",
     commonLabel: "Common Axie",
+    originLabel: "Origin",
     shinyLabel: "Shiny",
     perEraLabel: "per era",
     slipsLabel: "Fortune Slips for sale:",
@@ -242,6 +244,7 @@ const I18N = {
     priceTableTitle: "💰 Precios por Era",
     priceTableNote: "Valores en AXS, cobrados por cada era de alquiler.",
     commonLabel: "Axie Común",
+    originLabel: "Origen",
     shinyLabel: "Shiny",
     perEraLabel: "por era",
     slipsLabel: "Fortune Slips a la venta:",
@@ -303,6 +306,7 @@ const I18N = {
     priceTableTitle: "💰 Presyo bawat Era",
     priceTableNote: "Halaga sa AXS, sisingilin bawat era ng pag-arkila.",
     commonLabel: "Karaniwang Axie",
+    originLabel: "Origin",
     shinyLabel: "Shiny",
     perEraLabel: "bawat era",
     slipsLabel: "Fortune Slips na ibinebenta:",
@@ -392,17 +396,17 @@ function parseSeasonEra(name) {
 }
 
 const PRICE_TABLE = [
-  { labelKey: "ORIGIN", price: 6 },
-  { labelKey: "shinyLabel", price: 4 },
-  { labelKey: "Xmas2019", price: 4 },
-  { labelKey: "Japan", price: 4 },
-  { labelKey: "MEO", price: 5 },
-  { labelKey: "Nightmare", price: 3.5 },
+  { labelKey: "originLabel", price: 6, icon: "origin" },
+  { labelKey: "MEO", price: 5, icon: "meo" },
+  { labelKey: "shinyLabel", price: 4, icon: "shiny" },
+  { labelKey: "Xmas2019", price: 4, icon: "xmas" },
+  { labelKey: "Japan", price: 4, icon: "japan" },
+  { labelKey: "Nightmare", price: 3.5, icon: "nightmare" },
   { labelKey: "commonLabel", price: 1 },
 ];
 
 function priceRowLabel(labelKey) {
-  if (labelKey === "commonLabel" || labelKey === "shinyLabel") return t(labelKey);
+  if (labelKey === "commonLabel" || labelKey === "shinyLabel" || labelKey === "originLabel") return t(labelKey);
   return tagLabel(labelKey);
 }
 
@@ -411,8 +415,10 @@ function renderPriceTable() {
   el.innerHTML = PRICE_TABLE.map(
     (row) => `
     <div class="price-row">
-      <span class="price-row-label">${priceRowLabel(row.labelKey)}</span>
-      <span class="price-row-value">${row.price} AXS <small>/ ${t("perEraLabel")}</small></span>
+      <span class="price-row-label">${
+        row.icon ? `<img class="price-row-icon" src="collection-icons/${row.icon}.svg" alt="">` : ""
+      }${priceRowLabel(row.labelKey)}</span>
+      <span class="price-row-value"><span>${row.price} AXS</span> <small>/ ${t("perEraLabel")}</small></span>
     </div>`
   ).join("");
 }

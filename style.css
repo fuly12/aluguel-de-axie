@@ -233,14 +233,31 @@ body {
 }
 
 .price-row-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-weight: 600;
   font-size: 0.9rem;
+}
+
+.price-row-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
 
 .price-row-value {
   font-weight: 800;
   color: #ffd166;
   font-size: 0.95rem;
+  text-align: right;
+}
+
+/* "6 AXS" and "/ por era" never break internally; when the card is too narrow
+   (long label + collection icon), "/ por era" drops to a second line instead of
+   overflowing the card. */
+.price-row-value > span,
+.price-row-value small {
   white-space: nowrap;
 }
 
