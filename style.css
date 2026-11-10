@@ -489,10 +489,32 @@ body {
   position: relative;
 }
 
-.morph-ribbon {
+/* Top-left corner of the photo (the level badge sits top-right): the "Morfado"
+   ribbon, when shown, stacked above the collection emblems. */
+.card-corner-left {
   position: absolute;
   top: 6px;
   left: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.collection-emblems {
+  display: flex;
+  gap: 4px;
+}
+
+/* Scoped under .card-photo to win over the `.card-photo img` photo sizing. */
+.card-photo .collection-emblem {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(12, 18, 32, 0.85);
+}
+
+.morph-ribbon {
   background: linear-gradient(135deg, #7c3aed, #c026d3);
   color: #fff;
   font-size: 0.7rem;

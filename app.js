@@ -795,6 +795,31 @@ function renderGrid() {
   updateStats();
 }
 
+// Collection emblems (collection-icons/*.svg) shown in the top-left corner of the axie
+// photo, in the same order as the price table. A Nightmare Shiny gets both the Shiny
+// and the Nightmare emblem. Collections without an emblem (Summer, Mystic) only keep
+// their text tag below the photo.
+const COLLECTION_EMBLEMS = [
+  { icon: "origin", tags: ["ORIGIN"] },
+  { icon: "meo", tags: ["MEO", "MEO II"] },
+  { icon: "shiny", tags: ["NightmareShiny", "SummerShiny2022"] },
+  { icon: "xmas", tags: ["Xmas2018", "Xmas2019"] },
+  { icon: "japan", tags: ["Japan"] },
+  { icon: "nightmare", tags: ["Nightmare", "NightmareShiny"] },
+];
+
+function collectionEmblemsHtml(axie) {
+  const axieTags = [...(axie.specialGenes || [])];
+  if (axie.genesisTitle) axieTags.push(axie.genesisTitle);
+  const emblems = COLLECTION_EMBLEMS.map(({ icon, tags }) => {
+    const match = tags.find((tag) => axieTags.includes(tag));
+    if (!match) return "";
+    const label = tagLabel(match);
+    return `<img class="collection-emblem" src="collection-icons/${icon}.svg" alt="${label}" title="${label}">`;
+  }).join("");
+  return emblems ? `<div class="collection-emblems">${emblems}</div>` : "";
+}
+
 function collectibleTagsHtml(axie) {
   const tags = [];
   (axie.specialGenes || []).forEach((tag) => tags.push(tagLabel(tag)));
@@ -891,12 +916,14 @@ function buildCard(axie) {
   const discordHandle = typeof PARTNER_DISCORD !== "undefined" ? PARTNER_DISCORD[normalizeWallet(axie.ownerWallet)] : null;
 
   const photoSrc = isMorphView ? morphImageUrl(axie.id) : imageUrl(axie.id);
+  const morphRibbon = isMorphView ? `<span class="morph-ribbon">${t("tabMorph")}</span>` : "";
+  const emblems = collectionEmblemsHtml(axie);
   card.innerHTML = `
     <div class="card-photo">
       <img id="axie-img-${axie.id}" src="${photoSrc}" alt="Axie ${axie.id}" loading="lazy" title="${partsSummary(axie.parts)}"
            data-fallback="${imageUrl(axie.id)}"
            onerror="if (this.src !== this.dataset.fallback) { this.src = this.dataset.fallback; } else { this.style.visibility='hidden'; }">
-      ${isMorphView ? `<span class="morph-ribbon">${t("tabMorph")}</span>` : ""}
+      ${morphRibbon || emblems ? `<div class="card-corner-left">${morphRibbon}${emblems}</div>` : ""}
       ${axie.level != null ? `<span class="level-badge">Lv. ${axie.level}</span>` : ""}
     </div>
     <div class="card-info">
