@@ -193,7 +193,11 @@ function isDataUrlBlank(page, dataUrl) {
 async function renderBatch(items, manifest, manifestPath) {
   if (items.length === 0) return { rendered: 0, failed: [] };
 
-  const browser = await chromium.launch();
+  // Playwright pinned in package.json may expect a different Chromium build
+  // than the one pre-installed in the environment; prefer the env's binary.
+  const envChromium = "/opt/pw-browsers/chromium";
+  const launchOpts = existsSync(envChromium) ? { executablePath: envChromium } : {};
+  const browser = await chromium.launch(launchOpts);
   let page = await browser.newPage({ viewport: { width: 400, height: 400 } });
   await setupTextureProxy(page);
   await page.goto("about:blank");
