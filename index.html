@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aluguel de Axies do Fuly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;700;800&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -152,5 +155,33 @@
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
 <script src="firebase-config.js"></script>
 <script src="app.js"></script>
+<script>
+/* Brilho holográfico e leve inclinação do card que está sob o mouse */
+(function () {
+  var grid = document.getElementById("grid");
+  if (!grid) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+
+  grid.addEventListener("pointermove", function (e) {
+    var card = e.target.closest(".card");
+    if (!card) return;
+    var r = card.getBoundingClientRect();
+    var x = (e.clientX - r.left) / r.width;
+    var y = (e.clientY - r.top) / r.height;
+    card.style.setProperty("--mx", (x * 100).toFixed(1) + "%");
+    card.style.setProperty("--my", (y * 100).toFixed(1) + "%");
+    card.style.setProperty("--rx", ((0.5 - y) * 6).toFixed(2) + "deg");
+    card.style.setProperty("--ry", ((x - 0.5) * 6).toFixed(2) + "deg");
+  });
+
+  grid.addEventListener("pointerout", function (e) {
+    var card = e.target.closest(".card");
+    if (!card || card.contains(e.relatedTarget)) return;
+    card.style.removeProperty("--rx");
+    card.style.removeProperty("--ry");
+  });
+})();
+</script>
 </body>
 </html>
