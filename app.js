@@ -812,10 +812,11 @@ function renderGrid() {
 }
 
 // Collection emblems (collection-icons/*.svg) shown in the top-left corner of the axie
-// photo, in the same order as the price table. A Nightmare Shiny gets both the Shiny
-// and the Nightmare emblem. Collections without an emblem (Summer, Mystic) only keep
-// their text tag below the photo.
+// photo: Mystic first (the rarest), then the same order as the price table. A Nightmare
+// Shiny gets both the Shiny and the Nightmare emblem. Collections without an emblem
+// (Summer) only keep their text tag below the photo.
 const COLLECTION_EMBLEMS = [
+  { icon: "mystic", tags: ["Mystic"] },
   { icon: "origin", tags: ["ORIGIN"] },
   { icon: "meo", tags: ["MEO", "MEO II"] },
   { icon: "shiny", tags: ["NightmareShiny", "SummerShiny2022"] },
