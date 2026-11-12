@@ -1,3 +1,6 @@
+// Carteira do proprietário do site; os demais parceiros aparecem como associados.
+const SITE_OWNER_WALLET = "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8";
+
 const PARTNER_NAMES = {
   "0x7f8d45d28cda0e4ada4b6780a7a33a3f52d5fef8": "Fuly",
   "0xaae8248ce459912bef4e5d42f4f35d302766e664": "Mitt",

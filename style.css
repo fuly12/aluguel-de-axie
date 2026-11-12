@@ -179,7 +179,14 @@ button, input, select { font-family: inherit; }
   text-align: center;
   background: rgba(17, 22, 42, 0.6);
 }
-.associates-names { font-size: 0.9rem; color: var(--text); }
+.associates-names {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 28px;
+  font-size: 0.9rem;
+  color: var(--text);
+}
 .associates-names strong { color: var(--foil-b); }
 .associates-instructions { font-size: 0.8rem; color: var(--muted); margin-top: 2px; }
 

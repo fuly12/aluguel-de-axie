@@ -68,6 +68,7 @@ const I18N = {
   pt: {
     title: "🐾 Aluguel de Axies do Fuly",
     discordContact: "Discord para contato:",
+    siteOwnerLabel: "👑 Proprietário do site",
     associatesLabel: "🤝 Associados",
     associatesInstructions: "Interessados em alugar? Procure o dono do Axie — o Discord dele aparece logo abaixo da imagem de cada um.",
     statTotalLabel: "total",
@@ -130,6 +131,7 @@ const I18N = {
   en: {
     title: "🐾 Fuly's Axie Rentals",
     discordContact: "Discord contact:",
+    siteOwnerLabel: "👑 Site owner",
     associatesLabel: "🤝 Associates",
     associatesInstructions: "Interested in renting? Look for the Axie's owner — their Discord shows up right below each Axie's image.",
     statTotalLabel: "total",
@@ -192,6 +194,7 @@ const I18N = {
   es: {
     title: "🐾 Alquiler de Axies de Fuly",
     discordContact: "Contacto de Discord:",
+    siteOwnerLabel: "👑 Propietario del sitio",
     associatesLabel: "🤝 Asociados",
     associatesInstructions: "¿Interesado en alquilar? Busca al dueño del Axie — su Discord aparece justo debajo de la imagen de cada uno.",
     statTotalLabel: "total",
@@ -254,6 +257,7 @@ const I18N = {
   fil: {
     title: "🐾 Pag-arkila ng Axies ni Fuly",
     discordContact: "Discord para sa kontak:",
+    siteOwnerLabel: "👑 May-ari ng site",
     associatesLabel: "🤝 Mga Kasosyo",
     associatesInstructions: "Interesado mag-arkila? Hanapin ang may-ari ng Axie — makikita ang Discord niya sa ibaba mismo ng larawan ng bawat Axie.",
     statTotalLabel: "kabuuan",
@@ -342,9 +346,21 @@ function translateStaticUI() {
 function renderAssociatesBanner() {
   const el = document.getElementById("associatesBanner");
   if (!el || typeof PARTNER_NAMES === "undefined") return;
-  const names = Object.values(PARTNER_NAMES).join(", ");
+  const ownerWallet = typeof SITE_OWNER_WALLET !== "undefined" ? normalizeWallet(SITE_OWNER_WALLET) : null;
+  const entries = Object.entries(PARTNER_NAMES);
+  const ownerName = ownerWallet ? PARTNER_NAMES[ownerWallet] : null;
+  const associateNames = entries
+    .filter(([wallet]) => normalizeWallet(wallet) !== ownerWallet)
+    .map(([, name]) => name)
+    .join(", ");
+  const ownerHtml = ownerName
+    ? `<span class="associates-group">${t("siteOwnerLabel")}: <strong>${escapeHtml(ownerName)}</strong></span>`
+    : "";
+  const associatesHtml = associateNames
+    ? `<span class="associates-group">${t("associatesLabel")}: <strong>${escapeHtml(associateNames)}</strong></span>`
+    : "";
   el.innerHTML = `
-    <div class="associates-names">${t("associatesLabel")}: <strong>${escapeHtml(names)}</strong></div>
+    <div class="associates-names">${ownerHtml}${associatesHtml}</div>
     <div class="associates-instructions">${t("associatesInstructions")}</div>
   `;
 }
