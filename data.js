@@ -93,7 +93,7 @@ const AXIE_DATA = [
     "isMorphed": true,
     "morphParts": null,
     "morphGenesHex": "0x200000000000030001014070c41000000001001020a0830400030010084044020003001020808506000300102040840600030010288082020003001010a08404",
-    "level": 57
+    "level": 58
   },
   {
     "id": "4437",
@@ -7409,7 +7409,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 18
+    "level": 19
   },
   {
     "id": "11419767",
@@ -15873,7 +15873,7 @@ const AXIE_DATA = [
     "isMorphed": true,
     "morphParts": null,
     "morphGenesHex": "0x100000000000030002c100910310000000030010208041020001001008a040040001001020608304000300102080c0040003001028a041020003001010408206",
-    "level": 45
+    "level": 46
   },
   {
     "id": "5565",
@@ -18291,7 +18291,7 @@ const AXIE_DATA = [
     "isMorphed": true,
     "morphParts": null,
     "morphGenesHex": "0x1800000000000700018080c0830c00000001001020a100080003000c28a1040a0001001020810308000100102061450a0003001028018508000100101061830c",
-    "level": 31
+    "level": 32
   },
   {
     "id": "10768608",
