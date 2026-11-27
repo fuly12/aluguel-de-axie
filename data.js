@@ -71,7 +71,7 @@ const AXIE_DATA = [
     "isMorphed": true,
     "morphParts": null,
     "morphGenesHex": "0x30001004021040c0000000300102060440400010010088040020003001020008402000300102040840600030010286085020003001010a04506",
-    "level": 59
+    "level": 60
   },
   {
     "id": "2635",
@@ -7409,7 +7409,7 @@ const AXIE_DATA = [
     "isMorphed": false,
     "morphParts": null,
     "morphGenesHex": null,
-    "level": 19
+    "level": 20
   },
   {
     "id": "11419767",
@@ -13755,7 +13755,7 @@ const AXIE_DATA = [
     "isMorphed": true,
     "morphParts": null,
     "morphGenesHex": "0x1000300e0c083100000000003041021430200010000108100080003000028404508000100001000800400000300300100020002030008004104",
-    "level": 28
+    "level": 29
   },
   {
     "id": "11458165",
